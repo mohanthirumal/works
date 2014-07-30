@@ -1,0 +1,32 @@
+<div class="header" data-role="footer" data-position="fixed" data-id="header" role="banner">
+	<div class="logo">
+		<a data-transition="fade" class="back-btn" onclick="Doc.gotoBack()"></a>
+		<a data-transition="fade" href="#" onclick="Doc.showHideMenu()" class="doc-header-user-profile"><img src="images/avatar.jpg" id="avatar" class="avatar"/></a>
+	</div>
+</div>
+<div class="content">
+	<div class="home-desc">
+		<div class="register-user-image">
+			<div class="register-user-image-inner"><img src="images/avatar.jpg" id="man-app-avatar" class="clinic-avatar"/></div>
+		</div>
+		<div class="register-user-input">
+			<div class="doc-app-patient-label-txt" id="man-app-doc-name"></div>
+			<div class="doc-app-patient-label-txt" id="man-app-doc-spec"></div>
+			<div class="doc-app-patient-label-txt" id="man-app-doc-loc"></div>
+		</div>
+		<div class="clear"></div>
+		<div class="address-parent" style="text-indent:0;">
+			<b>Phone :</b>
+			<div class="register-user-address" id="man-app-doc-phone" style="text-align: center; padding: 5px;"></div>
+			<div class="height-10"></div>
+			<b>Address :</b>
+			<div class="register-user-address" id="man-app-doc-addr"></div>
+		</div>
+	</div>
+	<div class="app-details-options" id="doc-manual-map-show">
+		<div class="app-map-icon-bg-outer"><a class="app-map-icon-bg" href="#" id="man-app-doc-call"><div class="app-call-icon"></div></a>Call</div>
+		<div class="app-map-icon-bg-outer"><a class="app-map-icon-bg" href="#clinic-map" onclick="Doc.loadDocManualMap()"><div class="app-map-icon"></div></a>Map</div>
+	</div>
+</div>
+<div id="man-doc-footer"></div>
+<script>$("#man-doc-footer").load('footer.html').trigger('create');</script>

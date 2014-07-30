@@ -1,0 +1,21 @@
+.tournament-lobby-inner-right{float:left; width:764px; background-color:#fff; padding:0 0 5px 0;}
+.tounament-row-cont{float:left; width:99%; background-color:#CECECE; margin:5px 0 0 4px;}
+.tournament-row-type{float:left; width:135px; height:80px; border:solid 1px #fff; margin:5px 10px 5px 10px; -moz-border-radius:8px; -webkit-border-radius:8px; border-radius:8px; background-color:#fff; overflow:hidden;}
+.tournament-match-flag .flag,.tournament-row-type .flag{float:left; width:40px; border:solid 1px #B69551; -moz-border-radius:6px; -webkit-border-radius:6px; border-radius:6px; overflow:hidden;}
+.tournament-match-flag .flag-op,.tournament-row-type .flag-op{margin-left:-9px;}
+.tournament-match-flag .flag img,.tournament-row-type .flag img{width:100%; height:30px;}
+.v-image-area{float:left; width:20px; height:20px; margin-top:10px; margin-left:-5px; position:relative; background:url(../images/v_img.png) no-repeat; width:18px; height:19px;}
+.v-img{width:18px; height:19px;}
+.tournament-match-flag{margin:4px 0 0 0; float:left;}
+.tournament-match-flag .flag{height:30px;}
+.tournament-match-flag .v-image-area{margin:8px 0 0 -7px;}
+.tournament-row-type-flag{float:left; margin:5px 0 0 23px;}
+.tour-row-type-win-text{width:100%; float:left; text-align:center; font-weight:bold; font-size:16px; color:#666;}
+.tour-row-type-win-cash{float:left; width:100%; background-color:#343434; height:25px; text-align:center; line-height:25px; color:#fff; font-size:16px; font-weight:bold}
+.tour-row-player-entry{float:left; background:url(../images/tour-lobby-indi-bg.jpg) no-repeat; width:149px; height:86px;}
+.tour-row-player-count{width:100%; float:left; text-align:center; margin:8px 0 0 0; color:#4E871A; font-size:17px; font-weight:bold;}
+.tour-row-player-count span{color:#F5430D;}
+.tour-row-player-joined,.tour-row-enrty-fee{width:100%; float:left; text-align:center;}
+.tour-row-enrty-fee{font-weight:bold;}
+.tour-row-join-btn{float:left; width:48px; height:22px; background:url(../images/tour-lobby-join-btn.png) no-repeat; margin:1px 0 0 52px; text-align:center; line-height:22px; color:#fff; cursor:pointer;}
+.tour-period-type-txt{float:left; text-align:center; width:100%; height:36px; line-height:40px; font-weight:bold; font-size:18px;}

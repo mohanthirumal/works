@@ -1,0 +1,18 @@
+<div class="header" data-role="footer" data-position="fixed" data-id="header" role="banner">
+	<div class="logo">
+		<a data-transition="fade" class="back-btn" onclick="Doc.gotoBack()"></a>
+		<a data-transition="fade" href="#doc-setting" class="doc-header-user-profile"><img src="images/avatar.jpg" id="avatar" class="avatar"/></a>
+	</div>
+</div>
+<div class="content">
+	<div class="title">My Clinic</div>
+	<div class="view-tab-cont">
+		<a data-transition="fade" href="#clinic-info-general" class="button" data-role="none">General</a>
+		<a data-transition="fade" href="#invite-member-list" class="button active" data-role="none">Medical</a>
+		<a data-transition="fade" href="#doctor-map" class="button" data-role="none">Map</a>
+	</div>
+	<div class="clinic-link"><a class="clinic-link-arrow" href="#invite-member" data-transition="fade" onclick="MC.getClinicUsers();">Add Speciality</a></div>
+	<div id="clinic-members"></div>
+</div>
+<div id="inv-mem-list-footer"></div>
+<script>$("#inv-mem-list-footer").load('doc-footer.html').trigger('create');</script>

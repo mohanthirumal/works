@@ -1,0 +1,38 @@
+<div class="header" data-role="footer" data-position="fixed" data-id="header" role="banner">
+	<div class="logo">
+		<a data-transition="fade" class="back-btn" onclick="Doc.gotoBack()"></a>
+		<a data-transition="fade" href="#doc-setting" class="doc-header-user-profile"><img src="images/avatar.jpg" id="avatar" class="avatar"/></a>
+	</div>
+</div>
+<div class="content">
+	<div class="subtitle my-clinic-app-title"></div>
+	<div class="home-desc login-input-bg">
+		<input type="button" class="decline-btn" value="Delete" data-role="none"/>
+		<div class="doc-clinic-app-tit">Appointments</div>
+		<a href="#addBookingManual" data-rel="popup" data-position-to="window" class="ui-btn ui-shadow ui-corner-all ui-icon-plus ui-btn-icon-notext ui-btn-b ui-btn-inline">Plus</a>
+		<div class="clear"></div>
+		<input type="date" class="doc-app-date-input" id="doc-app-date-input" data-role="none"/>
+		<select class="doc-app-clinic-date" id="doc-app-clinic-date" data-role="none" onchange="MC.updateDocCliApp()">
+			<option value="">Select Doctor</option>
+		</select>
+	</div>
+	<div id="doc-clinic-app-list"></div>
+	<div data-role="popup" id="addBookingManual" data-theme="a" class="ui-corner-all">
+		<form>
+			<div style="padding:10px 20px;">
+				<h3>Add Booking</h3>
+				<label for="un" class="ui-hidden-accessible">Patient Name:</label>
+				<input type="text" name="app-patient-name" id="app-patient-name" value="" placeholder="Patient Name" data-theme="a">
+				<label for="pw" class="ui-hidden-accessible">contact No:</label>
+				<input type="text" name="app-patient-no" id="app-patient-no" value="" placeholder="contact No" data-theme="a">
+				<select name="clinic-type" id="clinic-type-time" data-role="none">
+					<option value="0">Select time</option>
+				</select>
+				<a href="#" onclick="MC.docManualAppoin()" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check">Confirm</a>
+				<a href="#" onclick="" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-delete">Cancel</a>
+			</div>
+		</form>
+	</div>
+</div>
+<div id="my-clinic-app-footer"></div>
+<script>$("#my-clinic-app-footer").load('doc-footer.html').trigger('create');</script>

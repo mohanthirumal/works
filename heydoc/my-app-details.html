@@ -1,0 +1,29 @@
+<div class="header" data-role="footer" data-position="fixed" data-id="header" role="banner">
+	<div class="logo">
+		<a data-transition="fade" class="back-btn" onclick="Doc.gotoBack()"></a>
+		<a data-transition="fade" href="#" onclick="Doc.showHideMenu()" class="doc-header-user-profile"><img src="images/avatar.jpg" id="avatar" class="avatar"/></a>
+	</div>
+</div>
+<div class="content">
+	<div class="title">My Appointments</div>
+	<div class="home-desc">
+		<div class="register-user-image">
+			<div class="register-user-image-inner"><img src="images/avatar.jpg" id="clinic-app-avatar" class="clinic-avatar"/></div>
+		</div>
+		<div class="register-user-input">
+			<div class="doc-app-patient-label-txt" id="app-patient-name"></div>
+			<div class="doc-app-patient-label-txt" id="app-patient-spec"></div>
+			<div class="doc-app-patient-label-txt" id="app-patient-date">App Date: <span></span></div>
+			<div class="doc-app-patient-label-txt" id="app-patient-time">App Time: <span></span></div>
+		</div>
+		Location Address :
+		<div class="book-doctor-addr" id="app-patient-addr">Scan India,20, bhakthavaham nager, adyar, chennai</div>
+	</div>
+	<div class="app-details-options">
+		<div class="app-map-icon-bg-outer"><a class="app-map-icon-bg" href="#clinic-map" onclick="Doc.loadClinicMap()"><div class="app-map-icon"></div></a>Map</div>
+		<div class="app-map-icon-bg-outer"><a class="app-map-icon-bg" href="#" onclick="Doc.addtoFavourite(this)"><div class="app-fav-icon"></div></a>Favourites</div>
+		<div class="app-map-icon-bg-outer"><div class="app-map-icon-bg"><div class="app-edit-icon"></div></div>Edit</div>
+	</div>
+</div>
+<div id="my-app-details-footer"></div>
+<script>$("#my-app-details-footer").load('footer.html').trigger('create');</script>

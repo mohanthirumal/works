@@ -1,0 +1,29 @@
+<div class="footer " data-role="footer" data-position="fixed" data-id="header" role="banner">
+	<ul>
+		<li><a data-transition="fade" href="#search-home" class="search active" data-role="none">Search</a></li>
+		<li><a data-transition="fade" href="#appointment" class="appoint" data-role="none" onclick="Doc.getMyAppointments()">Appointments</a></li>
+		<li><a data-transition="fade" href="#notification" class="notif" data-role="none" onclick="Doc.getNotification()">Notification</a></li>
+		<li><a data-transition="fade" href="#favourites" class="fav" data-role="none" onclick="Doc.getMyFavourites()">Favourites</a></li>
+		
+	</ul>
+</div>
+<div class="menu">
+	<div class="menu-top-arrow"></div>
+	<ul>
+		<li><a href="#setting">My Profile</a></li>
+		<li><a href="#" onclick="Doc.checkDocReg()">Doc Mode</a></li>
+		<li><a href="#">Support</a></li>
+		<li><a href="#">Share</a></li>
+		<li><a href="#" onclick="Doc.logout()">Logout</a></li>
+	</ul>
+</div>
+<script>
+$('.footer ul li a').click(function(){
+	$('.footer ul li a').removeClass('active');
+	var active = $(this).attr('class');
+	$('.footer ul li a.'+active).addClass('active');
+});
+$('.menu ul li a').click(function(){
+	$('.menu').hide();
+});
+</script>

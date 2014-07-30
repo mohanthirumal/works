@@ -1,0 +1,23 @@
+<div class="header" data-role="footer" data-position="fixed" data-id="header" role="banner">
+	<div class="logo">
+		<a data-transition="fade" class="back-btn" onclick="Doc.gotoBack()"></a>
+		<a data-transition="fade" href="#doc-setting" class="doc-header-user-profile"><img src="images/avatar.jpg" id="avatar" class="avatar"/></a>
+	</div>
+</div>
+<div class="content">
+	<div class="view-tab-cont">
+		<a data-transition="fade" href="#clinic-info-general" class="button" data-role="none">General</a>
+		<a data-transition="fade" href="#invite-member-list" class="button" data-role="none">Medical</a>
+		<a data-transition="fade" href="#doctor-map" class="button active" data-role="none">Map</a>
+	</div>
+	<p>Place the waypoint in location of your clinic and we will automatically show it to users on the map</p>
+	<div class="search-bar">
+		<input type="text" id="geocodeInput" value="" data-role="none" class="input" placeholder="Search Place"/>
+		<input type="button" value="" onclick="MC.searchLocation()"  data-role="none" class="button"/>
+	</div>
+	<div style="height:80%; width:100%; position: absolute;">
+		<div id="map-canvas"></div>
+	</div>
+</div>
+<div id="my-clinic-map-footer"></div>
+<script>$("#my-clinic-map-footer").load('doc-footer.html').trigger('create');</script>

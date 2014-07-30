@@ -1,0 +1,41 @@
+<IfModule mod_rewrite.c>
+# URL rewriting module activation
+RewriteEngine on
+
+#RewriteCond %{HTTP_HOST} !^www.kbcspl.com/zealcity3$ [NC]
+#RewriteRule ^(.*)$ http://www.kbcspl.com/zealcity3/$1 [L,R=301]
+# URL rewriting rules
+
+RewriteRule ^my-account$ /zealcityori/my-account.php [QSA,L]
+RewriteRule ^tournament$ /zealcityori/tournament.php [QSA,L]
+RewriteRule ^research$ /zealcityori/research.php [QSA,L]
+RewriteRule ^leaderboard$ /zealcityori/leaderboard.php [QSA,L]
+RewriteRule ^refer-a-friend$ /zealcityori/refer-a-friend.php [QSA,L]
+RewriteRule ^deposit$ /zealcityori/deposit.php [QSA,L]
+RewriteRule ^success$ /zealcityori/success.php [QSA,L]
+RewriteRule ^rules$ /zealcityori/rules.php [QSA,L]
+RewriteRule ^how-it-works$ /zealcityori/howitworks.php [QSA,L]
+RewriteRule ^research-details$ /zealcityori/research-details.php [QSA,L]
+RewriteRule ^my-team/(.*)-type/(.*)/(.*)$ /zealcityori/my-team.php?type=$1&id=$2&mid=$3 [QSA,L]
+RewriteRule ^my-tournament/(.*)-type/(.*)/(.*)$ /zealcityori/my-tournament.php?type=$1&id=$2&mid=$3 [QSA,L]
+RewriteRule ^my-period-tournament/(.*)$ /zealcityori/my-period-tournament.php?id=$1 [QSA,L]
+RewriteRule ^my-period-tournament-details/(.*)-type/(.*)$ /zealcityori/my-period-tournament-details.php?type=$1&id=$2 [QSA,L]
+RewriteRule ^about-us$ /zealcityori/about-us.php [QSA,L]
+RewriteRule ^faqs$ /zealcityori/faqs.php [QSA,L]
+RewriteRule ^legal$ /zealcityori/legal.php [QSA,L]
+RewriteRule ^terms-conditions$ /zealcityori/terms-conditions.php [QSA,L]
+RewriteRule ^privacy-policy$ /zealcityori/privacy-policy.php [QSA,L]
+RewriteRule ^support$ /zealcityori/support.php [QSA,L]
+RewriteRule ^live-match/(.*)$ /zealcityori/fulllivescore.php?id=$1 [QSA,L]
+RewriteRule ^forgot-password$ /zealcityori/forgot-password.php [QSA,L]
+RewriteRule ^create-tournament$ /zealcityori/create-tournament.php [QSA,L]
+RewriteRule ^xtra-cash$ /zealcityori/extra-cash.php [QSA,L]
+RewriteRule ^tournament-and-how-it-works$ /zealcityori/tournament-and-how-it-works.php [QSA,L]
+RewriteRule ^whats-new-in-zealcity$ /zealcityori/whats-new-in-zealcity.php [QSA,L]
+RewriteRule ^zealcity-points$ /zealcityori/zealcity-points.php [QSA,L]
+RewriteRule ^deposit-and-withdraw$ /zealcityori/deposit-and-withdraw.php [QSA,L]
+RewriteRule ^home$ /zealcityori/home.php [QSA,L]
+</IfModule>
+
+# Catch 404 errors
+ErrorDocument 404 /zealcity3/404.php

@@ -1,0 +1,58 @@
+<div class="header" data-role="footer" data-position="fixed" data-id="header" role="banner">
+	<div class="logo">
+		<a class="back-btn" href="#home" data-transition="fade"></a>
+		<div class="done-btn" onclick="Doc.signup()"></div>
+	</div>
+</div>
+<div class="content" style="bottom:0;">
+	<h2>Account Information</h2>
+	<div class="register-bg">
+		<div class="register-user-image">
+			<div class="register-user-image-inner"><img src="images/avatar.jpg" id="create-clinic-avatar" class="create-clinic-avatar" onclick="Doc.registerAvatar()"/></div>
+		</div>
+		<div class="register-user-input">
+			<input type="text" name="username" id="username1" value="" placeholder="Username" data-role="none" class="input"/>
+			<input type="password" name="password" id="password1" value="" placeholder="Password" data-role="none" class="input"/>
+		</div>
+	</div>
+	<h2>Profile Information</h2>
+	<div class="register-bg">
+		<div class="fb-login-btn" onclick="Doc.FBLogin()">
+			<div class="fb-icon-btn"></div>
+			<div class="fb-text-btn">Login with facebook</div>
+		</div>
+		<div class="clear"></div>
+		<div class="register-user-txt">E-mail : </div>
+		<div class="register-user-input">
+			<input type="email" name="email" id="email" value="" placeholder="E-mail" data-role="none" class="input"/>
+		</div>
+		<div class="clear"></div>
+		<div class="register-user-txt">DOB : </div>
+		<div class="register-user-input">
+			<input type="date" name="dob" id="dob" value="" placeholder="DOB"  data-role="date" data-inline="true" class="input" style="width:90%;"/>
+		</div>
+		<div class="clear"></div>
+		<div class="register-user-txt">Gender : </div>
+		<div class="register-user-input">
+			<select name="gender" id="gender" data-role="none" style="width:95%">
+				<option value="1">Male</option>
+				<option value="2">Female</option>
+			</select>
+		</div>
+		<div class="clear"></div>
+		<div class="register-user-txt">Phone : </div>
+		<div class="register-user-input">
+			<input type="text" name="phone" id="phone" value="" placeholder="Phone" data-role="none" class="input"/>
+		</div>
+		<div class="register-user-txt">Country : </div>
+		<div class="register-user-input">
+			<input type="text" name="country" id="country" value="" placeholder="Country" data-role="none" class="input"/>
+		</div>
+		<div class="clear"></div>
+		<div class="register-user-txt">City : </div>
+		<div class="register-user-input">
+			<input type="text" name="city" id="city" value="" placeholder="City" data-role="none" class="input"/>
+		</div>
+	</div>
+	<p>We will never share your e-mail or phone numbers with any 3rd party. By clicking Done your are indicating that you have read & agree to our terms of service.</p>
+</div>

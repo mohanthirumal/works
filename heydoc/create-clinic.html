@@ -1,0 +1,39 @@
+<div class="header" data-role="footer" data-position="fixed" data-id="header" role="banner">
+	<div class="logo">
+		<a data-transition="fade" class="back-btn" onclick="Doc.gotoBack()"></a>
+		<a data-transition="fade" href="#doc-setting" class="doc-header-user-profile"><img src="images/avatar.jpg" id="avatar" class="avatar"/></a>
+	</div>
+</div>
+<div class="content">
+	<div class="title">Create Clinic</div>
+	<form name="create-clinic" onsubmit="return Doc.createClinic()" id="create-clinic-form">
+	<div class="register-bg">
+		<div class="register-user-image">
+			<div class="register-user-image-inner"><img src="images/avatar.jpg" id="create-clinic-avatar" class="create-clinic-avatar" onclick="MC.addAvatar()"/></div>
+		</div>
+		<div class="register-user-input">
+			
+			<input type="text" name="clinic-name" id="clinic-name" value="" placeholder="Name" data-role="none" class="input" required/>
+			<select name="clinic-type" id="clinic-type" data-role="none" style="width:95%" required>
+				<option value="0">Select Type</option>
+				<option value="Clinic">Clinic</option>
+				<option value="Scan centre">Scan centre</option>
+				<option value="Hospitals">Hospitals</option>
+				<option value="Pharmacy">Pharmacy</option>
+				<option value="Diagnostics">Diagnostics</option>
+			</select>
+			<input type="text" name="clinic-country" id="clinic-country" value="" placeholder="Country" data-role="none" class="input" required/>
+			<input type="text" name="clinic-state" id="clinic-state" value="" placeholder="State" data-role="none" class="input" required/>
+			<input type="text" name="clinic-city" id="clinic-city" value="" placeholder="City" data-role="none" class="input" required/>
+			<input type="text" name="clinic-address" id="clinic-address" value="" placeholder="Address" data-role="none" class="input" required/>
+			<input type="text" name="clinic-pincode" id="clinic-pincode" value="" placeholder="Pincode" data-role="none" class="input" required/>
+			<input type="text" name="clinic-contact-no" id="clinic-contact-no" value="" placeholder="Clinic Contact No" data-role="none" class="input" required/>
+			<input type="text" name="clinic-email" id="clinic-email" value="" placeholder="Email" data-role="none" class="input"/>
+			
+		</div>
+	</div>
+	<div class="center"><input type="submit" value="Create" data-role="none" class="button"/></div>
+	</form>
+</div>
+<div id="create-clinic-footer"></div>
+<script>$("#create-clinic-footer").load('doc-footer.html');</script>

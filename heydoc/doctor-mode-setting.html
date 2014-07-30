@@ -1,0 +1,55 @@
+<div class="header" data-role="footer" data-position="fixed" data-id="header" role="banner">
+	<div class="logo">
+		<a data-transition="fade" class="back-btn" onclick="Doc.gotoBack()"></a>
+		<a data-transition="fade" href="#doc-setting" class="doc-header-user-profile"><img src="images/avatar.jpg" id="avatar" class="avatar"/></a>
+	</div>
+</div>
+<div class="content">
+	<h2>Hey doc id: <b id="doctor-id"></b></h2>
+	<h2>Doctor Information</h2>
+	<div class="register-bg">
+		<table align="center" cellpadding="10px">
+			<tr>
+				<td>Full name:</td>
+				<td id="doc-ful-name"></td>
+			</tr>
+			<tr>
+				<td>Speciality:</td>
+				<td id="doc-spec"></td>
+			</tr>
+			<tr>
+				<td>Medical License No:</td>
+				<td id="doc-med-lic"></td>
+			</tr>
+			<tr>
+				<td align="center" colspan="2">
+					Contact phone number
+					<input type="text" name="doc-mode-mobile" id="doc-mode-mobile" placeholder="Mobile" data-role="none" class="input"/>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					Contact E-mail
+					<input type="text" name="doc-mode-email" id="doc-mode-email" placeholder="Email" data-role="none" class="input"/>
+				</td>
+			</tr>
+			<tr>
+				<td>Doc Mode:</td>
+				<td>
+					<select id="doc-mode-check" name="doc-mode-check">
+						<option value="false">Off</option>
+						<option value="true">On</option>
+						
+					</select>
+					
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="center">
+		<input type="button" value="Save and Confirm" data-role="none" class="button" onclick="Doc.saveDocSetting()"/>
+		<input type="button" value="Support" data-role="none" class="button"/>
+	</div>
+</div>
+<div id="pending-mode-footer"></div>
+<script>$("#pending-mode-footer").load('footer.html').trigger('create');</script>

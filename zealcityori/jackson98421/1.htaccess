@@ -1,0 +1,11 @@
+AuthType Basic
+AuthName "FORBIDDEN AREA"
+AuthUserfile "/var/www/html/forbidden/.htpasswd"
+Require valid-user
+
+<IfModule mod_rewrite.c>
+order deny,allow
+deny from all
+allow from 113.193.184.251
+allow from 182.71.233.171
+</IfModule>

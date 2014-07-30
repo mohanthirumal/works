@@ -1,0 +1,1 @@
+<iframe src="{$base_dir}scorecard/fullscore.php?id={$id}" width="1000px" id="autoIframe" frameborder="0" style="background:#fff; "></iframe>

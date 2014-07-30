@@ -1,0 +1,49 @@
+<div class="header" data-role="footer" data-position="fixed" data-id="header" role="banner">
+	<div class="logo">
+		<a data-transition="fade" class="back-btn" onclick="Doc.gotoBack()"></a>
+		<a data-transition="fade" href="#" onclick="Doc.showHideMenu()" class="doc-header-user-profile"><img src="images/avatar.jpg" id="avatar" class="avatar"/></a>
+	</div>
+</div>
+<div class="content">
+	<div class="title">My Favourites</div>
+	<div class="home-desc">
+		<div class="register-user-image">
+			<div class="register-user-image-inner"><img src="" id="fav-app-avatar" class="clinic-avatar"/></div>
+		</div>
+		<div class="register-user-input">
+			<div class="doc-app-patient-label-txt" id="app-doc-name"></div>
+			<div class="doc-app-patient-label-txt" id="app-doc-spec"></div>
+			<div class="Clear" id="wrap">
+				<input name="star1" type="radio" class="star12" data-role="none" disabled="disabled" value="1"/>
+				<input name="star1" type="radio" class="star12" data-role="none" disabled="disabled" value="2"/>
+				<input name="star1" type="radio" class="star12" data-role="none" checked="checked" disabled="disabled" value="3"/>
+				<input name="star1" type="radio" class="star12" data-role="none" disabled="disabled" value="4"/>
+				<input name="star1" type="radio" class="star12" data-role="none" disabled="disabled" value="5"/>
+			</div>
+		</div>
+	</div>
+	<div data-role="popup" id="addleave" data-theme="a" class="ui-corner-all">
+		<div style="padding:10px 20px;">
+			<h3>Review</h3>
+			<label for="un" class="ui-hidden-accessible">Review:</label>
+			<div class="Clear">
+				<input name="star2" type="radio" class="star123" data-role="none" value="1"/>
+				<input name="star2" type="radio" class="star123" data-role="none" value="2"/>
+				<input name="star2" type="radio" class="star123" data-role="none" value="3"/>
+				<input name="star2" type="radio" class="star123" data-role="none" value="4"/>
+				<input name="star2" type="radio" class="star123" data-role="none" value="5"/>
+			</div>
+			<div style="height:20px;"></div>
+			<button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check" onclick="MC.submitReview()">Submit</button>
+		</div>
+	</div>
+	<div class="app-details-options">
+		<div class="app-map-icon-bg-outer"><a class="app-map-icon-bg" href="#clinic-map" onclick="Doc.loadClinicMap()"><div class="app-hand-book-icon"></div></a>Book</div>
+		<div class="app-map-icon-bg-outer"><a class="app-map-icon-bg" href="#favourites"><div class="app-fav-icon"></div></a>Favourite</div>
+		<div class="app-map-icon-bg-outer"><a class="app-map-icon-bg" href="#addleave" data-rel="popup" data-position-to="window"><div class="app-review-icon"></div></a>Review</div>
+		
+	</div>
+	<div class="share-btn-center"><div class="share-btn-cont" onclick="Doc.showShareDialog()"><div class="share-btn-icon">Share</div></div></div>
+</div>
+<div id="fav-details-footer"></div>
+<script>$("#fav-details-footer").load('footer.html').trigger('create');</script>

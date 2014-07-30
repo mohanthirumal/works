@@ -1,0 +1,15 @@
+<div class="header" data-role="footer" data-position="fixed" data-id="header" role="banner">
+	<div class="logo">
+		<a data-transition="fade" class="back-btn" onclick="Doc.gotoBack()"></a>
+		<a data-transition="fade" href="#" onclick="Doc.showHideMenu()" class="doc-header-user-profile"><img src="images/avatar.jpg" id="avatar" class="avatar"/></a>
+		
+	</div>
+</div>
+<div class="content">
+	<div class="title" id="speciality-title">Speciality</div>
+	<p id="speciality-desc"></p>
+	<div class="specialit-srch-res"><span>0</span> doctors found</div>
+	<div id="speciality-details-doctor"></div>
+</div>
+<div id="speciality-det-footer"></div>
+<script>$("#speciality-det-footer").load('footer.html');</script>

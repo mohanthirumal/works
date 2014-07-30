@@ -1,0 +1,13 @@
+<div class="header" data-role="footer" data-position="fixed" data-id="header" role="banner">
+	<div class="logo">
+		<a data-transition="fade" href="#doc-setting" class="doc-header-user-profile"><img src="images/avatar.jpg" id="avatar" class="avatar"/></a>
+	</div>
+</div>
+<div class="content">
+	<p>This is where you can setup your clinic information and invite your other staff members and fellow doctor to join in.</p>
+	<div class="title">My Clinic</div>
+	<div id="my-clinic-cont"></div>
+	<div class="clinic-link"><a class="clinic-link-arrow" href="#create-clinic" data-transition="fade">Create</a></div>
+</div>
+<div id="my-clinic-footer"></div>
+<script>$("#my-clinic-footer").load('doc-footer.html').trigger('create');Doc.getClinic();</script>

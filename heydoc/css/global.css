@@ -1,0 +1,69 @@
+@font-face{
+font-family:"Museo";
+src:url("fonts/91f8cdfa-6df5-4221-b33b-723413e056b8.eot?#iefix");
+src:url("fonts/91f8cdfa-6df5-4221-b33b-723413e056b8.eot?#iefix") format("eot"),url("fonts/75beb14f-19da-4fc5-98fc-982c88ca8af5.woff") format("woff"),url("fonts/de7bcb62-e696-4a16-900d-23cffbb4257b.ttf") format("truetype"),url("fonts/9a296ed2-c439-4d7e-b022-600dc1644f91.svg#9a296ed2-c439-4d7e-b022-600dc1644f91") format("svg");
+}
+body,input,select,label,.ui-btn{font:12px "Museo";}
+.doctor-app-date{display:none}
+.doctor-app-date:nth-child(1){display:block}
+a{text-decoration:none;}
+.ui-header, .ui-footer{background: #1CAFF5 !important; border:0  !important;}
+.ui-page-theme-a{text-shadow:none;}
+.ui-page-theme-a a{font-weight:normal; text-shadow:0;}
+.center{text-align:center;}
+.header{width:100%; background-color:#1CAFF5; height:64px; position:fixed; /*top:20px;*/top:0; left:0;}
+.header .logo{width:100%; height:100%; background:url(../images/logo.png) no-repeat center center; }
+.content{width:100%; position:fixed; /*top:87px;*/top:67px; bottom:67px; overflow:auto}
+.title{float:left; width:100%; height:40px; line-height:40px; background-color:#1CAFF5; text-align:center; color:#fff; margin:1px 0 0 0; font-size:20px;}
+.subtitle{float:left; width:100%; height:35px; line-height:35px; background-color:#CCCCCC; text-align:center; color:#000; margin:5px 0 0 0; font-size:16px;}
+.register-bg{background-color:#DADADA; width:100%; padding:8px 0 10px 0; float:left;}
+.input,select{ padding: .4em; line-height: 1.4; font-size: 16px; width:90%; border-radius:6px; margin:10px 0 0 0; border:0;}
+.back-btn{background:url(../images/back-btn.png) no-repeat; width:55px; height:30px; float:left; margin:18px 0 0 10px;}
+.back-btn:active{background:url(../images/back-btn-active.png) no-repeat;}
+.done-btn{background:url(../images/done-btn.png) no-repeat; width:49px; height:30px; float:right; margin:18px 10px 0 0;}
+.done-btn:active{background:url(../images/done-btn-active.png) no-repeat;}
+.hide{display:none;}
+.height-10,.height-5{float:left; width:100%; height:10px;}
+.height-5{height:5px;}
+/******************* Footer Styles **********************/
+.footer{width:100%; height:67px; position:fixed; bottom:0; left:0;}
+.footer ul{margin:0; padding:0; list-style:none; height:100%;}
+.footer ul li{margin:0; padding:0;}
+.footer ul li a{margin:0; padding:0; float:left; height:100%; text-align:center; background-color:#1CAFF5; font-size:11px; color:#fff !important; line-height:95px; }
+.footer ul li a.search{background:#1CAFF5 url(../images/search-icon.png) no-repeat center 15px; width:20%;}
+.footer ul li a.appoint{background:#1CAFF5 url(../images/appointment-icon.png) no-repeat center 15px; width:30%;}
+.footer ul li a.notif{background:#1CAFF5 url(../images/notification-icon.png) no-repeat center 15px; width:25%;}
+.footer ul li a.pres{background:#1CAFF5 url(../images/prescription-icon.png) no-repeat center 15px; width:22%;}
+.footer ul li a.setting{background:#1CAFF5 url(../images/settings-icon.png) no-repeat center 15px; width:16%;}
+.footer ul li a.my-clinic{background:#1CAFF5 url(../images/my-clinic-icon.png) no-repeat center 15px; width:16%;}
+.footer ul li a.patients{background:#1CAFF5 url(../images/patients-icon.png) no-repeat center 15px; width:15%;}
+.footer ul li a.myfollow{background:#1CAFF5 url(../images/my-followers-icon.png) no-repeat center 15px; width:22%;}
+.footer ul li a.fav{background:#1CAFF5 url(../images/golden-star-icon.png) no-repeat center 15px; width:25%;}
+.footer ul li a.active{background-color:#166991;border-bottom: solid 1px #166991;}
+.clear{clear:both;}
+/***************** Home Page **************************/
+.home-desc{width:100%; background-color:#ccc; float:left; margin:30px 0 0 0; padding-bottom:20px;}
+.home-desc p{padding:20px 10px 10px 10px; text-align:center; color:#000; font-size:18px;}
+.button{background:#189CDD url(../images/button-bg.png) repeat-x left bottom; border:0; padding:8px 20px 8px 20px; font-size:18px; border-radius:8px; color:#fff !important; outline:0;}
+.button:active{background-color:#3333FF;}
+.home-doc-reg-btn{margin:30px 0 30px 0;}
+/***************************** Doctor Mode setting Page ***********************************/
+.doctor-mode-setting h2{text-align:center;}
+.doctor-mode-setting table{font-size:16px; width:95%;}
+.doctor-mode-setting .input{text-align:center;}
+.doctor-mode-setting .button{margin:10px 0 10px 0;}
+.doc-header-user-profile{border:solid 1px #fff; width:40px; height:40px; float:right; margin:10px 10px 0 0; z-index:999; position:relative; border-radius:8px; overflow:hidden}
+.doc-header-user-profile img{width:40px; height:40px;}
+/************************** Notification and invites Page **************************************/
+.notification-invites .view-tab-cont{position:relative; top:5px; height:30px; width:175px; left:0; right:0; margin:auto;}
+.notification-invites .view-tab-cont .button{padding:6px 12px 6px 12px; margin:0; float:left; border-radius:0; margin:0; font-size:14px; background:url(../images/button-search-bg.png) repeat; color:#fff !important;}
+.notification-invites .view-tab-cont .button.active{background:url(../images/button-search-bg-hover.png) repeat;}
+.notifi-indiv{margin:10px auto; width:95%;}
+.notifi-indiv-item{float:left; width:100%; border-bottom:solid 1px #ccc; padding:10px 0 10px 0;}
+.notifi-indiv-image{float:left; width:20%;}
+.notifi-indiv-text{float:left; width:80%; font-size:14px;}
+.notifi-indiv-text div{text-align:center;}
+.notifi-indiv-image div img{float:left; width:50px; height:50px; background-color:#3366FF;}
+.decline-btn,.accept-btn{border:0; padding:5px 20px 5px 20px; background:linear-gradient(#96EA9F 20%,#0EA411 80%); border-radius:6px; color:#fff; font-size:14px;}
+.decline-btn{background:linear-gradient(#D98885 20%,#8B1515 80%);}
+.plus-icon{background:url(../images/plus-icon.png) no-repeat; width:20px; height:20px;}

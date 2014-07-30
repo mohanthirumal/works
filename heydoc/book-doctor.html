@@ -1,0 +1,40 @@
+<div class="header" data-role="footer" data-position="fixed" data-id="header" role="banner">
+	<div class="logo">
+		<a data-transition="fade" class="back-btn" onclick="Doc.gotoBack()"></a>
+		<a data-transition="fade" href="#" onclick="Doc.showHideMenu()" class="doc-header-user-profile"><img src="images/avatar.jpg" id="avatar" class="avatar"/></a>
+	</div>
+</div>
+<div class="content">
+	<form id="book-form-id">
+	<div id="doctor-book-name" class="doctor-book-name"></div>
+	<div class="home-desc">
+		<div class="book-app-center">
+			Choose date <input type="date" name="book-date" id="book-date" class="book-date-input" onchange="Doc.updateBookDetails()"/>
+			
+		</div>
+		<div class="hide book-app-center place-hider">
+		Choose Clinic <select name="clinic-type" id="clinic-type-info" data-role="none" style="width:95%" required onchange="Doc.updateBookAdress();">
+				<option value="0">Select Place</option>
+			</select>
+		</div>
+		<div class="hide address-hider book-app-center">
+			<div class="book-app-center">
+				Appointment Address
+				<div class="book-doctor-addr">Scan India,20, bhakthavaham nager, adyar, chennai</div>
+				<div class="book-app-center">
+				Availability: 
+				<select name="clinic-type" id="clinic-type-time" data-role="none" required onchange="Doc.confirmAppShow()">
+					<option value="0">Select time</option>
+				</select>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="hide confirm-app-hider">
+	<div class="center"><input type="button" value="Confirm Appointment" data-role="none" class="button" onclick="Doc.confirmAppointment()"/></div>
+	</div>
+	</form>
+
+</div>
+<div id="book-doc-footer"></div>
+<script>$("#book-doc-footer").load('footer.html').trigger('create');</script>

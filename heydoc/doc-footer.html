@@ -1,0 +1,16 @@
+<div class="footer" data-role="footer" data-id="myfooter" data-position="fixed">
+	<ul>
+		<li><a data-transition="fade" href="#doc-appointment" class="appoint" data-role="none">Appointments</a></li>
+		<li><a data-transition="fade" href="#my-clinic" class="my-clinic" data-role="none">My Clinic</a></li>
+		<li><a data-transition="fade" href="#doc-notification" class="notif" data-role="none" onclick="Doc.getNotification()">Notification</a></li>
+		<li><a data-transition="fade" href="#patient" class="patients" data-role="none" onclick="Doc.getMyPatients()">Patients</a></li>
+		<li><a data-transition="fade" href="#my-followers" class="myfollow" data-role="none" onclick="Doc.getMyFollowers()">MyFollowers</a></li>
+	</ul>
+</div>
+<script>
+$('.footer ul li a').click(function(){
+	$('.footer ul li a').removeClass('active');
+	var active = $(this).attr('class');
+	$('.footer ul li a.'+active).addClass('active');
+});
+</script>

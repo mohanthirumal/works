@@ -1,0 +1,29 @@
+<div class="header" data-role="footer" data-position="fixed" data-id="header" role="banner">
+	<div class="logo">
+		<a data-transition="fade" href="#" onclick="Doc.showHideMenu()" class="doc-header-user-profile"><img src="images/avatar.jpg" id="avatar" class="avatar"/></a>
+	</div>
+</div>
+<div class="content notification-invites">
+	<div class="title">Notification</div>
+	<div class="view-tab-cont">
+		<a data-transition="fade" href="#notification" class="button active" data-role="none">Notifications</a>
+		<a data-transition="fade" href="#invites" class="button" data-role="none">Invites</a>
+	</div>
+	<div class="clear"></div>
+	<div class="notifi-indiv" id="notifi-indiv-list">
+		<div class="notifi-indiv-item">
+			<div class="notifi-indiv-image"><div></div></div>
+			<div class="notifi-indiv-text">Sam has booked an appointment</div>
+		</div>
+		<div class="notifi-indiv-item">
+			<div class="notifi-indiv-image"><div></div></div>
+			<div class="notifi-indiv-text">Sam has booked an appointment</div>
+		</div>
+		<div class="notifi-indiv-item">
+			<div class="notifi-indiv-image"><div></div></div>
+			<div class="notifi-indiv-text">Sam has booked an appointment</div>
+		</div>
+	</div>
+</div>
+<div id="noti-footer"></div>
+<script>$("#noti-footer").load('footer.html').trigger('create');</script>

@@ -1,0 +1,16 @@
+<div class="header" data-role="footer" data-position="fixed" data-id="header" role="banner">
+	<div class="logo">
+		<a data-transition="fade" href="#doc-setting" class="doc-header-user-profile"><img src="images/avatar.jpg" id="avatar" class="avatar"/></a></div>
+</div>
+<div class="content notification-invites">
+	<div class="title">Notification</div>
+	<div class="view-tab-cont">
+		<a data-transition="fade" href="#doc-notification" class="button active" data-role="none">Notifications</a>
+		<a data-transition="fade" href="#doc-invites" class="button" data-role="none">Invites</a>
+	</div>
+	<div class="clear"></div>
+	<div class="notifi-indiv" id="notifi-indiv-list">
+	</div>
+</div>
+<div id="noti-footer"></div>
+<script>$("#noti-footer").load('doc-footer.html').trigger('create');</script>

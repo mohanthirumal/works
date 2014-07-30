@@ -1,0 +1,75 @@
+.tournamentInfoClass{ float:left; width:100%; margin:5px 0 0 0; padding:0;}
+.tour-details1{font-size:18px;}
+.tournamentInfoClassHeader{ margin:0 auto; padding:0; width:97%; height:45px; border-radius:8px 8px 0 0;-moz-border-radius:8px 8px 0 0;-web-border-radius:8px 8px 0 0; background-color:#000; font-size:18px;}
+.tournamentInfoContentClass,.tournamentInfoContentClass1{margin:0 auto; padding:0; width:97%; background-color:#fff; border-radius:0 0 8px 8px;-moz-border-radius:0 0 8px 8px;-web-border-radius:0 0 8px 8px;}
+.tournamentInfoContentClass1{}
+.headermenuClass{ float:left; padding:0 ; margin:9px 0 0 10px; background:url(../images/tournamentgrey-tab.png) repeat; height:36px; text-align:center; line-height:38px; color:#FFFFFF;border-radius:8px 8px 0 0;-moz-border-radius:8px 8px 0 0;-web-border-radius:8px 8px 0 0; padding:0 13px 0 0; cursor:pointer; }
+.headermenuClass:hover{ background:url(../images/tournamentorange-tab.png) repeat;}
+.tournament-back-icon{ float:left; background:url(../images/tournament-back-button.png) repeat; width:41px; height:24px; margin:12px 0 0 10px; padding:0;}
+.IconeImages{ float:left; background:url(../images/tournament-icon.png) no-repeat; width:24px; height:28px; margin:5px 5px 0 12px ; padding:0 0 0 0;}
+.IconeImages2{float:left; background:url(../images/tournamentinvitation-icon.png) no-repeat; width:28px; height:31px; margin:5px 5px 0 12px ; padding:0 0 0 0;}
+.IconeImages3{float:left; background:url(../images/tournamentmy-team-icon.png) no-repeat; width:33px; height:26px; margin:5px 5px 0 12px ; padding:0 0 0 0;}
+.IconeImages4{float:left; background:url(../images/tournamentinvitation-icon.png) no-repeat; width:28px; height:29px; margin:5px 5px 0 12px ; padding:0 0 0 0;}
+.InnerJoinContent_class{ padding:0 ; margin:50px 0 0 120px; width:50%; float:left;}
+.InnerContent-text{ float:left; width:50%; margin:0; padding:0;}
+.InnerContent-text1{float:left; width:50%; margin:0; padding:0;}
+.btn-background-Class{ float:left; background-color:#F1F1F1; width:100%; border-radius:8px;-moz-border-radius:8px ;-web-border-radius:8px ;}
+.btn-background-Class-one{ float:left; width:95%; height:450px;}
+.header-title-class{ float:left; width:100%; margin:30px 0 0 0; text-align:right; height:35px; line-height:35px;}
+.valueContainnerClass{ float:left;width:90%; background-color:#B4B4B4;border-radius:8px;-moz-border-radius:8px;-web-border-radius:8px; height:28px; margin:31px 0 0 12px; text-align:center; color:#000; line-height:32px}
+.header-title-class2{float:left; width:100%; margin:5px 0 0 0; text-align:right; height:35px; line-height:35px;}
+.valueContainnerClass2{ float:left;width:90%; background-color:#B4B4B4;border-radius:8px;-moz-border-radius:8px;-web-border-radius:8px; height:28px; margin:12px 0 0 12px; text-align:center; color:#000; line-height:32px; overflow:hidden;}
+.InnerJoinClassContainnor{ float:left;  height:28px; width:86%;}
+.ClassContainnor{ margin:0 auto; width:50%; margin-top:20px}
+.widthContainner{ float:left; width:34%; text-align:right;  line-height:35px; margin: 10px 0 0 0;}
+.valueContainnerClass23{float:left;width:50%;  text-align:center; color:#1873C2; margin:19px 0 0 0; font-size:14px;}
+.valueContainnerClass23 a{color:#1873C2;}
+.timeClass{ float:left; background:url(../images/tournament-time-button.png) repeat; height:27px; width:160px;border-radius: 8px;-moz-border-radius: 8px;-web-border-radius:8px; color:#fff; font-size:12px; margin:-5px  0 0 20px; padding:0; line-height:27px; }
+.Cancel-btn-class{ float:right;background:url(../images/tournament-cancel-button.png) repeat; height:28px; width:153px;border-radius: 8px;-moz-border-radius: 8px;-web-border-radius:8px; color:#fff; font-size:12px; margin:10px 120px 0 0px; padding:0; line-height:28px; text-align:center; cursor:pointer;}
+.tournamentInfoContentClass-invites{margin:10px; float:left;}
+.tournament-info-invited{float:left; padding:10px; width:250px; height:500px; overflow-x:auto; background-color:#CCCCCC;border-radius: 8px;-moz-border-radius: 8px;-web-border-radius:8px;}
+.tournament-info-left{float:left; width:290px;}
+.tournament-info-right{float:left; width:670px;}
+.tournament-info-right h1{font-size:20px; margin:10px 0 10px 0;}
+.tournament-add-friends-btn,.tournament-add-invite-btn{width:80px; height:29px; background:url(../images/add-funds-button.png) no-repeat; border:0; color:#fff; margin:10px 0 20px 0; float:left; }
+.tournament-info-trans-full{float:left;}
+.tournament-info-trans-full .friends-list{width:636px; height:500px; float:left;}
+.tournament-info-trans-full .friends-list #friendsList{float:left; height:427px; overflow-y:auto; width:100%; margin-top: 5px;}
+.tournament-info-trans-full .friends-list #friendsList .friend{border:solid 1px #000; margin:0 0 2px 2px; float:left; width: 140px; text-align: center; padding: 5px;color: #000; background-color: #CCC; font-size: 12px;}
+.tournament-info-trans-full .friends-list #friendsList .friend  img{float:left;}
+.tournament-info-trans-full .friends-list #friendsList .friend .user-name{float: left; width: 50px; margin: 0 0 0 5px; text-align: left;}
+.tournament-info-trans-full .friends-list #friendsList .friend input[type='checkbox']{margin: 17px 5px 0 0; float:left;}
+.tournament-add-invite-btn{float:right; margin:10px 10px 20px 0;}
+.tournament-info-my-team{float:left; padding:10px 0 0 0; width:100%; height: 624px; overflow-y: auto;}
+.tournament-my-team-list{width:595px; margin:0 auto;}
+.tour-info-opening-shortly{color:#f00; font-size:12px;}
+.tournament-info-my-team-indi{float:left; border:solid 1px #000; clear:both; margin:0 0 5px 0; width:100%; line-height:50px; font-size:15px; border-radius: 8px;-moz-border-radius: 8px;-web-border-radius:8px; overflow:hidden}
+.tournament-info-my-team-indi .flag{float:left; width:50px; height:50px;}
+.tournament-info-my-team-indi .flag img{width:100%; height:100%;}
+.tournament-info-my-team-indi .flag-cont{float:left;}
+.tournament-info-my-team-indi .flag-cont-date{width:300px; text-align:center; float:left;}
+.myteam-body .small{width:32px;}
+.myteam-body{background-color:#FFFFFF;}
+.tournament-info-results{float:left; padding:20px; text-align:center; width:100%;}
+.tournamentInfoContentClass-inner{float:left; width:100%; background-color:#fff;}
+.tournament-info-title{float:left; height:52px; background:url(../images/orange-strip.png) repeat; margin:0 0 0 10px; line-height:52px; color:#fff; font-size:20px; padding:0 20px 0 20px; -moz-border-radius:6px 6px 0 0; -webkit-border-radius:6px 6px 0 0; border-radius:6px 6px 0 0;}
+.tournament-info-invite-right{float:left; width:100%; background-color:#CCCCCC; border-radius: 8px;-moz-border-radius: 8px;-web-border-radius:8px;}
+.tournament-info-invite-right-inner{float:left; margin:15px;}
+.tour-info-invite-btn-cont{border:solid 1px #666666; border-radius: 8px;-moz-border-radius: 8px;-web-border-radius:8px; float:left;}
+.tour-info-facebook-cont{float:left; width:300px; font-size:15px; margin:15px 20px 20px 30px; color:#000;}
+.tour-info-or-cont{float:left; text-align:center; width:100px; margin:40px 0 0 0; font-size:20px;}
+.tour-info-email-cont{float:left; width:186px;}
+.tour-info-email-btn{ float:left; height:43px; width:117px; background:url(../images/green-invite-button.png) repeat-x; border:0; color:#fff; border-radius: 8px;-moz-border-radius: 8px;-web-border-radius:8px; font-size:20px; margin:30px 0 0 0;}
+.tour-info-invite-list-cont{float:left; width:100%; background-color:#333333; margin:20px 0 0 0; border-radius: 8px;-moz-border-radius: 8px;-web-border-radius:8px; padding:5px 0 0 0;}
+.tournament-info-email-invite input[type='text']{background:url(../images/login-txt-bg.png) no-repeat; width:287px; height:31px; float:left; border:0; margin:10px 0 0 20px; text-indent:10px; font-size:16px;}
+.tour-info-add-user-cont{width:100%; text-align:center; float:left; margin:15px 0 0 0;}
+.tour-info-add-user-cont a{color:#fff;}
+.tour-info-invited-image{float:left; width:117px; text-align: center; height: 20px; background-color: #7E7777; color: #FFF; line-height: 20px; margin: 0 0 8px 0;}
+.tour-info-invited-indi{float:left; width:100%;}
+.tour-info-invited-indi .tour-info-invited-image{height:55px; border-bottom:solid 1px #000; padding:5px 0 0 0; margin:0;}
+.tournament-info-my-team-indi .overall-btn{margin:12px 0 0 0;}
+.btn-size{width:145px; font-size:16px;}
+.tournamentInfoClassHeader .active{ background:url(../images/tournamentorange-tab.png) repeat;}
+.serach-caption {float: left; width: 60px; height: 25px; background-color: #CCCCCC; border-top-right-radius: 6px; font-size: 9px; text-align: center; line-height: 25px; }
+.all-friends { float: left; width: 146px; margin-left: 4px; height: 25px; font-size: 12px; font-weight: bold; text-align: center; line-height: 25px; background-color: #CCCCCC; border-radius: 5px 0 0 0;}
+.search-tbox { float: left; width: 424px; height: 23px; border: 1px solid #EAEAEA; }

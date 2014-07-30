@@ -1,0 +1,19 @@
+<div class="header" data-role="footer" data-position="fixed" data-id="header" role="banner"><div class="logo">
+<a data-transition="fade" class="back-btn" onclick="Doc.gotoBack()"></a>
+		<a data-transition="fade" href="#" onclick="Doc.showHideMenu()" class="doc-header-user-profile"><img src="images/avatar.jpg" id="avatar" class="avatar"/></a>
+</div></div>
+<div class="content">
+	<div class="search-bar">
+		<input type="text" id="geocodeInput" value="" data-role="none" class="input" placeholder="Search"/>
+		<input type="button" value="" onclick="Doc.search()"  data-role="none" class="button"/>
+	</div>
+	<div style="height:100%; width:100%; position: absolute;">
+		<div id="map-canvas"></div>
+	</div>
+	<div class="view-tab-cont">
+		<a data-transition="fade" href="#search" class="button active" data-role="none">Map</a>
+		<a data-transition="fade" href="#search-list" class="button" data-role="none">List</a>
+	</div>
+</div>
+<div id="search-footer"></div>
+<script>$("#search-footer").load('footer.html').trigger('create');</script>

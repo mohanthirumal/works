@@ -1,0 +1,43 @@
+<div class="header" data-role="footer" data-position="fixed" data-id="header" role="banner">
+	<div class="logo">
+		<a data-transition="fade" class="back-btn" onclick="Doc.gotoBack()"></a>
+		<a data-transition="fade" href="#doc-setting" class="doc-header-user-profile"><img src="images/avatar.jpg" id="avatar" class="avatar"/></a>
+	</div>
+</div>
+<div class="content">
+	<div class="title">Clinic Information</div>
+	<div class="view-tab-cont">
+		<a data-transition="fade" href="#clinic-info-general" class="button active" data-role="none">General</a>
+		<a data-transition="fade" href="#invite-member-list" class="button" data-role="none">Medical</a>
+		<a data-transition="fade" href="#doctor-map" class="button" data-role="none">Map</a>
+	</div>
+	<form name="create-clinic" onsubmit="return MC.updateMyClinicInfo()">
+	<div class="register-bg">
+		<div class="register-user-image">
+			<div class="register-user-image-inner"><img src="images/avatar.jpg" id="clinic-avatar" class="clinic-avatar" onclick="MC.updateAvatar()"/></div>
+		</div>
+		<div class="register-user-input">
+			<input type="text" name="clinic-name" id="clinic-name-info" value="" placeholder="Name" data-role="none" class="input" required/>
+			<select name="clinic-type" id="clinic-type-info" data-role="none" style="width:95%" required>
+				<option value="0">Select Type</option>
+				<option value="Clinic">Clinic</option>
+				<option value="Scan centre">Scan centre</option>
+				<option value="Hospitals">Hospitals</option>
+				<option value="Pharmacy">Pharmacy</option>
+				<option value="Diagnostics">Diagnostics</option>
+			</select>
+			<input type="text" name="clinic-country" id="clinic-country-info" value="" placeholder="Country" data-role="none" class="input" required/>
+			<input type="text" name="clinic-state" id="clinic-state-info" value="" placeholder="State" data-role="none" class="input" required/>
+			<input type="text" name="clinic-city" id="clinic-city-info" value="" placeholder="City" data-role="none" class="input" required/>
+			<input type="text" name="clinic-address" id="clinic-address-info" value="" placeholder="Address" data-role="none" class="input" required/>
+			<input type="text" name="clinic-pincode" id="clinic-pincode-info" value="" placeholder="Pincode" data-role="none" class="input" required/>
+			<input type="text" name="clinic-contact-no" id="clinic-contact-no-info" value="" placeholder="Clinic Contact No" data-role="none" class="input" required/>
+			<input type="text" name="clinic-email" id="clinic-email-info" value="" placeholder="Email" data-role="none" class="input"/>
+			
+		</div>
+	</div>
+	<div class="center"><input type="submit" value="Save and Confirm" data-role="none" class="button"/></div>
+	</form>
+</div>
+<div id="clinic-info-footer"></div>
+<script>$("#clinic-info-footer").load('doc-footer.html');</script>

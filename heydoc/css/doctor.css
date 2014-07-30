@@ -1,0 +1,63 @@
+/****************** My Clinic Page ***************************/
+#my-clinic p{padding:0 10px 0 10px; text-align:center; font-size:13px; color:#000;}
+.clinic-link{float:left; width:100%; height:50px; line-height:50px; background:#DADADA url(../images/plus-icon.png) no-repeat 30px center; margin:5px 0 0 0; text-align:center; font-weight:bold; font-size:18px;}
+.clinic-link:active{background-color:#666666;}
+.clinic-link-remove-icon{background-image:none;}
+.clinic-link-arrow{background:url(../images/arrow-icon.png) no-repeat right 30px center; float:left; width:100%; height:100%; color:#000 !important;}
+.clinic-link-arrow-minus{background:url(../images/minus-icon.png) no-repeat right 30px center;}
+.clinic-link-arrow-plus{background:url(../images/plus-icon.png) no-repeat right 30px center;}
+/****************** Create Clinic Page ***************************/
+.register-user-image{width:30%; float:left;}
+.register-user-input{float:left; width:70%;}
+.register-user-image-inner{width:75px; height:75px; border:solid 1px #000; margin:10px auto;}
+.register-user-image-inner img{width:75px; height:75px;}
+.register-user-txt{width:25%; float:left; text-align:right; padding-top:20px; font-size:15px; margin-right:10px;}
+#create-clinic .button{margin:10px 0 10px 0;}
+/****************** My Clinic home Page ***************************/
+.my-clinic-bg-chage{background:#fff; border-bottom:solid 2px #ccc;}
+/******************* My Clinic Member *****************************/
+#my-clinic-member .register-user-input{margin-left:20px; width:60%;}
+#my-clinic-member .register-bg{margin-top:30px; margin-bottom:10px;}
+#my-clinic-member .register-bg-clinic{width:80%; margin:0 auto;}
+/************************ Doctor Map *****************************/
+.search-bar{position:absolute; z-index:9;}
+.search-bar .input{border:solid 1px #ccc; width:70%; padding: .1em; margin:0 0 0 3px; float:left; border-radius:0;}
+.search-bar .button{background:#fff url(../images/search-bar-icon.png) no-repeat center center; width:30px; height:26px; border:solid 1px #ccc; border-radius:0; padding:0; float:left; margin:0 0 0 2px}
+/************************ Clinic Info general *******************/
+.view-tab-cont{height:30px; width:200px; margin:auto;}
+.view-tab-cont .button{padding:6px 12px 6px 12px; float:left; border-radius:0; margin:10px 0 10px 0; font-size:14px; background:url(../images/button-search-bg.png) repeat; color:#fff !important;}
+.view-tab-cont .button.active{background:url(../images/button-search-bg-hover.png) repeat;}
+#doctor-map .view-tab-cont .button{margin:0;}
+#doctor-map p{text-align:center;}
+#doctor-map .search-bar{top: 86px;}
+/************************ Time & schedule management *******************/
+#doc-working-timing .view-tab-cont{height:30px; width:270px; margin:auto;}
+.work-time-schedule{float:left; width:100%;}
+#doc-working-timing .days,#doc-work-break .days{width:40%}
+#doc-working-timing .time,#doc-work-break .time{width:29%}
+#doc-work-break .doc-break-center{width:160px; margin:0 auto;}
+#doc-work-break .doc-break-no{font-size:16px; margin:10px 0 10px 0;	float:left;}
+#doc-work-break input[type='number']{width:50px; font-size:18px; text-align:center;}
+#doc-work-break .doc-break-center{}
+#doc-working-timing h3{clear:both; text-align:center;}
+#doc-working-timing .work-time-schedule:nth-last-child(2){margin-bottom:10px;}
+/************************Doc Appointment ***********************************/
+#doc-clinic-app .home-desc{margin-top:5px; text-align:center;padding-bottom: 10px;}
+#doc-clinic-app .decline-btn{margin:8px 0 0 10px; float:left;}
+#doc-clinic-app .doc-clinic-app-tit{float:left; font-weight:bold; font-size:18px; line-height:40px; text-indent:20px; }
+#doc-clinic-app .plus-icon{float:right;}
+#doc-clinic-app .doc-app-date-input{width:90px; height:30px;}
+#doc-clinic-app .doc-app-clinic-date{width:150px; margin-left:10px;}
+#doc-clinic-app .clinic-link{background:none; border-bottom:solid 1px #ccc; text-align:left; text-indent:10px;}
+/************************ Clinic Appoinment Patient Page *******************************/
+.doc-app-patient-label{font-weight:bold; font-size:18px; margin:10px 0 0 0;}
+.doc-app-patient-label-txt{text-align:center; font-size:16px; }
+.doc-app-patient-bottom .doc-app-patient-label{float:left; margin:10px 0 0 0; width:40%; text-align:right;}
+.doc-app-patient-bottom .doc-app-patient-label-txt{float:left; margin:12px 0 0 0; width:60%; text-align:left; text-indent:10px;}
+#doc-clinic-app-patient .button{margin:15px 0 0 0;}
+.doc-clinic-app-patie-stat{margin:0;}
+/************************ My Followers ************************************************/
+#my-followers .clinic-link{background:none; border-bottom:solid 1px #ccc; text-align:left; text-indent:15px;}
+/******************* Footer Styles **********************/
+.footer ul li a.appoint{background:#1CAFF5 url(../images/appointment-icon.png) no-repeat center 15px; width:25%;}
+.footer ul li a.notif{background:#1CAFF5 url(../images/notification-icon.png) no-repeat center 15px; width:22%;}

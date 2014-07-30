@@ -1,0 +1,12 @@
+.howit-background{float:left;width:100%; background-color:#FFFFFF; margin-top:8px;}
+.first-container{float:left;}
+.title{ width:450px;}
+.title-text{background-color:#F24F0c; width:80%; height:25px; margin:15px 0 0 8px; font-size:12px; font-weight:bold; color:#FFFFFF; text-align:center; padding-top:6px;}
+.orange-corner{margin:-31px 0 0 366px; background:url(../images/orange-corner.png) no-repeat; width:59px; height:31px;}
+.sign-up-area{float:left; background: #808080 url(../images/background-strip-1.png) no-repeat; width:485px; height:430px; margin:-1px 5px 10px 8px;}
+.step{margin:8px 0 5px 40px; font-size:16px; font-weight:bold; }
+.register-coc{ width:394px; height:170px;  margin:10px 20px 0 45px; }
+.signin-img{width:394px; height:170px;}
+.signup-description{ background: #656565 url(../images/strip-for-description.png) repeat-x; float:left; width:424px; height:176px; text-align:justify; padding:8px 8px 8px 10px; margin:10px 0 0 20px; color:#FFFFFF; font-size:12px; }
+.straight-arrow{ position:absolute; margin:100px 0 0 440px;}
+.arr-bend{position:absolute; margin:425px 0 0 -45px;}

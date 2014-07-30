@@ -1,0 +1,16 @@
+<div class="header" data-role="footer" data-position="fixed" data-id="header" role="banner">
+	<div class="logo">
+		<a data-transition="fade" class="back-btn" onclick="Doc.gotoBack()"></a>
+		<a data-transition="fade" href="#" onclick="Doc.showHideMenu()" class="doc-header-user-profile"><img src="images/avatar.jpg" id="avatar" class="avatar"/></a>
+	</div>
+</div>
+<div class="content">
+	<div class="search-bar">
+		<input type="text" id="geocodeInput2" value="" data-role="none" class="input" placeholder="Search" list="datalist"/>
+		<datalist id="datalist"></datalist>
+		<input type="button" value="" onclick="Doc.search('geocodeInput2')" data-role="none" class="button" id="search-s-btn" style="display:none"/>
+	</div>
+	<div id="speciality-list"></div>
+</div>
+<div id="speciality-footer"></div>
+<script>$("#speciality-footer").load('footer.html');</script>

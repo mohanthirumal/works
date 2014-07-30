@@ -1,0 +1,96 @@
+/**** Research *****/
+/*.research_content{float:left; width:100%; height:500px;}*/
+.first_container{float:left; margin-bottom:2px;}
+.leftcontext{float:left; width:545px; height:370px; background-color:#FFFFFF; margin:1px 8px 2px 0;}
+.rightcontext{float:left; width:445px; height:370px; background-color:#FFFFFF; margin:1px 0 2px 0;}
+.second_container{float:left;height:340px; margin:7px 0 5px 0; }
+.teamplayers{height:80px; width:545px;  margin:1px 0 2px 0; background-color:#FFFFFF; }
+.second_container .leftcontext{height:255px;}
+.second_container .rightcontext{ margin-top:-83px; height:340px;}
+.fourth_container,.fifth_container{float:left; width:100%; height:270px; margin:1px 0 5px 0;}
+.injury_causes{float:left; width:270px; height:270px; }
+.injury_causes .title,.injury_causes .title1{width:100%; height:32px; background-color:#FFF;}
+.injury_causes .title{ background-color:#F86611;}
+.injury_causes .cause1{width:100%; height:95px; margin-top:4px; background-color:#FFF; margin-bottom:5px;}
+.content_title1{float:left; width:100%; height:33px;  background-color:#F86611;}
+.fourth_container .leftcontext{float:left; background-color:#FFF; height:270px; width:270px; margin-left:5px;}
+.third_container .leftcontext,.third_container .rightcontext,.fourth_container .rightcontext{height:270px;}
+.content_title{float:left; width:94%; height:33px; margin-top:6px; background-color:#F86611;}
+.head_headimg,.pitchreport_img,.weather_img,.pro_img,.starplayer_icon,.prevmatch_img{float:left; background:url(../images/headtohead_icon.png) no-repeat; width:60px; height:100%; margin-left:20px;}
+.content_title p,.injury_causes .title p,.content_title1 p{float:left;color:#FFFFFF; font-size:14px; font-weight:bold; margin:8px 0 0 5px;}
+.htoh_captain_img{float:left; background:url(../images/headtohead.jpg) no-repeat; width:94%; height:260px; margin:4px 5px 4px 15px; }
+.team_selection{float:right; margin:0 26px 0 0;}
+.select_team,.select_player{float:left; height:26px;}
+.down_arrow{float:left; background:url(../images/arrow_down.jpg) no-repeat; width:30px; height:30px; margin-right:5px;}
+.prev_btn,next_btn{float:left;}
+.player_img{float:left; background:url(../images/sir.png) no-repeat; width:158px; height:165px; margin:23px 0 0 60px;  border-radius:10px;}
+.player_det{float:left; width:47%; height:63%; margin:24px 0 0 1px;}
+.player_name{float:left; font-size:33px; font-weight:bold; margin:6px 0 40px 10px; color:#474747;}
+#player_det_table{float:left; margin:-21px 0 0 10px; color:#484848;}
+.runs,.high_score{float:left; width:60px; height:40px; margin:2px 0 0 10px; font-size:18px; font-weight:bold;}
+.plyer_run{float:left; color:#7F7F7F;}
+.high_score{float:right; width:70px; }
+.fb_like{float:left; width:340px; height:30px; margin:12px 0 0 60px;}
+.fb_like_icon{float:left; width:44px; height:20px; border:1px solid #C9D4E6; margin:3px 0 0 2px; background-color:#EEEEF6; border-radius:4px;}
+.no_of_likes{float:left; color:#6B6B6B; margin:6px 0 0 2px;}
+.view_profile_btn,.full_score_btn{float:left; margin:13px 0 0 30px; background-color:#9AB625; border-radius:4px; color:#FFFFFF; font-weight:bold; padding:10px;}
+.full_score_btn{margin:5px 0 0 160px;}
+
+.pitchreport_img{background:url(../images/pitchreport_icon.png) no-repeat; width:72px; height:28px; margin:5px 0 0 15px;}
+.weather_img{ background:url(../images/weatherreport_icon.png) no-repeat; width:44px; height:42px; margin:0 0 0 15px;}
+.pro_img{background:url(../images/procorner_icon.png) no-repeat;  width:50px; height:40px; margin:-7px 0 0 15px;}
+.starplayer_icon{background:url(../images/starplayer_icon.png) no-repeat; width:62px; height:49px; margin:-15px 0 0 15px;}
+.prevmatch_img{background:url(../images/prevmatch_icon.png) no-repeat; }
+.team1{float:left; border:2px solid #F1F1F1; width:113px; height:94px; border-radius:10px; margin:35px 0 0 45px;}
+.team1 img{width:87px; height:74px;}
+.team1_img{margin:13px 5px 0 15px;}
+.versus_img{float:left; background:url(../images/vs_img.png) no-repeat; width:31px; height:26px; margin:70px 0 0 40px;}
+.injured_player{float:left; background:url(../images/injury_img.jpg) no-repeat; width:75px; height:75px; margin:10px 0 0 10px;}
+.injure_detail,.star_player_detail{float:left;margin:10px 0 0 3px; width:100%; font-size:11px;}
+.injure_detail img{ max-height:75px; max-width:75px; float:left; margin:0 5px 0 0;}
+.fifth_container,.fifth_container .leftcontext,.fifth_container .rightcontext{height:310px;}
+.star_player_detail{width:520px; font-size:12px; margin-left:10px; text-align:justify;}
+.star_player_detail img{max-width:80px; max-height:80px; float:left; margin: 0 10px 0 0;}
+.title1 a{float:right; text-decoration:none; margin:8px 15px 0 0; color:#000000; font-weight:bold;}
+.star_player{float:left; background:url(../images/starplayer_img.jpg) no-repeat; width:100px; height:100px; margin:8px 0 0 10px;}
+.star_player_divider{float:left; width:96%; border:1px solid #CECECE; margin:3px 0 0 10px;}
+.pro_player{float:left; background:url(../images/starplayer_img.jpg) no-repeat; width:75px; height:75px; margin:8px 0 0 10px;}
+.pro_player_detail{float:left;width:400px; font-size:12px; margin:10px 5px 3px 10px;}
+.pro_player_detail img{max-width:75px; max-height:75px; float:left; margin:0 5px 0 0;}
+.weather_report{float:left; background:url(../images/sun_img.jpg) no-repeat; width:169px; height:128px; margin:15px; 1px 0 15px; border:1px solid #000;}
+.pitch_report{float:left; background:url(../images/pitchreport_img.jpg) no-repeat; width:307px; height:170px; margin:15px; 0 0 15px;}
+.zeal_icon{float:left; background:url(../images/punditsays_img.jpg) no-repeat; width:100px; height:96px; margin:10px; 2px 2px 10px;}
+.weather_rep_detail p{margin:55px 15px 3px 4px; text-indent:30px;}
+.pitch_rep_detail,.weather_rep_detail,.pundit_says{float:left; margin:10px 10px 0 10px; text-align:justify;}
+.pitch_rep_detail p{margin:55px 15px 1px 5px;}
+.pitch_rep_detail img,.weather_rep_detail img{ max-height:150px; max-width:150px; margin:0 10px 2px 0; float:left;}
+.pundit_says p{margin:45px 15px 1px 5px;}
+.pundit_says img{ max-height:100px; max-width:100px; margin:0 10px 2px 0; float:left;}
+.team_name{margin:15px 3px 1px 1px; font-weight:bold; text-align:center; width:120px;}
+.team_play_detail{float:left; width:137px; height:100px;margin:5px 5px 10px 50px;}
+.team_detail{float:left; width:163px; height:85px; background-color:#D6EDFB; margin:0 0 0 0;  }
+.match_played,.match_won,.match_loss,.match_tied{ float:left; margin:3px 0 0 25px; width:40px;}
+.team_match_detail{float:left; width:32px; height:17px; margin:3px 0 0 20px; text-align:right; }
+.team_play_divider{float:left; width:80%; border:1px solid #B3DFF8; margin-left:12px;}
+.team_play_detail .team_name1{margin:0 3px 1px 50px; font-weight:bold;}
+.prev_match1{float:left; width:88%; height:80px; background-color:#F3F3F3; margin:4px 5px 2px 25px; border-radius:10px;}
+.prev_match1_detail #prev_match1_detail1,.prev_match1_detail #prev_match1_detail2{float:left; font-size:11px; width:80%; margin-left: 50px; color:#5D5D5D; text-align:center;}
+.prev_match1_detail #prev_match1_detail2{width:70%; margin-left: 85px;}
+.prev_match_team1{float:left; width:87px; height:74px; margin:5px 0px 0px 20px;}
+.prev_match_team1 img,.prev_match_team2 img{width:87px; height:74px;}
+.prev_match_team2{float:left; width:87px; height:74px; margin:5px 0px 0px 30px;}
+.score_detail{float:left; width:50px; height:30px; margin:10px 0 0 5px;}
+.score_detail .prev_score{font-weight:bold; font-size:12px;}
+.prev_versus{float:left; margin:30px 0px 0px 20px; font-weight:bolder; font-size:18px; width:20px; height:20px; }
+.match_detail{float:left; width:100%; margin:30px 0 0 55px;}
+#match_detail_table{ margin:10px 0 0 40px;}
+#det{text-indent:30px; text-align:justify;}
+.previous-match .content_title{display:block;}
+.match-details-advance{float:left; margin:0 0 0 100px;}
+.points-table-container{float:left; width:100%;}
+.points-table-head,.points-table-body{float:left; width:90%; border:solid 1px #000; font-weight:bold; margin:20px 0 0 20px; text-align:center; height:27px; line-height:27px; font-size:11px;}
+.points-table-body{margin-top:5px; border-color:#ccc; height:17px; line-height:17px;}
+.point-table-cont .large{float:left; width:250px;}
+.point-table-cont .medium{float:left; width:80px;}
+.point-table-cont .small{float:left; width:50px;}
+.group-a{float:left; margin:5px 0 -15px 5px; font-size: 11px; font-weight: bold;}

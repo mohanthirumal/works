@@ -1,0 +1,51 @@
+<div class="header" data-role="footer" data-position="fixed" data-id="header" role="banner">
+	<div class="logo">
+		<a data-transition="fade" href="#" onclick="Doc.showHideMenu()" class="doc-header-user-profile"><img src="images/avatar.jpg" id="avatar" class="avatar"/></a>
+	</div>
+</div>
+<div class="content">
+	<div class="register-bg">
+	<div class="register-user-txt">Update : </div>
+		<div class="register-user-image">
+			<img src="images/avatar.jpg" id="avatar" class="avatar register-user-image-inner" onclick="Doc.updateAvatar()"/>
+		</div>
+		<div class="register-user-txt">Name : </div>
+		<div class="register-user-input">
+			<input type="email" name="email" id="email" value="" placeholder="E-mail" data-role="none" class="input"/>
+		</div>
+		<div class="clear"></div>
+		<div class="register-user-txt">E-mail : </div>
+		<div class="register-user-input">
+			<input type="email" name="email" id="email" value="" placeholder="E-mail" data-role="none" class="input"/>
+		</div>
+		<div class="clear"></div>
+		<div class="register-user-txt">DOB : </div>
+		<div class="register-user-input">
+			<input type="date" name="dob" id="dob" value="" placeholder="DOB"  data-role="date" data-inline="true" class="input" style="width:90%;"/>
+		</div>
+		<div class="clear"></div>
+		<div class="register-user-txt">Gender : </div>
+		<div class="register-user-input">
+			<select name="gender" id="gender" data-role="none" style="width:95%">
+				<option value="1">Male</option>
+				<option value="2">Female</option>
+			</select>
+		</div>
+		<div class="clear"></div>
+		<div class="register-user-txt">Phone : </div>
+		<div class="register-user-input">
+			<input type="text" name="phone" id="phone" value="" placeholder="Phone" data-role="none" class="input"/>
+		</div>
+		<div class="register-user-txt">Country : </div>
+		<div class="register-user-input">
+			<input type="text" name="country" id="country" value="" placeholder="Country" data-role="none" class="input"/>
+		</div>
+		<div class="clear"></div>
+		<div class="register-user-txt">City : </div>
+		<div class="register-user-input">
+			<input type="text" name="city" id="city" value="" placeholder="City" data-role="none" class="input"/>
+		</div>
+	</div>
+</div>
+<div id="setting-footer"></div>
+<script>$("#setting-footer").load('footer.html').trigger('create');</script>

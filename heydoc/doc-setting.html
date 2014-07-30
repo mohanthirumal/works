@@ -1,0 +1,53 @@
+<div class="header" data-role="footer" data-position="fixed" data-id="header" role="banner">
+	<div class="logo">
+	<a data-transition="fade" class="back-btn" onclick="Doc.gotoBack()"></a>
+		<a data-transition="fade" href="#doc-setting" class="doc-header-user-profile"><img src="images/avatar.jpg" id="avatar" class="avatar"/></a>
+	</div>
+</div>
+<div class="content">
+	<h2>Hey doc id: <b id="doctor-id"></b></h2>
+		<h2>Doctor Information</h2>
+		<div class="register-bg">
+			<table align="center" cellpadding="10px">
+				<tr>
+					<td>Full name:</td>
+					<td>Mohan</td>
+				</tr>
+				<tr>
+					<td>Speciality:</td>
+					<td>Mohan</td>
+				</tr>
+				<tr>
+					<td>Medical License No:</td>
+					<td>Mohan</td>
+				</tr>
+				<tr>
+					<td align="center" colspan="2">
+						Contact phone number
+						<input type="text" name="doc-mode-mobile" id="doc-mode-mobile" placeholder="Mobile" data-role="none" class="input"/>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+						Contact E-mail
+						<input type="text" name="doc-mode-email" id="doc-mode-email" placeholder="Email" data-role="none" class="input"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Doc Mode:</td>
+					<td>
+						<select id="doc-mode-check" name="doc-mode-check" data-role="flipswitch">
+							<option value="false">Off</option>
+							<option value="true" selected="selected">On</option>
+							
+						</select>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="center">
+			<input type="button" value="Save and Confirm" data-role="none" class="button" onclick="Doc.saveDocSetting()"/>
+		</div>
+</div>
+<div id="doc-set-footer"></div>
+<script>$("#doc-set-footer").load('doc-footer.html');Doc.getDocDetails();</script>

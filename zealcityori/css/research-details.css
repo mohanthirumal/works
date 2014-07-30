@@ -1,0 +1,38 @@
+.research-details{float:left; width:100%; margin-top:10px;}
+.left-container{float:left; width:200px;}
+.right-container{float:left; width:790px; margin-left:10px;}
+.research-menu{float:left; width:100%; border:solid 1px #000;}
+.research-menu ul{float:left;}
+.research-menu ul li{float:left; width:100%; height:50px; line-height:50px; text-indent:20px; border-bottom:solid 2px #ccc; font-weight:bold; font-size:14px; cursor:pointer;}
+.research-menu ul li:hover,.research-menu ul li.active{background:url(../images/menu-hover.jpg) repeat; color:#fff;}
+.research-content{float:left; padding:20px;}
+.upcoming-matches-indi{float:left; padding:5px 0 5px 0; height:60px; line-height:40px; border-bottom:solid 1px #ccc; clear:both;}
+.upcoming-matches{float:left;}
+.upcoming-matches-indi .flag{width:40px; height:40px; float:left; border:solid 1px #000; -moz-border-radius:6px; -webkit-border-radius:6px; border-radius:6px; overflow:hidden;}
+.upcoming-matches-indi .flag img{height:40px; width:40px;}
+.upcoming-matches-body{float:left; width:740px; margin:0 0 0 0}
+.match-details-title{float:left; width:100%; height:35px; background-color:#F86611; color:#fff; line-height:35px; text-indent:20px; font-size:18px;}
+.Pitch-report{min-height:520px;}
+.teams-team1-stats{float:left; margin-top:50px;}
+.research-matches{float:left; margin-left:40px;}
+.research-table-head{float:left; text-align:center; font-weight:bold; margin-top:20px; border:solid 1px #000; height:30px; line-height:30px; clear:both; background-color:#373536; color:#fff;}
+.research-matches .medium{float:left; width:100px;}
+.research-matches .large{float:left; width:150px; line-height:20px; margin:5px 0 0 0; text-align:center;}
+.research-table-body{float:left; text-align:center; borderclear:both;}
+.align-left{text-align:left;}
+.research-players-indiv{float:left; width:100%; margin:5px 0 0 55px;; line-height:30px;}
+.research-players-indiv img{width:30px; height:30px; margin-right:5px;}
+.research-players-team1{float:left; width:250px;}
+.rightcontext{width:504px; height:auto;}
+.hide{display:none;}
+.research-players-flag{ float: left; height: 80px; margin: 20px 0 20px 80px; }
+.research-players-flag img{width:82px; height:82px;}
+.point-table-cont .large{float:left; width:240px; text-align:left; text-indent:20px;}
+.point-table-cont .medium{float:left; width:60px;}
+.point-table-cont .small{float:left; width:50px;}
+.upcoming-matches-indi-team1{float:left; margin:0 0 0 30px; width:40px;}
+.upcoming-matches-indi-team2{float:left; margin:0 0 0 10px; width:40px;}
+.research-table-content-upcoming{min-height:200px;}
+.loading{height:50px;}
+.research-content h1{margin:20px 0 10px 0; float:left; width:100%;}
+.research-content p{text-indent:20px;}

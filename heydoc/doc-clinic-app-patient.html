@@ -1,0 +1,56 @@
+<div class="header" data-role="footer" data-position="fixed" data-id="header" role="banner">
+	<div class="logo">
+		<a data-transition="fade" class="back-btn" onclick="Doc.gotoBack()"></a>
+		<a data-transition="fade" href="#doc-setting" class="doc-header-user-profile"><img src="images/avatar.jpg" id="avatar" class="avatar"/></a>
+	</div>
+</div>
+<div class="content">
+	<div class="title">Clinic Information</div>
+	<div>
+		<div class="register-user-image">
+			<div class="register-user-image-inner"><img src="" id="clinic-app-avatar" class="clinic-avatar"/></div>
+		</div>
+		<div class="register-user-input">
+			<div class="doc-app-patient-label">App Date:</div>
+			<div class="doc-app-patient-label-txt" id="doc-app-patient-date"></div>
+			<div class="doc-app-patient-label">Booking Id:</div>
+			<div class="doc-app-patient-label-txt" id="doc-app-patient-bid"></div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div class="doc-app-patient-bottom">
+		<div class="doc-app-patient-label">Full Name:</div>
+		<div class="doc-app-patient-label-txt" id="doc-app-patient-name"></div>
+	</div>
+	<div class="clear"></div>
+	<div class="doc-app-patient-bottom">
+		<div class="doc-app-patient-label">Age:</div>
+		<div class="doc-app-patient-label-txt" id="doc-app-patient-age"></div>
+	</div>
+	<div class="clear"></div>
+	<div class="doc-app-patient-bottom">
+		<div class="doc-app-patient-label">Gender:</div>
+		<div class="doc-app-patient-label-txt" id="doc-app-patient-gender"></div>
+	</div>
+	<div class="clear"></div>
+	<div class="doc-app-patient-bottom">
+		<div class="doc-app-patient-label">Contact No:</div>
+		<div class="doc-app-patient-label-txt" id="doc-app-patient-contact"></div>
+	</div>
+	<div class="clear"></div>
+	<div class="doc-app-patient-bottom">
+		<div class="doc-app-patient-label">Status:</div>
+		<div class="doc-app-patient-label-txt">
+			<select id="doc-clinic-app-patie-stat" class="doc-clinic-app-patie-stat" data-role="none" class="">
+				<option value="Not Completed">Not Completed</option>
+				<option value="Completed">Completed</option>
+				<option value="Cancelled">Cancelled</option>
+				<option value="Changed">Changed</option>
+			</select>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div class="center"><input type="button" id="doc-app-pat-btn" value="Submit" data-role="none" class="button" onclick="MC.updateAppoiPatStatus()"/></div>
+</div>
+<div id="doc-clinic-app-footer"></div>
+<script>$("#doc-clinic-app-footer").load('doc-footer.html');</script>

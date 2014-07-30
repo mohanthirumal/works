@@ -1,0 +1,491 @@
+<div class="header" data-role="footer" data-position="fixed" data-id="header" role="banner">
+	<div class="logo">
+		<a data-transition="fade" class="back-btn" onclick="Doc.gotoBack()"></a>
+		<a data-transition="fade" href="#doc-setting" class="doc-header-user-profile"><img src="images/avatar.jpg" id="avatar" class="avatar"/></a>
+	</div>
+</div>
+<div class="content">
+	<div class="subtitle my-clinic-title"></div>
+	<div class="view-tab-cont">
+		<a onclick="Doc.showContent(1, 'doc-sch-tab', this)" class="button active" data-role="none">Work Schedule</a>
+		<a onclick="Doc.showContent(2, 'doc-sch-tab', this)" class="button" data-role="none">Leave Management</a>
+	</div>
+	
+	<!--<h3>
+		Days per week - 7
+	</h3>-->
+	<div class="doc-sch-tab doc-sch-tab1">
+		<form id="schedule-form">
+		<div class="work-time-schedule">
+			<select name="days" class="days" data-role="none">
+				<option value="0">Choose day</option>
+				<option value="1">SUN</option>
+				<option value="2">MON</option>
+				<option value="3">TUE</option>
+				<option value="4">WED</option>
+				<option value="5">THU</option>
+				<option value="6">FRI</option>
+				<option value="7">SAT</option>
+			</select>
+			<select name="in" class="time in-time" data-role="none">
+				<option value="0">In Time</option>
+				<option value="1:00 AM">1:00 AM</option>
+				<option value="2:00 AM">2:00 AM</option>
+				<option value="3:00 AM">3:00 AM</option>
+				<option value="4:00 AM">4:00 AM</option>
+				<option value="5:00 AM">5:00 AM</option>
+				<option value="6:00 AM">6:00 AM</option>
+				<option value="7:00 AM">7:00 AM</option>
+				<option value="8:00 AM">8:00 AM</option>
+				<option value="9:00 AM">9:00 AM</option>
+				<option value="10:00 AM">10:00 AM</option>
+				<option value="11:00 AM">11:00 AM</option>
+				<option value="12:00 PM">12:00 PM</option>
+				<option value="13:00 PM">13:00 PM</option>
+				<option value="13:00 PM">13:00 PM</option>
+				<option value="15:00 PM">15:00 PM</option>
+				<option value="16:00 PM">16:00 PM</option>
+				<option value="17:00 PM">17:00 PM</option>
+				<option value="18:00 PM">18:00 PM</option>
+				<option value="19:00 PM">19:00 PM</option>
+				<option value="20:00 PM">20:00 PM</option>
+				<option value="21:00 PM">21:00 PM</option>
+				<option value="22:00 PM">22:00 PM</option>
+				<option value="23:00 PM">23:00 PM</option>
+			</select>
+			<select name="out" class="time out-time" data-role="none">
+				<option value="0">Out Time</option>
+				<option value="1:00 AM">1:00 AM</option>
+				<option value="2:00 AM">2:00 AM</option>
+				<option value="3:00 AM">3:00 AM</option>
+				<option value="4:00 AM">4:00 AM</option>
+				<option value="5:00 AM">5:00 AM</option>
+				<option value="6:00 AM">6:00 AM</option>
+				<option value="7:00 AM">7:00 AM</option>
+				<option value="8:00 AM">8:00 AM</option>
+				<option value="9:00 AM">9:00 AM</option>
+				<option value="10:00 AM">10:00 AM</option>
+				<option value="11:00 AM">11:00 AM</option>
+				<option value="12:00 PM">12:00 PM</option>
+				<option value="13:00 PM">13:00 PM</option>
+				<option value="13:00 PM">13:00 PM</option>
+				<option value="15:00 PM">15:00 PM</option>
+				<option value="16:00 PM">16:00 PM</option>
+				<option value="17:00 PM">17:00 PM</option>
+				<option value="18:00 PM">18:00 PM</option>
+				<option value="19:00 PM">19:00 PM</option>
+				<option value="20:00 PM">20:00 PM</option>
+				<option value="21:00 PM">21:00 PM</option>
+				<option value="22:00 PM">22:00 PM</option>
+				<option value="23:00 PM">23:00 PM</option>
+			</select>
+		</div>
+		<div class="work-time-schedule">
+			<select name="days" class="days" data-role="none">
+				<option value="0">Choose day</option>
+				<option value="1">SUN</option>
+				<option value="2">MON</option>
+				<option value="3">TUE</option>
+				<option value="4">WED</option>
+				<option value="5">THU</option>
+				<option value="6">FRI</option>
+				<option value="7">SAT</option>
+			</select>
+			<select name="in" class="time in-time" data-role="none">
+				<option value="0">In Time</option>
+				<option value="1:00 AM">1:00 AM</option>
+				<option value="2:00 AM">2:00 AM</option>
+				<option value="3:00 AM">3:00 AM</option>
+				<option value="4:00 AM">4:00 AM</option>
+				<option value="5:00 AM">5:00 AM</option>
+				<option value="6:00 AM">6:00 AM</option>
+				<option value="7:00 AM">7:00 AM</option>
+				<option value="8:00 AM">8:00 AM</option>
+				<option value="9:00 AM">9:00 AM</option>
+				<option value="10:00 AM">10:00 AM</option>
+				<option value="11:00 AM">11:00 AM</option>
+				<option value="12:00 PM">12:00 PM</option>
+				<option value="13:00 PM">13:00 PM</option>
+				<option value="13:00 PM">13:00 PM</option>
+				<option value="15:00 PM">15:00 PM</option>
+				<option value="16:00 PM">16:00 PM</option>
+				<option value="17:00 PM">17:00 PM</option>
+				<option value="18:00 PM">18:00 PM</option>
+				<option value="19:00 PM">19:00 PM</option>
+				<option value="20:00 PM">20:00 PM</option>
+				<option value="21:00 PM">21:00 PM</option>
+				<option value="22:00 PM">22:00 PM</option>
+				<option value="23:00 PM">23:00 PM</option>
+			</select>
+			<select name="out" class="time out-time" data-role="none">
+				<option value="0">Out Time</option>
+				<option value="1:00 AM">1:00 AM</option>
+				<option value="2:00 AM">2:00 AM</option>
+				<option value="3:00 AM">3:00 AM</option>
+				<option value="4:00 AM">4:00 AM</option>
+				<option value="5:00 AM">5:00 AM</option>
+				<option value="6:00 AM">6:00 AM</option>
+				<option value="7:00 AM">7:00 AM</option>
+				<option value="8:00 AM">8:00 AM</option>
+				<option value="9:00 AM">9:00 AM</option>
+				<option value="10:00 AM">10:00 AM</option>
+				<option value="11:00 AM">11:00 AM</option>
+				<option value="12:00 PM">12:00 PM</option>
+				<option value="13:00 PM">13:00 PM</option>
+				<option value="13:00 PM">13:00 PM</option>
+				<option value="15:00 PM">15:00 PM</option>
+				<option value="16:00 PM">16:00 PM</option>
+				<option value="17:00 PM">17:00 PM</option>
+				<option value="18:00 PM">18:00 PM</option>
+				<option value="19:00 PM">19:00 PM</option>
+				<option value="20:00 PM">20:00 PM</option>
+				<option value="21:00 PM">21:00 PM</option>
+				<option value="22:00 PM">22:00 PM</option>
+				<option value="23:00 PM">23:00 PM</option>
+			</select>
+		</div>
+		<div class="work-time-schedule">
+			<select name="days" class="days" data-role="none">
+				<option value="0">Choose day</option>
+				<option value="1">SUN</option>
+				<option value="2">MON</option>
+				<option value="3">TUE</option>
+				<option value="4">WED</option>
+				<option value="5">THU</option>
+				<option value="6">FRI</option>
+				<option value="7">SAT</option>
+			</select>
+			<select name="in" class="time in-time" data-role="none">
+				<option value="0">In Time</option>
+				<option value="1:00 AM">1:00 AM</option>
+				<option value="2:00 AM">2:00 AM</option>
+				<option value="3:00 AM">3:00 AM</option>
+				<option value="4:00 AM">4:00 AM</option>
+				<option value="5:00 AM">5:00 AM</option>
+				<option value="6:00 AM">6:00 AM</option>
+				<option value="7:00 AM">7:00 AM</option>
+				<option value="8:00 AM">8:00 AM</option>
+				<option value="9:00 AM">9:00 AM</option>
+				<option value="10:00 AM">10:00 AM</option>
+				<option value="11:00 AM">11:00 AM</option>
+				<option value="12:00 PM">12:00 PM</option>
+				<option value="13:00 PM">13:00 PM</option>
+				<option value="13:00 PM">13:00 PM</option>
+				<option value="15:00 PM">15:00 PM</option>
+				<option value="16:00 PM">16:00 PM</option>
+				<option value="17:00 PM">17:00 PM</option>
+				<option value="18:00 PM">18:00 PM</option>
+				<option value="19:00 PM">19:00 PM</option>
+				<option value="20:00 PM">20:00 PM</option>
+				<option value="21:00 PM">21:00 PM</option>
+				<option value="22:00 PM">22:00 PM</option>
+				<option value="23:00 PM">23:00 PM</option>
+			</select>
+			<select name="out" class="time out-time" data-role="none">
+				<option value="0">Out Time</option>
+				<option value="1:00 AM">1:00 AM</option>
+				<option value="2:00 AM">2:00 AM</option>
+				<option value="3:00 AM">3:00 AM</option>
+				<option value="4:00 AM">4:00 AM</option>
+				<option value="5:00 AM">5:00 AM</option>
+				<option value="6:00 AM">6:00 AM</option>
+				<option value="7:00 AM">7:00 AM</option>
+				<option value="8:00 AM">8:00 AM</option>
+				<option value="9:00 AM">9:00 AM</option>
+				<option value="10:00 AM">10:00 AM</option>
+				<option value="11:00 AM">11:00 AM</option>
+				<option value="12:00 PM">12:00 PM</option>
+				<option value="13:00 PM">13:00 PM</option>
+				<option value="13:00 PM">13:00 PM</option>
+				<option value="15:00 PM">15:00 PM</option>
+				<option value="16:00 PM">16:00 PM</option>
+				<option value="17:00 PM">17:00 PM</option>
+				<option value="18:00 PM">18:00 PM</option>
+				<option value="19:00 PM">19:00 PM</option>
+				<option value="20:00 PM">20:00 PM</option>
+				<option value="21:00 PM">21:00 PM</option>
+				<option value="22:00 PM">22:00 PM</option>
+				<option value="23:00 PM">23:00 PM</option>
+			</select>
+		</div>
+		<div class="work-time-schedule">
+			<select name="days" class="days" data-role="none">
+				<option value="0">Choose day</option>
+				<option value="1">SUN</option>
+				<option value="2">MON</option>
+				<option value="3">TUE</option>
+				<option value="4">WED</option>
+				<option value="5">THU</option>
+				<option value="6">FRI</option>
+				<option value="7">SAT</option>
+			</select>
+			<select name="in" class="time in-time" data-role="none">
+				<option value="0">In Time</option>
+				<option value="1:00 AM">1:00 AM</option>
+				<option value="2:00 AM">2:00 AM</option>
+				<option value="3:00 AM">3:00 AM</option>
+				<option value="4:00 AM">4:00 AM</option>
+				<option value="5:00 AM">5:00 AM</option>
+				<option value="6:00 AM">6:00 AM</option>
+				<option value="7:00 AM">7:00 AM</option>
+				<option value="8:00 AM">8:00 AM</option>
+				<option value="9:00 AM">9:00 AM</option>
+				<option value="10:00 AM">10:00 AM</option>
+				<option value="11:00 AM">11:00 AM</option>
+				<option value="12:00 PM">12:00 PM</option>
+				<option value="13:00 PM">13:00 PM</option>
+				<option value="13:00 PM">13:00 PM</option>
+				<option value="15:00 PM">15:00 PM</option>
+				<option value="16:00 PM">16:00 PM</option>
+				<option value="17:00 PM">17:00 PM</option>
+				<option value="18:00 PM">18:00 PM</option>
+				<option value="19:00 PM">19:00 PM</option>
+				<option value="20:00 PM">20:00 PM</option>
+				<option value="21:00 PM">21:00 PM</option>
+				<option value="22:00 PM">22:00 PM</option>
+				<option value="23:00 PM">23:00 PM</option>
+			</select>
+			<select name="out" class="time out-time" data-role="none">
+				<option value="0">Out Time</option>
+				<option value="1:00 AM">1:00 AM</option>
+				<option value="2:00 AM">2:00 AM</option>
+				<option value="3:00 AM">3:00 AM</option>
+				<option value="4:00 AM">4:00 AM</option>
+				<option value="5:00 AM">5:00 AM</option>
+				<option value="6:00 AM">6:00 AM</option>
+				<option value="7:00 AM">7:00 AM</option>
+				<option value="8:00 AM">8:00 AM</option>
+				<option value="9:00 AM">9:00 AM</option>
+				<option value="10:00 AM">10:00 AM</option>
+				<option value="11:00 AM">11:00 AM</option>
+				<option value="12:00 PM">12:00 PM</option>
+				<option value="13:00 PM">13:00 PM</option>
+				<option value="13:00 PM">13:00 PM</option>
+				<option value="15:00 PM">15:00 PM</option>
+				<option value="16:00 PM">16:00 PM</option>
+				<option value="17:00 PM">17:00 PM</option>
+				<option value="18:00 PM">18:00 PM</option>
+				<option value="19:00 PM">19:00 PM</option>
+				<option value="20:00 PM">20:00 PM</option>
+				<option value="21:00 PM">21:00 PM</option>
+				<option value="22:00 PM">22:00 PM</option>
+				<option value="23:00 PM">23:00 PM</option>
+			</select>
+		</div>
+		<div class="work-time-schedule">
+			<select name="days" class="days" data-role="none">
+				<option value="0">Choose day</option>
+				<option value="1">SUN</option>
+				<option value="2">MON</option>
+				<option value="3">TUE</option>
+				<option value="4">WED</option>
+				<option value="5">THU</option>
+				<option value="6">FRI</option>
+				<option value="7">SAT</option>
+			</select>
+			<select name="in" class="time in-time" data-role="none">
+				<option value="0">In Time</option>
+				<option value="1:00 AM">1:00 AM</option>
+				<option value="2:00 AM">2:00 AM</option>
+				<option value="3:00 AM">3:00 AM</option>
+				<option value="4:00 AM">4:00 AM</option>
+				<option value="5:00 AM">5:00 AM</option>
+				<option value="6:00 AM">6:00 AM</option>
+				<option value="7:00 AM">7:00 AM</option>
+				<option value="8:00 AM">8:00 AM</option>
+				<option value="9:00 AM">9:00 AM</option>
+				<option value="10:00 AM">10:00 AM</option>
+				<option value="11:00 AM">11:00 AM</option>
+				<option value="12:00 PM">12:00 PM</option>
+				<option value="13:00 PM">13:00 PM</option>
+				<option value="13:00 PM">13:00 PM</option>
+				<option value="15:00 PM">15:00 PM</option>
+				<option value="16:00 PM">16:00 PM</option>
+				<option value="17:00 PM">17:00 PM</option>
+				<option value="18:00 PM">18:00 PM</option>
+				<option value="19:00 PM">19:00 PM</option>
+				<option value="20:00 PM">20:00 PM</option>
+				<option value="21:00 PM">21:00 PM</option>
+				<option value="22:00 PM">22:00 PM</option>
+				<option value="23:00 PM">23:00 PM</option>
+			</select>
+			<select name="out" class="time out-time" data-role="none">
+				<option value="0">Out Time</option>
+				<option value="1:00 AM">1:00 AM</option>
+				<option value="2:00 AM">2:00 AM</option>
+				<option value="3:00 AM">3:00 AM</option>
+				<option value="4:00 AM">4:00 AM</option>
+				<option value="5:00 AM">5:00 AM</option>
+				<option value="6:00 AM">6:00 AM</option>
+				<option value="7:00 AM">7:00 AM</option>
+				<option value="8:00 AM">8:00 AM</option>
+				<option value="9:00 AM">9:00 AM</option>
+				<option value="10:00 AM">10:00 AM</option>
+				<option value="11:00 AM">11:00 AM</option>
+				<option value="12:00 PM">12:00 PM</option>
+				<option value="13:00 PM">13:00 PM</option>
+				<option value="13:00 PM">13:00 PM</option>
+				<option value="15:00 PM">15:00 PM</option>
+				<option value="16:00 PM">16:00 PM</option>
+				<option value="17:00 PM">17:00 PM</option>
+				<option value="18:00 PM">18:00 PM</option>
+				<option value="19:00 PM">19:00 PM</option>
+				<option value="20:00 PM">20:00 PM</option>
+				<option value="21:00 PM">21:00 PM</option>
+				<option value="22:00 PM">22:00 PM</option>
+				<option value="23:00 PM">23:00 PM</option>
+			</select>
+		</div>
+		<div class="work-time-schedule">
+			<select name="days" class="days" data-role="none">
+				<option value="0">Choose day</option>
+				<option value="1">SUN</option>
+				<option value="2">MON</option>
+				<option value="3">TUE</option>
+				<option value="4">WED</option>
+				<option value="5">THU</option>
+				<option value="6">FRI</option>
+				<option value="7">SAT</option>
+			</select>
+			<select name="in" class="time in-time" data-role="none">
+				<option value="0">In Time</option>
+				<option value="1:00 AM">1:00 AM</option>
+				<option value="2:00 AM">2:00 AM</option>
+				<option value="3:00 AM">3:00 AM</option>
+				<option value="4:00 AM">4:00 AM</option>
+				<option value="5:00 AM">5:00 AM</option>
+				<option value="6:00 AM">6:00 AM</option>
+				<option value="7:00 AM">7:00 AM</option>
+				<option value="8:00 AM">8:00 AM</option>
+				<option value="9:00 AM">9:00 AM</option>
+				<option value="10:00 AM">10:00 AM</option>
+				<option value="11:00 AM">11:00 AM</option>
+				<option value="12:00 PM">12:00 PM</option>
+				<option value="13:00 PM">13:00 PM</option>
+				<option value="13:00 PM">13:00 PM</option>
+				<option value="15:00 PM">15:00 PM</option>
+				<option value="16:00 PM">16:00 PM</option>
+				<option value="17:00 PM">17:00 PM</option>
+				<option value="18:00 PM">18:00 PM</option>
+				<option value="19:00 PM">19:00 PM</option>
+				<option value="20:00 PM">20:00 PM</option>
+				<option value="21:00 PM">21:00 PM</option>
+				<option value="22:00 PM">22:00 PM</option>
+				<option value="23:00 PM">23:00 PM</option>
+			</select>
+			<select name="out" class="time out-time" data-role="none">
+				<option value="0">Out Time</option>
+				<option value="1:00 AM">1:00 AM</option>
+				<option value="2:00 AM">2:00 AM</option>
+				<option value="3:00 AM">3:00 AM</option>
+				<option value="4:00 AM">4:00 AM</option>
+				<option value="5:00 AM">5:00 AM</option>
+				<option value="6:00 AM">6:00 AM</option>
+				<option value="7:00 AM">7:00 AM</option>
+				<option value="8:00 AM">8:00 AM</option>
+				<option value="9:00 AM">9:00 AM</option>
+				<option value="10:00 AM">10:00 AM</option>
+				<option value="11:00 AM">11:00 AM</option>
+				<option value="12:00 PM">12:00 PM</option>
+				<option value="13:00 PM">13:00 PM</option>
+				<option value="13:00 PM">13:00 PM</option>
+				<option value="15:00 PM">15:00 PM</option>
+				<option value="16:00 PM">16:00 PM</option>
+				<option value="17:00 PM">17:00 PM</option>
+				<option value="18:00 PM">18:00 PM</option>
+				<option value="19:00 PM">19:00 PM</option>
+				<option value="20:00 PM">20:00 PM</option>
+				<option value="21:00 PM">21:00 PM</option>
+				<option value="22:00 PM">22:00 PM</option>
+				<option value="23:00 PM">23:00 PM</option>
+			</select>
+		</div>
+		<div class="work-time-schedule">
+			<select name="days" class="days" data-role="none">
+				<option value="0">Choose day</option>
+				<option value="1">SUN</option>
+				<option value="2">MON</option>
+				<option value="3">TUE</option>
+				<option value="4">WED</option>
+				<option value="5">THU</option>
+				<option value="6">FRI</option>
+				<option value="7">SAT</option>
+			</select>
+			<select name="in" class="time in-time" data-role="none">
+				<option value="0">In Time</option>
+				<option value="1:00 AM">1:00 AM</option>
+				<option value="2:00 AM">2:00 AM</option>
+				<option value="3:00 AM">3:00 AM</option>
+				<option value="4:00 AM">4:00 AM</option>
+				<option value="5:00 AM">5:00 AM</option>
+				<option value="6:00 AM">6:00 AM</option>
+				<option value="7:00 AM">7:00 AM</option>
+				<option value="8:00 AM">8:00 AM</option>
+				<option value="9:00 AM">9:00 AM</option>
+				<option value="10:00 AM">10:00 AM</option>
+				<option value="11:00 AM">11:00 AM</option>
+				<option value="12:00 PM">12:00 PM</option>
+				<option value="13:00 PM">13:00 PM</option>
+				<option value="13:00 PM">13:00 PM</option>
+				<option value="15:00 PM">15:00 PM</option>
+				<option value="16:00 PM">16:00 PM</option>
+				<option value="17:00 PM">17:00 PM</option>
+				<option value="18:00 PM">18:00 PM</option>
+				<option value="19:00 PM">19:00 PM</option>
+				<option value="20:00 PM">20:00 PM</option>
+				<option value="21:00 PM">21:00 PM</option>
+				<option value="22:00 PM">22:00 PM</option>
+				<option value="23:00 PM">23:00 PM</option>
+			</select>
+			<select name="out" class="time out-time" data-role="none">
+				<option value="0">Out Time</option>
+				<option value="1:00 AM">1:00 AM</option>
+				<option value="2:00 AM">2:00 AM</option>
+				<option value="3:00 AM">3:00 AM</option>
+				<option value="4:00 AM">4:00 AM</option>
+				<option value="5:00 AM">5:00 AM</option>
+				<option value="6:00 AM">6:00 AM</option>
+				<option value="7:00 AM">7:00 AM</option>
+				<option value="8:00 AM">8:00 AM</option>
+				<option value="9:00 AM">9:00 AM</option>
+				<option value="10:00 AM">10:00 AM</option>
+				<option value="11:00 AM">11:00 AM</option>
+				<option value="12:00 PM">12:00 PM</option>
+				<option value="13:00 PM">13:00 PM</option>
+				<option value="13:00 PM">13:00 PM</option>
+				<option value="15:00 PM">15:00 PM</option>
+				<option value="16:00 PM">16:00 PM</option>
+				<option value="17:00 PM">17:00 PM</option>
+				<option value="18:00 PM">18:00 PM</option>
+				<option value="19:00 PM">19:00 PM</option>
+				<option value="20:00 PM">20:00 PM</option>
+				<option value="21:00 PM">21:00 PM</option>
+				<option value="22:00 PM">22:00 PM</option>
+				<option value="23:00 PM">23:00 PM</option>
+			</select>
+		</div>
+		</form>
+		<div class="clear"></div>
+		<div class="center">
+			<input type="button" value="Save & Confirm" data-role="none" class="button" onclick="Doc.updateWorkSchedule();"/>
+			<a href="#doc-work-break" data-transition="fade"><input type="button" value="Work Breaks" data-role="none" class="button"/></a>
+		</div>
+	</div>
+	<div class="doc-sch-tab doc-sch-tab2 hide">
+		<div id="doc-leave-add"></div>
+		<div class="clinic-link">
+			<a href="#addleave" data-rel="popup" data-position-to="window" class="clinic-link-arrow  clinic-link-arrow-plus" data-transition="fade">Add Leave</a>
+		</div>
+		<div data-role="popup" id="addleave" data-theme="a" class="ui-corner-all">
+			<div style="padding:10px 20px;">
+				<h3>Add Leave</h3>
+				<label for="un" class="ui-hidden-accessible">Leave:</label>
+				<input type="date" name="leave-date-time" id="leave-date-time" value="" data-theme="a">
+				<button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check" onclick="MC.addLeave()">Add</button>
+			</div>
+		</div>
+	</div>
+	
+</div>
+<div id="work-time-footer"></div>
+<script>$("#work-time-footer").load('doc-footer.html').trigger('create');</script>

@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+<script type="text/javascript" src="../js/parse-1.2.18.js"></script>
+<script>
+Parse.initialize("SV7U73uAVhR6fn1IUR5OxPoa0fHBxyfQNk9NvJTA", "pZzaN8INyPr5UZuXHsPeoBRxuWZEmoGjwhjioCF2");
+function deleteRecord()
+{
+	
+	var Clinic = Parse.Object.extend("role");
+	var query = new Parse.Query(Clinic);
+	var Role = Parse.Object.extend("clinic");
+	var role = new Parse.Query(Role);
+	query.matchesQuery("parent", role);
+	var Doctor = Parse.Object.extend("doctor");
+	var doctor = new Parse.Query(Doctor);
+	query.matchesQuery("user_id", doctor);
+	query.find({
+	  success: function(result) {
+	  for(i = 0; i < result.length; i++)
+			{
+				
+			}
+		alert(result.length);
+	  }
+	});
+	
+	
+	
+	
+	return false;
+	var Schedule = Parse.Object.extend("doctor_list");
+	var query = new Parse.Query(Schedule);
+	query.equalTo("specialist", document.getElementById('search').value);
+	query.find({
+		success: function(result) {alert(result.length);
+			for(i = 0; i < result.length; i++)
+			{
+				result[i].destroy();
+			}
+		},
+		error: function(error) {
+			alert('Error in delete query');
+		}
+	});
+}
+
+</script>
+<body>
+<input type="text" value="" id="search"/>
+<input type="button" onclick="deleteRecord()" value="Delete"/>
+</body>
+</html>

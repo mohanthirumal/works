@@ -1,0 +1,109 @@
+/****************** Login Page ***************************/
+.login-title{float:left; width:100%; height:40px; line-height:40px; background-color:#1CAFF5; text-align:center; color:#fff; margin:1px 0 0 0; font-size:20px;}
+.login-input-bg{margin-top:20px; margin-bottom:20px; padding:20px 0 20px 0;}
+
+.sign-in-or-txt{float:left; width:100%; margin:20px 0 10px 0; color:#000; font-size:15px;}
+.fb-login-btn{width:195px; margin:0 auto;}
+.fb-icon-btn{width:33px; height:34px; background:url(../images/fb-btn.jpg) no-repeat; float:left; border-radius:4px 0 0 4px;}
+.fb-text-btn{border:0; color:#fff; font-size:15px; border-radius:0 4px 4px 0; background-color:#3B559F; height:34px; line-height:34px; padding:0 10px 0 10px; float:left;}
+/****************** Signup Page ***************************/
+#signup h2{text-align:center; margin:10px 0 0 0; float:left; width:100%;}
+.register-bg{background-color:#DADADA; width:100%; padding:8px 0 10px 0; float:left;}
+.register-user-image{width:30%; float:left;}
+.register-user-input{float:left; width:70%;}
+.register-user-image-inner{width:75px; height:75px; border:solid 1px #000; margin:10px auto; text-indent:0;border-radius:8px; overflow:hidden}
+.register-user-image-inner img{width:75px; height:75px;}
+.register-user-txt{width:25%; float:left; text-align:right; padding-top:20px; font-size:15px; margin-right:10px;}
+#signup p{float:left; padding:10px;}
+/**************************** Search Page *****************/
+.search-bar{position:absolute; z-index:9;}
+.search-bar .input{border:solid 1px #ccc; width:70%; padding: .1em; margin:0 0 0 3px; float:left; border-radius:0;}
+.search-bar .button{background:#fff url(../images/search-bar-icon.png) no-repeat center center; width:30px; height:26px; border:solid 1px #ccc; border-radius:0; padding:0; float:left; margin:0 0 0 2px}
+.view-tab-cont{position:absolute; bottom:5px; height:30px; width:104px; left:0; right:0; margin:auto;}
+.view-tab-cont .button{padding:6px 12px 6px 12px; margin:0; float:left; border-radius:0; margin:0; font-size:14px; background:url(../images/button-search-bg.png) repeat; color:#fff !important;}
+.view-tab-cont .button.active{background:url(../images/button-search-bg-hover.png) repeat;}
+#search-list .search-bar,#speciality .search-bar{position:relative;}
+#search-list .search-bar .input,#speciality .search-bar .input{width:98%; line-height:35px;}
+.user-list-display .clinic-link{background:#fff;}
+.user-list-display .clinic-link .clinic-link-arrow{color:#000 !important; border-bottom:solid 1px #ccc; text-align:left; text-indent:10px; line-height:30px;}
+.user-list-display .clinic-link .clinic-link-arrow span{font-size:13px; display:block; line-height:15px;}
+.user-list-display .clinic-link .clinic-link-arrow span span{float:right; margin-right: 49px; line-height: 18px;}
+/***************************** Doctor Joining Page ***********************************/
+#join-doctor p{padding:0 10px 0 10px; text-align:center; color:#000; font-size:14px;}
+#join-doctor h2{text-align:center; margin:0; float:left; width:100%;}
+.ui-page-theme-a .ui-btn{background-color:#fff;}
+.ui-mobile label{font-weight:normal; font-family:"Museo"; color:#000;}
+#join-doctor select{margin:0 0 10px 0; text-align:center;}
+.checkbox-center{width:70%; margin:0 auto;}
+#join-doctor .input{margin:0 0 10px 0;}
+#join-doctor .button{margin:10px 0 10px 0;}
+/************************** Search Home Page **************************************/
+#search-home p{padding:0 10px 0 10px; text-align:center; font-size:14px; color:#000;}
+.clinic-link{float:left; width:100%; height:50px; line-height:50px; background:#1CAFF5 url(../images/plus-icon.png) no-repeat 30px center; margin:5px 0 0 0; text-align:center; font-weight:bold; font-size:18px;}
+.clinic-link:active{background-color:#666666;}
+.clinic-link-arrow{background:url(../images/arrow-icon.png) no-repeat right 30px center; float:left; width:100%; height:100%; color:#fff !important;}
+.search-problem{background-image:url(../images/problem-icon.png);}
+.search-speciality{background-image:url(../images/speciality-icon.png);}
+.search-clinic{background-image:url(../images/clinic-icon.png);}
+.search-hospital{background-image:url(../images/hospital-icon.png);}
+.search-area{background-image:url(../images/area-icon.png);}
+/************************** Booking Page ******************************************/
+.doctor-book-name{float:left; width:100%; font-weight:bold; text-align:center; font-size:18px; margin:15px 0 10px 0;}
+#book-doctor .home-desc{margin-top:0; text-align:center; font-weight:bold; font-size:13px}
+#book-doctor .book-date-input{height:30px;}
+#book-doctor select{margin:0;}
+.calendar-icon{width:17px; height:17px; background:url(../images/calender-icon.png) no-repeat; float:right; margin-top:8px;}
+.book-app-center{width:200px; margin:0 auto; margin-top:20px; font-size:18px;}
+.book-doctor-addr{background-color:#fff; border-radius:4px; font-weight:normal; padding:10px 0 10px 0;}
+/************************** Speciality Page ***************************************/
+#speciality .clinic-link{background:#CCC; text-align:left; text-indent:10px;}
+#speciality .clinic-link-arrow{color:#000 !important;}
+#speciality-detail p{padding:0 0 0 0; text-align:center; color:#000; font-size:14px; float:left; width:100%;}
+#speciality-detail .specialit-srch-res{float:left; width:100%; height:50px; line-height:50px; background:#CCC; margin:5px 0 0 0; text-align:center; font-weight:bold; font-size:18px;}
+#speciality-detail .clinic-link{background:none; border-bottom:solid 1px #ccc; font-weight:normal; font-size:15px; line-height:24px;}
+#speciality-detail .clinic-link-arrow{color:#000 !important; text-align:left; background:none}
+#speciality-detail .clinic-link-arrow img{width:40px; height:40px; float:left; margin:5px 0 0 5px; border-radius:6px;}
+#speciality-detail .clinic-link-arrow .doc-name{float:left; margin:0 0 0 10px;}
+#speciality-detail .clinic-link-arrow .doc-name span{font-size:14px;}
+#speciality-detail .clinic-link-arrow .accept-btn{float:right; margin:0 5px 0 0; padding:5px 15px 5px 15px;}
+#speciality-detail .clinic-link-arrow .doc-list-r{float:right; width:65px;}
+/*************************** My Appointmnet Details **********************************/
+.doc-app-patient-label-txt{line-height:25px;}
+#my-app-details,#favourites-details,#manual-doctor{font-size:16px;}
+.book-doctor-addr{width:80%; margin:0 auto; padding:10px;}
+.app-map-icon-bg{background:linear-gradient(#73cffb 10%,#06a9f8 90%); width:50px; height:50px; border-radius:4px; border:solid 1px #06a9f8; margin:0 auto; display:block;}
+.app-map-icon{background:url(../images/map-icon.png) no-repeat center center; width:100%; height:100%;}
+.app-fav-icon{background:url(../images/favourite-star.png) no-repeat center center; width:100%; height:100%;}
+.app-edit-icon{background:url(../images/edit-icon.png) no-repeat center center; width:100%; height:100%;}
+.app-hand-book-icon{background:url(../images/book-button-icon.png) no-repeat center center; width:100%; height:100%;}
+.app-review-icon{background:url(../images/review-button-icon.png) no-repeat center center; width:100%; height:100%;}
+.app-call-icon{background:url(../images/call-icon.png) no-repeat center center; width:100%; height:100%;}
+.app-map-icon-bg-outer{width:90px; float:left; margin:20px 0 0 0; text-align:center; }
+.app-details-options{width:270px; margin:0 auto;}
+#my-app-details .home-desc,#favourites-details .home-desc{margin:3px 0 0 0;}
+.app-fav-gold-icon{background:url(../images/golden-star-icon.png) no-repeat center center; width:100%; height:100%;}
+.share-btn-cont{border:0; padding:10px 20px 10px 15px; background:linear-gradient(#96EA9F 20%,#0EA411 80%); border-radius:6px; color:#fff; font-size:14px; float:left; margin:20px 0 0 0;}
+.share-btn-icon{background:url(../images/share-button-icon.png) no-repeat left center; float:left; width:100%; text-indent:25px; font-weight:bold;}
+.share-btn-center{width:100px; margin:0 auto;}
+div.rating-cancel{display:none;}
+/*******************************Manual Doctor *****************************************/
+#manual-doctor .home-desc{margin-top:4px;}
+#manual-doctor #man-app-doc-spec{font-size:14px;}
+#manual-doctor #man-app-doc-name{font-weight:bold; margin-top:10px;}
+#manual-doctor .register-user-address{background-color:#fff; padding:20px; border-radius:8px;}
+#manual-doctor .address-parent{width:95%; margin:0 auto;}
+#manual-doctor .register-user-image-inner{border-radius:8px; overflow:hidden}
+#manual-doctor .address-parent{text-indent:10px;}
+#manual-doctor .app-map-icon-bg-outer{margin-top:5px;}
+#manual-doctor .app-details-options{width:180px;}
+/******************************** Header Menu *******************************************/
+.menu{position:absolute; top:50px; right:15px; z-index:9999; width:150px; display:none;}
+.menu ul{margin:0; padding:0; float:left;  background-color:#86D8FE; border-radius:6px;}
+.menu ul li{margin:0; padding:0; list-style:none; float:left; height:35px; width:100%; line-height:35px; text-align:center; font-size:18px; border-bottom:solid 1px #1CAFF5;}
+.menu ul li:last-child{border:0;}
+.menu-top-arrow{background:url(../images/menu-top-arraow.png) no-repeat; width:9px; height:7px; float:right; margin:0 10px 0 0;}
+.menu ul li a{color:#000 !important; float:left; width:100%; height:100%;}
+.menu ul li a:active{color:#fff !important; background-color:#0000CC;}
+
+/******************************** Setting Page *******************************************/
+#setting .register-user-image{margin:0 auto; float:none; width:24%;}

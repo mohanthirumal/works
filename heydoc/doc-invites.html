@@ -1,0 +1,49 @@
+<div class="header" data-role="footer" data-position="fixed" data-id="header" role="banner">
+	<div class="logo">
+		<a data-transition="fade" class="back-btn" onclick="Doc.gotoBack()"></a>
+		<a data-transition="fade" href="#doc-setting" class="doc-header-user-profile"><img src="images/avatar.jpg" id="avatar" class="avatar"/></a>
+	</div>
+</div>
+<div class="content notification-invites">
+	<div class="title">Invites</div>
+	<div class="view-tab-cont">
+		<a data-transition="fade" href="#doc-notification" class="button" data-role="none">Notifications</a>
+		<a data-transition="fade" href="#doc-invites" class="button active" data-role="none">Invites</a>
+	</div>
+	<div class="clear"></div>
+	<div class="notifi-indiv">
+	<div class="center">No Invites</div>
+<!--		<div class="notifi-indiv-item">
+			<div class="notifi-indiv-image"><div></div></div>
+			<div class="notifi-indiv-text">
+				Sam has booked an appointment
+				<div>
+				<input type="button" class="accept-btn" value="Accept" data-role="none"/>
+				<input type="button" class="decline-btn" value="Decline" data-role="none"/>
+				</div>
+			</div>
+		</div>
+		<div class="notifi-indiv-item">
+			<div class="notifi-indiv-image"><div></div></div>
+			<div class="notifi-indiv-text">
+				Sam has booked an appointment
+				<div>
+				<input type="button" class="accept-btn" value="Accept" data-role="none"/>
+				<input type="button" class="decline-btn" value="Decline" data-role="none"/>
+				</div>
+			</div>
+		</div>
+		<div class="notifi-indiv-item">
+			<div class="notifi-indiv-image"><div></div></div>
+			<div class="notifi-indiv-text">
+				Sam has booked an appointment
+				<div>
+				<input type="button" class="accept-btn" value="Accept" data-role="none"/>
+				<input type="button" class="decline-btn" value="Decline" data-role="none"/>
+				</div>
+			</div>
+		</div>-->
+	</div>
+</div>
+<div id="invites-footer"></div>
+<script>$("#invites-footer").load('doc-footer.html').trigger('create');</script>

@@ -1,0 +1,21 @@
+<div class="header" data-role="footer" data-position="fixed" data-id="header" role="banner">
+	<div class="logo">
+		<a data-transition="fade" class="back-btn" href="#doc-working-timing"></a>
+	</div>
+</div>
+<div class="content">
+	<div class="title">Work Breaks</div>
+	<div class="doc-break-center"><div class="doc-break-no">No of Breaks : <input type="number" value="0" data-role="none" id="doc-break-count" onchange="Doc.updateBreak();"/></div></div>
+	<div class="clear"></div>
+	<div class="center">
+		<div id="work-break-html"></div>
+	</div>
+	<div class="clear"></div>
+	<div class="doc-break-center" style="width:270px;">
+		<input type="checkbox" name="same-for-all" id="same-for-all"/>
+		<label for="same-for-all">Same for all working days</label>
+	</div>
+	<div class="center"><input type="button" value="Save & Confirm" data-role="none" class="button"/></div>
+</div>
+<div id="work-time-footer"></div>
+<script>$("#work-time-footer").load('doc-footer.html').trigger('create');</script>

@@ -1,0 +1,815 @@
+@font-face{font-family: 'WebRupee';src: url('fonts/WebRupee.V2.0.eot');src: local('WebRupee'), url('fonts/WebRupee.V2.0.ttf') format('truetype'),  url('fonts/WebRupee.V2.0.woff') format('woff'), url('fonts/WebRupee.V2.0.svg') format('svg');font-weight: normal;font-style: normal;}
+@font-face{
+font-family:"Museo Sns W10 Cyr 300";
+src:url("fonts/91f8cdfa-6df5-4221-b33b-723413e056b8.eot?#iefix");
+src:url("fonts/91f8cdfa-6df5-4221-b33b-723413e056b8.eot?#iefix") format("eot"),url("fonts/75beb14f-19da-4fc5-98fc-982c88ca8af5.woff") format("woff"),url("fonts/de7bcb62-e696-4a16-900d-23cffbb4257b.ttf") format("truetype"),url("fonts/9a296ed2-c439-4d7e-b022-600dc1644f91.svg#9a296ed2-c439-4d7e-b022-600dc1644f91") format("svg");
+}
+@font-face{
+font-family:"Museo Sns W10 Cyr 700";
+src:url("fonts/a7fbb955-3f5b-4943-a20f-23613f1b7fc5.eot?#iefix");
+src:url("fonts/a7fbb955-3f5b-4943-a20f-23613f1b7fc5.eot?#iefix") format("eot"),url("fonts/d8e727b7-2e45-46ec-8636-1dc260f9c25e.woff") format("woff"),url("fonts/163f7fc3-fa62-4113-9d08-d39abc3e0c55.ttf") format("truetype"),url("fonts/4b2207cd-07ef-41f6-8d25-00283b918a05.svg#4b2207cd-07ef-41f6-8d25-00283b918a05") format("svg");
+}
+a{text-decoration:none;}
+.WebRupee{font-family: 'WebRupee'; margin-right:2px;}
+html{margin:0; padding:0; width:100%; height:100%}
+body{margin:0; padding:0; width:100%; height:100%; font:12px "Museo Sns W10 Cyr 300", Arial, Helvetica, sans-serif; color:#000;}
+.content-loader{position:fixed; width:100%; height:100%; z-index:999; background:url(../images/loader.gif) no-repeat center center,#ccc url(../images/bg.jpg) no-repeat center center;}
+.full-container{float:left; width:100%;}
+.top-container{float:left; width:100%; height:58px; background-color:#1A1A1A;}
+.center-container{margin:0 auto; width:1000px;}
+.clear{clear:both;}
+input:focus{outline:0;}
+input,select{ font-family:"Museo Sns W10 Cyr 300";}
+.shadow {-moz-box-shadow:inset 0 0 10px #000000; -webkit-box-shadow:inset 0 0 10px #000000; box-shadow:inset 0 0 10px #000000;}
+.top-buttons{float:right;}
+.button{float:left; border:0; color:#fff; font-weight:bold; background:url(../images/button.png) no-repeat -64px 0; height:31px; width:64px;}
+.button:hover{background-position:0 0;}
+.top-buttons .button{margin:10px 10px 0 0;}
+.content{float:left; width:100%; background:#000000 url(../images/bg.jpg) no-repeat center top; padding-bottom:10px;}
+.logo{float:left; margin-left:10px; height:134px;}
+.loading{width:100%; height:100%; float:left; background:url(../images/loader.gif) no-repeat center center;}
+.tournament-join-loading{float:left; width:100px; height:50px;}
+/*.userdetail{float:right;}*/
+.user{float:right; color:#FFFFFF; clear:both; }
+.accbut{float:right; margin:17px 0 10px 0;}
+.loggingout{margin:0 0 1px 3px; float: right; clear:both; }
+.userimg,.loginname,.cash,.addfunds,.coins,.logout{float:left; color:#FFFFFF; margin:3px 0 2px 11px; height:20px; cursor:pointer;}
+.userimg{margin-top:20px;}
+.user input,.logout,.loggingout input,.loginname,.userimg{float:right;}
+.cash{background:url(../images/cash_icon.png) no-repeat; text-indent:30px; height:26px; line-height:26px; float:right}
+.form-submit #submit,.addfunds{text-indent: 2px; background:url(../images/add-funds-button.png) no-repeat center center; -moz-border-radius:3px; -webkit-border-radius:3px;border-radius:3px; border:0; height:29px; padding:0 5px 0 5px;}
+.coins{background:url(../images/zeal_icons.png) no-repeat; text-indent:25px; height:21px; line-height:21px; float:right}
+.addfunds,.coins,.cash{}
+.btn-refer-a-friend{background:#E7B508;}
+.myac{float:right; font-family: arial;  margin:3px 0 0 0; color:#FFF; text-decoration:underline ;}
+.logout{background:url(../images/logout_icon.png) no-repeat left center; text-indent:18px; margin-left:16px; height:20px; line-height:20px;}
+.mylogout{color:#FFFFFF;}
+.search{float:none; margin:0 0 10px 810px;}
+.search-text-cont{float:left; width:300px; -moz-border-radius:3px 0 0 3px; -webkit-border-radius:3px 0 0 3px; border-radius:3px 0 0 3px; background:#fff url(../images/search-icon.png) no-repeat left center; height:30px;}
+.search-btn{float:left; background-color:#9D9D9D; -moz-border-radius:0 3px 3px 0; -webkit-border-radius:0 3px 3px 0; border-radius:0 3px 3px 0; height:30px; border:0; color:#fff; width:60px; text-transform:uppercase; font-weight:bold; font-size:11px;}
+.search-text-cont input{margin:5px 0 0 18px; width:270px; border:0; height:20px;}
+.menu{float:right; height:50px; background-color:#fff; -moz-border-radius:6px; -webkit-border-radius:6px; border-radius:6px; margin-right:14px;}
+.menu-left{float:left; background:url(../images/menu-left.png) no-repeat; width:16px; height:69px;}
+.menu-center{float:left; background:url(../images/menu-center.png) repeat; height:52px; width:967px;}
+.menu-right{float:left; background:url(../images/menu-right.png) no-repeat; width:16px; height:69px;}
+.menu ul{float:left; margin:0 0 0 0;}
+.menu ul li{float:left;}
+.menu ul li a{float:left; margin:0 0 0 0; height:52px; line-height:52px; font-weight:bold; font-family:"Museo Sns W10 Cyr 700"; font-size:16px; padding:0 8px 0 8px; text-shadow: 0 1px #fff; text-decoration:none; color:#666666;}
+.menu ul li a div{height:100%; float:left;}
+.menu ul li a:hover,.menu ul li a.active{color:#F96219;}
+.menu ul li a:hover,.menu ul li a.active{background:url(../images/menu-hover.jpg) repeat; color:#fff; text-shadow:0 0; -moz-box-shadow:inset 0 0 10px #292929; -webkit-box-shadow:inset 0 0 10px #292929; box-shadow:inset 0 0 10px #292929; cursor:pointer; overflow:hidden;}
+.menu ul li a .home-icon{width:50px; background:url(../images/menu/home-icon.png) no-repeat center center;}
+.menu ul li a:hover .home-icon,.menu ul li a.active .home-icon{background-image:url(../images/menu/home-icon.png)}
+.menu ul li.divider{width:1px; background:url(../images/menu/divider.png) no-repeat center center; padding:0; height:50px;}
+.menu ul li a .how-it-works-icon{background:url(../images/menu/how-it-work-icon.png) no-repeat center center; width:35px;}
+.menu ul li a:hover .how-it-works-icon,.menu ul li a.active .how-it-works-icon{background-image:url(../images/menu/how-it-work-icon.png)}
+.menu ul li a .rules-icon{background:url(../images/menu/rules-icon.png) no-repeat center center; width:25px;}
+.menu ul li a:hover .rules-icon,.menu ul li a.active .rules-icon{background-image:url(../images/menu/rules-icon.png)}
+.menu ul li a .tournament-icon{background:url(../images/menu/tournament-icon.png) no-repeat center center; width:23px;}
+.menu ul li a:hover .tournament-icon,.menu ul li a.active .tournament-icon{background-image:url(../images/menu/tournament-icon.png)}
+.menu ul li a .research-icon{background:url(../images/menu/research-icon.png) no-repeat center center; width:27px;}
+.menu ul li a:hover .research-icon,.menu ul li a.active .research-icon{background-image:url(../images/menu/research-icon.png)}
+.menu ul li a .leaderboard-icon{background:url(../images/menu/leaderboard-icon.png) no-repeat center center; width:28px;}
+.menu ul li a:hover .leaderboard-icon,.menu ul li a.active .leaderboard-icon{background-image:url(../images/menu/leaderboard-icon.png)}
+.menu ul li a .support-icon{background:url(../images/menu/support-icon.png) no-repeat center center; width:28px;}
+.menu ul li a:hover .support-icon,.menu ul li a.active .support-icon{background-image:url(../images/menu/support-icon.png)}
+.live-match-cont{float:left; margin:0 0 0 15px;}
+.live-match-cont a{color:#000;}
+.live-match-left{float:left; background:url(../images/live-match-nav.png) no-repeat; height:76px; width:20px; cursor:pointer;}
+.live-match-center{float:left; background-color:#1A1A1A; height:72px; width:930px; overflow:hidden; border:solid 2px #000; border-width:2px 0 2px 0;}
+.live-match-center-inner{width:10000px;}
+.live-match-right{float:left; background:url(../images/live-match-nav.png) no-repeat -22px 0; width:20px; height:76px; cursor:pointer;}
+.live-match-indiv{float:left; background-color:#fff; width:184px; height:73px; margin-right:2px;}
+.live-match-indiv.live{ background-color:#D5D5D5;}
+.live-match-indiv .inner{float:left; margin:16px 0 0 10px;}
+.live-match-indiv .flag{float:left; width:50px; border:solid 1px #B69551; -moz-border-radius:6px; -webkit-border-radius:6px; border-radius:6px; margin-left:-9px; overflow:hidden;}
+.live .flag{width:46px;}
+.live-match-indiv .flag img{width:100%; height:38px;}
+.v-image-area{float:left; width:20px; height:20px; margin-top:10px; margin-left:-5px; position:relative; background:url(../images/v_img.png) no-repeat; width:18px; height:19px;}
+.v-img{width:18px; height:19px;}
+.live-match-indiv .score-text{float:left;}
+.score-text1{ width:80px; margin-left:2px;}
+.live-match-indiv .score{float:left; background-color:#fff; padding:5px 10px 5px 5px; -moz-border-radius:8px; -webkit-border-radius:8px; border-radius:8px;}
+.live-match-indiv .overs{text-align:center;}
+.live-match-indiv .teams{color:#D83A31; font-weight:bold;}
+.live-match-indiv .match-details{color:#666666; font-size:10px; width:90px;}
+.live-match-cont a{font-family:Arial, Helvetica, sans-serif;}
+.fixtures .teams{font-size:12px; text-transform:uppercase; margin:5px 0 0 0; text-indent:1px;}
+.fixtures .match-details{font-size:13px; text-indent:3px;}
+.fixtures .score-text1{width:73px;}
+.index-promotions{float:left; width:606px; height:315px; border:solid 3px #fff; background-color:#1D1D1D; margin:5px 0 0 0;}
+.index-second{float:left; width:968px; margin:0 0 0 15px;}
+.index-right1{float:left; margin:0 0 0 5px;}
+.jackpot-ads{float:left; width:351px; height:66px; background:url(../images/jackpot-ad.jpg) no-repeat; }
+.live-match-indiv .inner .opening-soon{width:47px; height:47px;float:left;}
+.live-match-indiv .inner .opening-soon img{margin:-28px 0 0 46px; }
+/* Live score widget new Box START */ 
+
+.live-score-widjet{float:left; width:351px; margin-top:5px;}
+.live-score-menu{float:left; background:url(../images/live-score-menu.png) repeat; height:58px; width:100%; -moz-border-radius:6px 6px 0 0; -webkit-border-radius:6px 6px 0 0; border-radius:6px 6px 0 0;}
+#live-score-menu-id{margin:0 0 0 5px;}
+.live-score-menu ul{float:left;}
+.live-score-menu ul li{float:left; height:35px; line-height:35px; padding:0 15px 0 15px;font-weight:bold; margin:5px 0 0 10px;}
+.live-score-menu ul li:hover,.live-score-menu ul li.active{background:url(../images/livescore-hover.png) repeat; -moz-border-radius:6px 6px 0 0; -webkit-border-radius:6px 6px 0 0; border-radius:6px 6px 0 0; color:#fff; -moz-box-shadow:inset 0 0 10px #292929; -webkit-box-shadow:inset 0 0 10px #292929; box-shadow:inset 0 0 10px #292929; cursor:pointer;}
+.match-score{float:left; width:100%; background-color: #EBEBEB; border-bottom-left-radius:6px; border-bottom-right-radius:6px; height: 263px;}
+.match-score a{color:#000;}
+.match-score-indi{float:left; width:100%; border-top:solid 1px #ccc; background-color:#EFEFEF; text-indent:20px; height:30px; line-height:30px;}
+.match-score-indi.even{background-color:#EBEBEB;}
+.match-score-indi.last{-moz-border-radius:0 0 6px 6px; -webkit-border-radius:0 0 6px 6px; border-radius:0 0 6px 6px; height:40px;}
+.more{background-color:#E0E0E0; border:solid 1px #ccc; padding:5px 15px 5px 15px; font-weight:bold; color:#3C3C3C; -moz-border-radius:4px; -webkit-border-radius:4px; border-radius:4px; font-size:11px;}
+.more:hover{background-color:#000; color:#fff;}
+.linetop{float:left; width:100%; height:1px; background-color:#C0C0C0;}
+.team1name{float:left; margin:3px 1px 1px 50px;}
+.team2name{float:left; margin:3px 1px 1px 1px;}
+.tourn-type{ float:left; margin:3px 1px 1px 5px;}
+.tourn-type-matchno{float:left; margin:3px 1px 1px 3px;}
+.venue{float:left; margin:2px 0 0 0; width:100%; text-align:center;}
+.flagarea{float:left; width:80px; height:60px; text-align:center;}
+.team1-flag{float:left; margin:1px 1px 1px 20px; width:45px; height:40px; border:1px solid #CCC; border-radius:6px;}
+.vs-area{float:left; width:30px; height:50px;}
+.versus{float:left; margin:19px 1px 1px 1px; width:25px; height:25px;}
+.team2-flag{float:left; margin:10px 1px 1px 10px; width:45px; height:40px;border:1px solid #CCC; border-radius:6px;}
+
+.team1-score-area{float:left;width:120px; height:40px; background:#FFFFFF; border-radius:5px; font-size:14px;}
+.team1-score{float:left; margin:10px 1px 1px 12px; font-weight:bold; font-size:18px;}
+.countryflag1name{float:left; margin:1px 1px 1px 1px; padding:1px 90px 1px 20px; border:1px solid #F00;}
+.countryflag2name{float:left; margin:1px 1px 1px 1px; padding:1px 90px 1px 1px; border:1px solid #F00;}
+.totalovers{float:left; width:100px; height:30px; text-align:center; margin-top:5px;}
+.match-score-status{float:left; width:100%; text-align:center; margin:0 0 5px 0; font-weight:bold;}
+.livescore-list{ float:left; margin:0 1px 1px 0px; width:100%; height:50px; background-color:#D3D3D3; border-bottom-left-radius:6px; border-bottom-right-radius:6px;}
+.sidebar-scorecard-nav{width:280px; float:left; overflow:hidden;}
+.sidebar-scorecard-nav-inner{width:1000px;}
+.left-move{ float:left; margin:13px 1px 1px 3px; width:23px; height:25px;}
+.other-livematch1{float:left; width:75px; height:30px; background:#FFFFFF; margin:9px 1px 1px 10px; border-radius:5px;}
+.otherlive-team1-flag{float:left; margin:5px 1px 1px 5px; width:23px; height:23px; text-indent:10px;}
+.other-versus{float:left; margin:7px 1px 1px 2px; width:15px; height:15px;}
+.otherlive-team2-flag{float:left; margin:5px 1px 1px 1px; width:23px; height:23px;}
+.vertical-line{float:left; margin:7px 1px 1px 5px; background:url(../images/lobby-divider-colum.png) repeat; height:30px; border:1px solid #999;}
+.right-move{float: right; margin:13px 1px 1px 1px; width:23px; height:25px;}
+.vert-line{float:left; width:1px; height:40px; background-color:#C0C0C0; margin:5px 1px 1px 5px;}
+/* Live score widget new Box END */ 
+.score-more{float:right; margin:7px 10px 0 0; cursor:pointer;}
+.index-left2{float:left; width:100%; margin:5px 0 0 0;}
+.tournament-lobby-head{float:left; width:100%; height:39px; line-height:39px; background:url(../images/tournament-lobby.png) repeat; -moz-border-radius:6px 6px 0 0; -webkit-border-radius:6px 6px 0 0; border-radius:6px 6px 0 0; border:solid 1px #000; margin:0 -1px 0 -1px;}
+.next-starts-in{float:left; background:url(../images/next-match-bg.png) no-repeat; width:289px; height:39px;}
+.next-match-start-text{text-indent:25px; color:#fff; font-size:12px; font-weight:bold;}
+.next-starts-in-counter{float:right; width:100px; height:30px; margin:5px 25px 0 5px; text-align:center; background: url(../images/addfunds_bg.png) no-repeat center center; -moz-border-radius:8px; -webkit-border-radius:8px; border-radius:8px; font-weight:bold; text-indent:0;}
+.tournament-lobby-title{float:left; line-height:39px; font-weight:bold; margin-left:15px; }
+.tournament-lobby-body{float:left; width:100%; background-color:#000; -moz-border-radius:0 0 4px 4px; -webkit-border-radius:0 0 4px 4px; border-radius:0 0 4px 4px; border:solid 1px #000;  margin:0 -1px 0 -1px;}
+.tournament-lobby-inner{float:left; width:100%; margin:0; height:1105px; overflow:auto;}
+.tournament-lobby-inner-head{float:left; width:180px; margin:0 3px 0 2px;}
+.tournament-lobby-inner-head-title{float:left; width:100%; height:20px; line-height:20px; background-color:#373536; margin:1px 0 4px 0; font-size:13px;}
+.tournament-lobby-inner-head-title ul li{float:left; color:#fff; text-align:center;}
+.tournament-lobby-inner-head-title ul li.small{width:30px;}
+.tournament-lobby-inner-head-title ul li.large{width:80px;}
+.tournament-lobby-inner-head-title ul li.extra-large{width:170px;}
+.tournament-lobby-inner-head-title ul li.medium{width:50px;}
+.tournament-loby-left-menu{float:left; width:100%;}
+.tournament-loby-left-menu ul{margin:0; padding:0; list-style:none; float:left; width:100%;}
+.tournament-loby-left-menu ul li{margin:2px 0 0 0; padding:0; width:100%; background:url(../images/lobby-left-menu-bg.png) repeat-x; height:49px; line-height:49px; color:#fff; text-align:center; -moz-border-radius:8px; -webkit-border-radius:8px; border-radius:8px; cursor:pointer; font-weight:bold; font-size:14px;}
+.tournament-loby-left-menu ul li:hover,.tournament-loby-left-menu ul li.active{background:url(../images/lobby-left-menu-bg-hover.png) repeat-x;}
+.tournament-lobby-inner-right{float:left; width:764px;}
+.my-tournament .tournament-lobby-inner-right{width:760px;}
+.index-lobby-room .small{width:28px;}
+.index-lobby-room .large{width:80px;}
+.index-lobby-room .extra-large{width:170px; height:100%;}
+.index-lobby-room .medium{width:50px;}
+.index-lobby-room{float:left; height:60px; width:100%; background-color:#F6F6F6; border-bottom:solid 5px #373536; color:#000; font-size:14px;}
+.index-lobby-room div{float:left; text-align:center; line-height:60px;}
+.index-lobby-room div.divider{width:2px; height:60px; background:url(../images/lobby-divider-colum.png) repeat;}
+.index-lobby-room .lobby-join{background:url(../images/lobby-join-btn.png) no-repeat; width:50px; height:24px; border:0; float:left; margin:15px 0 0 20px; color:#fff; line-height:24px; text-decoration:none; cursor:pointer;}
+.index-lobby-room .teamflag{line-height:20px;}
+.index-lobby-room .teamflag img{width:35px; height:25px; margin-top:10px;}
+.index-lobby-room.compl-tour{background-color:#C4E2C4;}
+.index-lobby-room.destr-tour{background-color:#F1C2C6;}
+.my-tour-indi .small{28px; float:left;}
+.my-tour-indi .large{width:70px;}
+.my-tournament .tournament-lobby-inner-head-title ul li.large{width:73px;}
+.prize-money{font-weight:bold; animation:prizemoney 1s; -webkit-animation:prizemoney 0.5s;animation-iteration-count: infinite;-webkit-animation-iteration-count: infinite;}
+@keyframes prizemoney
+{
+100% {transform:scale(1.5); -ms-transform:scale(1.5); -moz-transform:scale(1.5); -webkit-transform:scale(1.5); -o-transform:scale(1.5);}
+}
+
+@-webkit-keyframes prizemoney /* Safari and Chrome */
+{
+100% {transform:scale(1.5); -ms-transform:scale(1.5); -moz-transform:scale(1.5); -webkit-transform:scale(1.5); -o-transform:scale(1.5);}
+}
+.prize-animate{border:solid 1px red; float:}
+.view-all-tour-btn{float:right; height:25px; line-height:25px; margin:10px;}
+.index-right{float:left; width:351px; margin:6px 0 0 5px;}
+.index-left{float:left; width:612px; margin:5px 0 0 0;}
+.index-intro-video{float:left; width:100%; height:346px; /*background:#000 url(../images/index-banner.jpg) no-repeat bottom left;*/}
+.index-discursion{float:left; width:100%;}
+.index-discussion-tab{float:left; background-color:#E9E9E9; width:100%;}
+.index-discussion-tab .star-player{float:left; width:60px; height:50px; background:url(../images/discussion-tab.png) no-repeat;}
+.index-discussion-tab .pitch-condition{float:left; background:url(../images/discussion-tab.png) no-repeat -60px 0; width:105px; height:50px;}
+.index-discussion-tab-inner{float:left; padding:10px 25px 20px 25px; font-weight:bold; color:#545454; text-align:center; cursor:pointer}
+.pitch-condition-tab,.weather-report-tab{padding-left:10px; padding-right:10px;}
+.head-to-head-tab{padding-left:15px; padding-right:15px;}
+.index-discussion-tab .weather-report{float:left;width:45px; height:50px; background:url(../images/discussion-tab.png) no-repeat -165px 0; margin-left:20px;}
+.index-discussion-tab .head-to-head{float:left; width:80px; height:50px; background:url(../images/procorner_icon.png) no-repeat center center;}
+.index-discussion-tab .previous-matches{float:left; width:50px; height:50px; background:url(../images/discussion-tab.png) no-repeat -290px 0; margin-left:20px;}
+.index-discursion-divider{width:2px; height:85px; background:url(../images/lobby-divider-colum.png) repeat; float:left;}
+.row-divider{float:left; width:100%; height:2px; background:url(../images/lobby-divider-row.png) repeat;}
+.star-player-container{float:left; width:100%; background-color:#ECECEC;}
+.star-player-image{float:left; text-align:center; padding:10px 15px 10px 15px;}
+.star-player-desc{float:left; margin-top:20px; font-weight:bold; color:#545454; padding:0 10px 10px 10px; font-size:13px;}
+.star-player-desc img{max-width:84px; max-height:64px; float:left; margin:0 15px 10px 15px; min-height:64px; min-width:65px;}
+.star-player-desc a{color:#545454; text-decoration:none;}
+.research-index-inner{float:left; background-color:#ECECEC; padding:10px; font-style:italic; font-weight:bold; color:#545454; height:266px; width:96.8%;}
+.research-index-inner img{float:left; max-height:200px; max-width:200px; margin:0 10px 10px 0;}
+.leaderboard-container{float:left; width:100%;}
+.leaderboard-container .head{float:left; width:100%;}
+.leaderboard-container .head .tabs{float:left; width:100%;}
+.leaderboard-container .head .tabs ul li{background:url(../images/tournament-lobby.png) repeat 0 -4px; height:35px; -moz-border-radius:0 6px 0 0; -webkit-border-radius:0 6px 0 0; border-radius:0 6px 0 0; float:left; width:130px; text-align:center; line-height:35px; margin-right:3px; font-weight:bold; color:#545454;}
+.leaderboard-container .head .tabs ul li:hover,.leaderboard-container .head .tabs ul li.active{background:url(../images/livescore-hover.png) repeat; color:#fff;}
+.leaderboard-dates{float:right; margin:-60px 10px 0 0; font-weight:bold;}
+.leaderboard-container .body{float:left; width:100%; height:490px; overflow:hidden; background-color:#E9E9E9;}
+.home-winner-indiv{float:left; width:100%; background-color:#E9E9E9;}
+.winner-image{float:left; padding:6px 15px 6px 15px;}
+.winner-desc{float:left; margin-top:30px;}
+.winner-desc span{color:#F54408; font-weight:bold;}
+.star-player-purchase{float:left; width:100%;}
+.star-player-title{float:left; width:100%; background:url(../images/stars-title.jpg) repeat; height:41px; -moz-border-radius:8px 8px 0 0; -webkit-border-radius:8px 8px 0 0; border-radius:8px 8px 0 0; text-indent:20px; font-weight:bold; line-height:41px;}
+.star-player-indi{float:left; width:149px; background:#F6F4F5 url(../images/stars-bg.jpg) repeat-x left bottom; margin:5px 5px 0 0;}
+.star-player-indi .star-player-indi-image{float:left; width:100%; text-align:center; padding-top:20px;}
+.star-player-name{float:left; width:100%; color:#545454; text-align:center; font-weight:bold; margin:5px 0 5px 0;}
+.star-player-points{float:left; width:100%; font-weight:bold; margin:0 0 10px 0; text-align:center;}
+.star-player-purchase-money{float:left; background:url(../images/stars-amount.jpg) repeat; height:36px; width:110px; -moz-border-radius:8px; -webkit-border-radius:8px; border-radius:8px; margin:0 0 0 18px; text-align:center; line-height:36px; font-weight:bold; color:#fff;}
+.star-player-purchase-desc{float:left; margin:5px 5px 10px 10px;}
+.star-player-purchase .last{margin-right:0;}
+.poll-container{float:left; background:url(../images/poll-bg.png) no-repeat; width:349px; height:313px;}
+.footer{float:left; width:100%; background:url(../images/footer-bg.png) repeat;}
+.footer-column{ width:80%; height:100px; margin:5px 0 0 150px;}
+.footer-menu{width:235px; float: left; margin: 0 20px 0 10px; padding: 0 0 0 0; }
+.footer-menu ul{margin:10px 0 0 10px; }
+.footer-menu ul li{color:#ccc; margin:10px 0 0 0;}
+.footer-menu ul li a{ color:#CCCCCC; text-decoration:none; font-size:14px;}
+.footer-payment-icons{float:left; margin:20px 0 10px 30px;}
+.footer-payment-icons img{margin:0 15px 0 0; float:left;}
+.footer-payment-icons .we-accept-txt{color:#fff; float:left; margin-right:10px; line-height:40px;}
+.copyright{float:left; width:100%; text-align:center; color:#fff; margin:50px 0 20px 0;}
+.show{display:block;}
+.hide{display:none;}
+.btn-remove-player{background:url(../images/minus-btn.png) no-repeat; width:16px; height:16px; border:0; cursor:pointer;}
+
+/******************************************* Join Tournament ******************************************/
+.join-tournament{float:left; position:absolute; top:0px; left:0px; height:100%; width:100%; display:none; z-index:2;}
+.innercontainer{float:left; border:1px solid #000; border-radius:7px; background-color:#FFFFFF; width:51%; height:640px; margin-top:10px; margin-left:250px;  z-index:10;}
+.innerheader{ float:left; width:100%; height:35px; border-radius:7px; background-color:#F3F3F3;}
+.innerheader .tournlobbybutton{float:left; line-height:33px; font-weight:bold; margin-left:180px; width:24%; background:#F66410; color:#FDFFFF; border-top-left-radius:7px; border-top-right-radius:7px; text-indent:5px;}
+.tournname{float:left; margin:7px 1px 1px 25px; font-size:12px; width:310px;}
+.tournid{float:left; margin:7px 1px 1px 16px; font-size:12px; }
+.flag1{float:left; margin:5px 10px 1px 55px; border:1px solid #999; border-radius:7px; width:25%; height:110px; text-align:center; font-weight:bold;}
+.flag2{float:left; margin:5px 10px 1px 50px; border:1px solid #999; border-radius:7px; width:25%; height:110px; text-align:center; font-weight:bold;}
+.flag1 .indflag{margin:5px 1px 1px 1px;}
+.vs{float:left; margin:65px 10px 1px 50px;}
+.matchdetails{float:left; margin:10px 1px 1px 70px; }
+.matchdetails .matchdetailstitle{float:left; border:1px solid #600; width:80%; height:22px; background-color:#1f1f1f; color:#FFFFFF; font-weight:bold; margin:0 1px 1px 30px;}
+.matchdetails .matchdetailstitle .title{ float:left; margin:2px 1px 1px 90px;}
+.match{ float:left; margin:5px 1px 1px 70px; color:#676767; text-align:right;}
+.matchcontent{float:left; font-weight:bold; margin:5px 1px 1px 5px;}
+.players{float:left; background:url(../images/players_bg.png); color:#1f1f1f; margin:5px 1px 1px 35px; width:443px; height:33px;}
+.players .totalplyers{ float:left; margin:8px 1px 1px 150px; font-weight:bold;}
+.players .viewall{float:left; margin:8px 1px 1px 120px; color:#565656; cursor:pointer; text-decoration:underline;}
+.matchstartin-title{ float:left;margin:1px 1px 1px 200px; color:#f30504; font-weight:bold;}
+.timer{ float:left; background:url(../images/timer_bg1.png) no-repeat;  margin:10px 1px 1px 8px; width:150px; height:56px;}
+.countdown_section{float:left;}
+.timer .hourstime,.countdown_amount{ float:left; font-size:20px; color:#FFFFFF; text-align:center; line-height:37px; width:100%;}
+.timer .hourstimename{ float:left; margin:15px 1px 1px 5px; color:#FFF; font-size:11px;}
+.timer .minstime{ float:left; margin:5px 1px 1px -5px; font-size:20px; color:#FFFFFF;}
+.timer .minstimename{ float:left; margin:35px 1px 1px 5px; color:#FFF;}
+.timer .sectime{float:left; margin:5px 1px 1px -5px; font-size:20px; color:#FFFFFF;}
+.timer .sectimename{float:left; margin:35px 1px 1px 5px; color:#FFF;}
+.timer .countdown_row{margin-left:7px; float:left;}
+.timer .countdown_section{width:42px; height:33px; margin:5px 1px 1px 2px; overflow:hidden}
+.next-starts-in-counter .countdown_amount{width:auto; font-size:16px; margin:0; line-height:32px; float:none;}
+.entryfeearea{ float:left; border:3px solid #999; width:40%; height:25px; margin:3px 1px 1px 150px; text-align:center;}
+.entryfeearea .entryfeetitle{ float:left; color: #585858; font-weight:bold; margin:4px 1px 1px 10px;}
+.entryfeearea .yellow-bg{ float:left; height:25px; width:120px; background-color:#FFBB02; margin:-20px 0 0 85px;}
+.entryfeearea .feeamount{ float:left; margin:-2px 0 0 45px; color: #1A1C22; font-size:25px; font-weight:bold; }
+.prize-pool{float:left; color: #585858; font-weight:bold; margin:-3px 1px 1px 50px; font-size:22px;}
+.prize-pool-order{float:left; border:3px solid #999; width:49%; height:60px; margin:-4px 90px 1px 127px; border-radius:7px;}
+.first-place{float:left; background:url(../images/prizemoney_bg.png) no-repeat; width:76px; height:24px; margin:4px 1px 1px 5px;}
+.fst{float:left; margin:3px 1px 1px 2px; font-weight:bold; color:#FFFFFF; width:20px; text-align:center;}
+.fst-amount{float:left; margin:4px 1px 1px 0; font-weight:bold; width:50px; text-align:center;}
+
+.rules{float:left; margin:5px 1px 1px 25px; font-weight:bold;}
+.ruleshere{ float:left; border:1px solid #f1f1f1; background-color:#f1f1f1; width:92%; height:65px; margin:1px 1px 1px 20px;}
+.ruleshere .rulesheretitle{ float:left; margin:25px 1px 1px 175px;}
+.joinbut{float:left; margin:10px 0 1px 200px; background:url(../images/lobby-join-btn.png); width:50px; height:24px; font-weight:bold; color:#FFFFFF;} 
+.cancelbut{float:left; margin:10px 0 1px 10px; background:url(../images/lobby-join-btn.png); width:50px; height:24px; font-weight:bold; color:#FFFFFF;}
+.joinbut .butname{float:left; margin:3px 1px 1px 12px; cursor:pointer;}
+.cancelbut .butname{float:left; margin:3px 1px 1px 5px; cursor:pointer;}
+
+/*View all cotent - START*/
+.view-all-container{float:left; width:190px; border-radius:6px;  position: absolute; background-color: #CCC; margin-top:250px; margin-left:170px; display:none; padding:5px;}
+.all-palyers-area{float:left;width:150px;}
+.all-joined-plyers{float:left;}
+.close-but-area{float:left; width:19px; height:19px; margin:0 0 0 17px;}
+.closeimge{float:left; width:18; height:18px; cursor:pointer;}
+/*View all cotent - END*/
+
+/******************************************* Join Tournament ******************************************/
+/**************************************** Sign up ************************************************/
+.transparent-container{float:left; width:100%; background:url(../images/trans-black.png) repeat; height:100%; position:fixed; display:none; z-index:1}
+.signin-container{position: absolute; margin: 40px 1px 1px 200px; width: 620px; height: 560px; border-radius: 10px; background-color: #EAEAEA;display:none; z-index:3;}
+.signup-container{position: absolute; margin: 40px 1px 1px 200px; width: 620px; height: 560px; border-radius: 10px; background-color: #EAEAEA;display:none; z-index:3}
+.signup-container-id{margin: 40px 1px 1px 370px; height: 430px;}
+.signin-container{height: 330px;}
+.select-team{float:left; border:solid 1px red; width:150px;}
+.select-team ul li{float:left; width:100%; height:20px; border:solid 1px red; cursor:pointer;}
+.signup-success-msg{float:left; margin:30px 0 0 80px; font-weight:bold; font-size:18px; width:450px; text-align:center;}
+.signup-success-button{float:left; margin:40px 0 0 200px;}
+.signup-success-button input{height:30px;}
+/**************************************** My Tournament ************************************************/
+.my-tournament-container{float:left; width:100%;}
+.my-tournament-container .left-container{float:left; width:550px;}
+.my-tournament-container .right-container{float:left; width:452px; margin-left:2px;}
+.mytournament-filter{float:left; width:100%; background-color:#EAEAEA;}
+.mytournament-players{float:left; width:100%; background-color:#fff; -moz-border-radius:0 0 8px 8px; -webkit-border-radius:0 0 8px 8px; border-radius:0 0 8px 8px; height:715px; overflow:auto;}
+.mytournament-players ul li:nth-child(even),.mytournament-players li:nth-child(even){background-color:#EEEEEE;}
+.mytournament-players .player-indi{float:left; width:100%; line-height:25px; padding:3px 0 3px 0;}
+.mytournament-players .player-indi div{float:left; margin-left:10px; width:100px;}
+.mytournament-players .player-indi div.small{width:50px;text-align:center}
+.mytournament-players .player-indi div img{width:20px; height:20px;}
+.mytournament-players .player-indi .addfunds{height:20px;}
+.mytournament-step1{width:100%; float:left;}
+.mytournament-step1#myteam{height:350px; background-color:#fff;}
+.mytournament-step1 .player-indi div{width:50px;}
+.errors{float:left; width:100%; position:fixed; top:0; left:0; height:100%; background:url(../images/trans-black.png) repeat; z-index:10; display:none; color:#000; font-weight:bold; font-size:20px; font-family:calibri; border-bottom:solid 5px #fff;}
+.error-popup{position:absolute; top:0; left:0; right:0; bottom:0; width:600px; height:300px; border:solid 1px red; margin:auto; background-color:#fff;border-radius:5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border: 0; -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);}
+.popclose-btn{float: right; font-size: 21px; font-weight: bold; line-height: 1; color: #000; text-shadow: 0 1px 0 #FFF; filter: alpha(opacity=20);opacity: .2; -webkit-appearance: none; padding: 0; cursor: pointer; background: rgba(0, 0, 0, 0); border: 0; margin:10px 10px 0 0;}
+.error-footer{background: #FBFBFB; border-radius: 0 0 5px 5px; -webkit-border-radius: 0 0 5px 5px; padding: 10px 0 10px; margin-top: 15px; text-align: right; border-top: 1px solid #E5E5E5;float: left; width: 100%;}
+.error-body{height:174px; float: left; width:100%; margin:20px 0 0 0; text-align:center;}
+.errors ul{margin:0; text-align:center; width:100%;}
+.errors ul li{margin:20px 0 0 0;}
+.btn-default{background-color: #FFF; border-color: #CCC; color: #333; background-image: linear-gradient(to bottom, #FFF 60%, #F9F9F9 100%);}
+.btn{border-color: #CCC; outline: none; margin-bottom: 5px !important; margin-left: 4px; font-size: 13px; padding: 7px 11px; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.12), 1px 1px 0 rgba(255, 255, 255, 0.2) inset;}
+.btn{ display: inline-block; padding: 6px 20px; margin-bottom: 0; font-size: 14px; font-weight: bold; line-height: 1.428571429; text-align: center; white-space: nowrap; vertical-align: middle; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none; background-image: none; border: 1px solid rgba(0, 0, 0, 0); border-radius: 4px; }
+.btn-success{background-color: #65CA65; border-color: #54A754;color: #FFF; margin:0 20px 0 0;}
+.hidden{display:none;}
+.mytournament-right-list{float:left; height:220px; width:100%; background-color:#EFEFEF;}
+/*********************************************** Tournament ****************************************************/
+.tournament-tab ul li{float:left; height:35px; line-height:35px; padding:0 15px 0 15px;font-weight:bold; margin:5px 0 0 10px; -moz-border-radius:6px 6px 0 0; -webkit-border-radius:6px 6px 0 0; border-radius:6px 6px 0 0; background-color:#fff; cursor:pointer;-moz-box-shadow:inset 0 0 10px #292929; -webkit-box-shadow:inset 0 0 10px #292929; box-shadow:inset 0 0 10px #292929;}
+.tournament-tab ul li:hover,.tournament-tab ul li.active{background:url(../images/livescore-hover.png) repeat; color:#fff;}
+.tournament{display:none;}
+#tournament1{display:block;}
+.border{border:0;}
+.lobby-join-closed{background:url(../images/button_red.png) no-repeat; width:50px; height:24px; border:0; float:left; margin:15px 0 0 20px; color:#fff; line-height:24px; text-decoration:none;}
+.champion-icon-star{position:absolute; width:29px; height:29px; background:url(../images/star.png); margin:0 0 0 50px;}
+.champion-icon-star-header{width:29px; height:29px; background:url(../images/star.png); margin:0 0 0 50px; float:left;}
+.championship-text{float:left; font-weight:bold;}
+.championship-text a{ color:#000;}
+.leaderboard-head-title{float:left; margin:15px 0 0 0; font-size: 20px;} 
+.leaderboard-head-title ul{float:left;}
+.leaderboard-head-title ul li{float:left; height:30px; background-color:#fff; font-weight:bold; line-height:30px; padding:0 15px 0 15px; margin:0 10px 0 0; -moz-border-radius:6px 6px 0 0; -webkit-border-radius:6px 6px 0 0; border-radius:6px 6px 0 0; cursor:pointer;}
+.prizes-championship{background:url(../images/rank-and-price.png) no-repeat; width:495px; height:500px; float:left;}
+/**************************************** My Tournament ************************************************/
+.my-tournament-container{float:left; width:100%;}
+.my-tournament-container .left-container{float:left; width:515px; margin:0 0 0 15px;}
+.my-tournament-container .right-container{float:left; width:452px; margin-left:2px;}
+
+.mytournament-playermenu{float:left; width:100%; height:33px; background-color:#373536;}
+.mytournament-playermenu .playermame{float:left; margin:8px 1px 1px 30px; color:#faf8f9; font-weight:bold;}
+.mytournament-playermenu .role{float:left; margin:8px 1px 1px 80px; color:#faf8f9; font-weight:bold;}
+.mytournament-playermenu .team{float:left; margin:8px 1px 1px 45px; color:#faf8f9; font-weight:bold;}
+.mytournament-playermenu .runs{float:left; margin:8px 1px 1px 35px; color:#faf8f9; font-weight:bold;}
+.mytournament-playermenu .salary{float:left; margin:8px 1px 1px 25px; color:#faf8f9; font-weight:bold;}
+.mytournament-playermenu .addbut{float:left; margin:8px 1px 1px 30px; color:#faf8f9; font-weight:bold;}
+
+
+.mytournament-filter{float:left; width:100%; height:50px; background-color:#EAEAEA;}
+.mytournament-filter .checkbox{float:left; margin:18px 1px 1px 20px;}
+.mytournament-filter .checkname{float:left; margin:18px 1px 1px 1px; font-weight:bold;}
+
+.mytournament-players{float:left; width:100%; background-color:#fff;}
+.mytournament-players .player-indi{float:left; width:100%;}
+.mytournament-players .player-indi div{float:left; margin-left:10px; width:80px;}
+
+.mytournament-players .player-indi div.small{width:50px;}
+.mytournament-players .player-indi div img{width:25px; height:25px;}
+.mytournament-players .add-button{ border:1px solid #5d971e; border-radius:4px; background-color:#5d971e; height:22px;; width:90%; color:#fcfdfe; font-weight:bold; cursor:pointer;}
+.playername{float:left;} 
+.playername img{ margin-right:10px;} 
+
+.step1{float:left; margin:2px 1px 0 1px; width:100%;}
+.step2{float:left; margin:2px 1px 0 1px; width:100%;}
+.step3{float:left; margin:2px 1px 0 1px; width:100%;}
+
+.step1 #livescoremenu-id{ width:442px;}
+
+
+
+.live-score-menu .step1title{float:left; margin:8px 1px 1px 15px; color:#fe0000; font-size:18px;}
+.mytournament-step1{width:100%; float:left; border-bottom-left-radius:7px; border-bottom-right-radius:7px; background-color:#EBEBEB; height:104px;}
+.mytournament-step1 .step1txt{float:left; margin:30px 1px 30px 75px; width:48%; height:27px; border:1px solid #a3a3a3; }
+.mytournament-step1 .subbut{float:left; margin:30px 1px 30px 5px; background-color:#649f22; border:1px solid #d0d0d0; border-radius:5px; width:14%; height:25px; color:#fefffd; font-weight:bold;}
+
+.chooseurcaptain{float:left; margin:15px 1px 1px 50px;}
+.selectcaptain{float:left; margin:10px 1px 1px 10px; width:40%; height:28px; border:1px solid #a3a3a3;}
+.chooseurcoach{float:left; margin:5px 1px 1px 50px;}
+.selectcoach{float:left; margin:5px 1px 20px 18px; width:40%; height:28px; border:1px solid #a3a3a3;}
+.sub-button{float:left; border:0; color:#fff; background:url(../images/add-funds-button.png) no-repeat; height:31px; width:80px; margin:10px 1px 1px 180px; cursor:pointer;}
+ 
+
+.live-score-menu .selectteamplayers{ float:left; margin:10px 1px 1px 80px; font-weight:bold;}
+.step2menubg{float:left; width:100%; height:30px; background-color: #EAEAEA;}
+.step2menubg .name{float:left; margin:0px 1px 1px 20px; font-weight:bold;}
+.step2menubg .role{float:left; margin:0px 1px 1px 125px; font-weight:bold;}
+.step2menubg .country{float:left; margin:0px 1px 1px 45px; font-weight:bold;}
+.step2menubg .salary{float:left; margin:0px 1px 1px 20px; font-weight:bold;}
+.mytournament-step1 .player-indi div{width:80px;}
+.hidden{display:none;}
+.my-tournament-team-invite{position:fixed; background:url(../images/its-more-fun-parent.jpg) no-repeat; width:497px; height:320px; z-index:99; margin:auto; top:0; bottom:0; left:0; right:0;}
+.my-tournament-team-msg{width:385px; height:50px; padding:10px; float:left; margin:175px 0 0 50px; color:#fff; font-size:18px; text-align:center;}
+.my-tournament-btn-share{float:left; margin:20px 0 0 190px;}
+/* Remaning area  */
+
+.remaining{float:left; margin:1px 1px 1px 1px; width:100%; border-radius:4px;}
+.remaining-menu{ float:left; width:100%; height:39px; background-color:#EAEAEA; border-radius:4px; }
+.amount-bg{ float:left; background:url(../images/remaining-menu.png) no-repeat; width:129px; height:39px; margin: 0 0 0 10px;}
+.amount{float:left; margin:12px 0 0 25px; color:#FFF0F0; font-weight:bold; font-size:12px; width:75px; text-align:center;}
+.remain-title{float:left; margin:12px 1px 1px 5px; font-size:13px; font-weight:bold; color:#353535;}
+.quest-img{float:left; margin:12px 1px 1px 180px; width:14px; height:14px;}
+.remain-body{ float:left; width:100%; height:30px; background-color:#FFFFFF; border-bottom-left-radius:4px; border-bottom-right-radius:4px;}
+.changes{ float:right; margin:15px 1px 1px 0;}
+.changes-value-bg{float:right; height:20px; background-color:#E2E2E2; margin:12px 10px 1px 1px; border-radius:4px; padding: 0 2px 0 2px;}
+.changes-values{float:left; margin:3px 1px 1px 1px;}
+.quest-img-body{float:left; margin:6px 1px 1px 1px; width:14px; height:14px;}
+
+/* My tournament new right window */
+.mytournaments-right-window{margin:5px 1px 1px 1px; width:100%; height:250px; border:1px solid #FFF; border-radius:6px; background-color:#ECECEC;}
+.mytournaments-right-window-menu{float:left; background:url(../images/live-score-menu.png) repeat; height:58px; width:100%; -moz-border-radius:6px 6px 0 0; -webkit-border-radius:6px 6px 0 0; border-radius:6px 6px 0 0; color:#FFFFFF;}
+
+.tournament-title-bg{float:left; width:100px; height:35px; line-height:35px; padding:0 15px 0 15px;font-weight:bold; margin:1px 0 0 10px; -moz-border-radius:6px 6px 0 0; -webkit-border-radius:6px 6px 0 0; border-radius:6px 6px 0 0; background-color:#F96611;}
+
+.inner-menu-bg{float:left; width:100%; background-color:#242424; height:40px;}
+
+.innermenu-name{float:left; width:30px; color:#FFF; margin:10px 1px 1px 10px; font-weight:bold;}
+.innermenu-myteampoints{float:left; width:90px; color: #FFF; margin:10px 1px 1px 50px; font-weight:bold;}
+.innermenu-rank{float:left; width:30px; color:#FFF; margin:10px 1px 1px 50px; font-weight:bold;}
+
+
+.table-body-valus{float:left; width:100%; background-color:#ECECEC;}
+.tour-name{float:left; margin:20px 1px 1px 10px; font-weight:bold; width:130px;}
+.tour-points{float:left; margin:20px 1px 1px 0; font-weight:bold; width:50px;}
+.tour-rank{float:left; margin:20px 1px 1px 10px; font-weight:bold; width:80px;}
+.enter-but-bg{float:left; margin:17px 1px 1px 5px;  background:url(../images/enter_btn.png) no-repeat; width:50px; height:24px;}
+.enter-but{float:left; margin:4px 1px 1px 10px; color:#FFFFFF; font-weight:bold; text-decoration:none;}
+.divider-line{float:left; margin:10px 1px 1px 1px; background: url(../images/lobby-divider-row.png) repeat; width:100%; height:1px;}
+.more-button{float:left; margin:60px 1px 1px 270px; width:20%; height:10%; font-weight:bold;}
+
+
+
+/* Inner window confirmation -START*/
+.tournregis-innercontainer{float:left; border:1px solid #000; border-radius:7px; background-color:#EAEAEA; width:475px; height:250px; margin:50px 1px 1px 225px; z-index:10; display:none;}
+.insufficient-innercontainer{float:left; border:1px solid #000; border-radius:7px; background-color:#EAEAEA; width:475px; height:200px; margin:50px 1px 1px 400px; z-index:10; display:none;}
+.inner-header{float:left; background:url(../images/live-score-menu.png) repeat; height:58px; width:475px; -moz-border-radius:6px 6px 0 0; -webkit-border-radius:6px 6px 0 0; border-radius:6px 6px 0 0;}
+.inner-header .tournlobbybutton{float:left; font-weight:bold; margin-left:150px; padding:13px 0 0 0; width:160px; height:25px; background:#F66410; color:#FDFFFF; border-top-left-radius:7px; border-top-right-radius:7px; text-align:center;}
+.joinquestion{float:left; margin:15px 1px 1px 100px; font-weight: 500; font-size:17px; font-weight:bold;}
+.tournregis-divider{ float:left; margin: 10px 1px 1px 20px; border:1px solid #d0d0d0; width:435px;}
+.tournmentdetails-left{ float:left; margin:10px 1px 1px 130px;}
+.tournmentdetails-right{float:left; margin:10px 1px 1px 10px; font-weight:bold;}
+.confirmbutton{ float:left; margin:5px 10px 1px 170px; border:1px solid #010101; background-color:#373737; border-radius:7px; width:70px; height:13%; color:#fdfdfe; font-size:13px; font-weight:bold; cursor:pointer;}
+.cancelbutton{ float:left; margin:5px 1px 1px 1px; border:1px solid #010101; background-color:#373737; border-radius:7px; width:70px; height:13%; color:#fdfdfe; font-size:13px; font-weight:bold; cursor:pointer;}
+/* Inner window confirmation -END */
+/* Tournment Registration inner window "Connect with facebook"-- START */
+.fund-fulls{float:left; background:url(../images/trans-black.png) repeat; top:0px; left:0px; width:100%; height:100%; position:fixed;}
+.facebook_innerview{float:left; border:1px solid #000; border-radius:7px; background-color:#eaeaea; width:475px; height:300px; margin:100px 1px 1px 225px; z-index:20;}
+.errormsg{float:left; margin:20px 1px 1px 150px; font-weight: 500; font-size:12px; font-size:16px; font-weight: bold;}
+.errormsg1{float:left; margin:1px 1px 1px 20px; font-weight: 500; font-size:12px; font-size:16px; font-weight: bold; text-align:center;}
+.okbut{float:left; margin:35px 10px 1px 200px; border:1px solid #010101; background-color:#373737; border-radius:7px; width:100px; height:13%; color:#fdfdfe; font-size:13px; font-weight:bold;}
+.learnmore{float:left;margin:5px 1px 1px 200px; color:#116aeb;}
+.fbsendtext{float:left;margin:10px 1px 1px 180px; font-weight:bold;}
+.connectwithfbbut{float:left;margin:10px 1px 1px 140px; width:206; height:44;}
+.fbcancelbut{float:left;margin:10px 10px 1px 200px; border:1px solid #010101; background-color:#373737; border-radius:7px; width:71px; height:10%; color:#fdfdfe; font-size:13px; font-weight:bold;}
+
+/* Tournment Registration inner window "Connect with facebook"-- END- */
+/* LEFT HIDDEN container START */
+	.left-hidden-container{ float:left; width:515px; height:856px; margin:-856px 0 0 0; background:url(../images/trans-black.png) repeat; border-top-left-radius:5px; border-top-right-radius:5px;}
+/* LEFT HIDDEN container END */
+/*step2,3 hidden - START*/
+.step2-hidden{float:left; background:url(../images/trans-black.png) repeat; width:100%; height:439px; margin:-439px 0 0 1px; border-radius:5px;}
+.step3-hidden{float:left; background:url(../images/trans-black.png) repeat; width:100%; height:209px; margin:-209px 0 0 1px; border-radius:6px;}
+/*step2 hidden - END*/
+/****************************************************** sign up ***************************/
+.signuptext{float:left;background:url(../images/livescore-hover.png) repeat;  color:#fff;  padding-top:8px; -moz-border-radius:6px 6px 0 0; -webkit-border-radius:6px 6px 0 0; border-radius:6px 6px 0 0; color:#fff;   text-align:center;}
+.signuptext{width:180px; height:28px; font-size:16px; font-weight:bold; margin:5px 1px 1px 220px;}
+.facebook-photo{float:left; width:50px; height:50px; margin-left:280px;}
+.logintype{float:left; height:80px; margin-top:-12px; width:100%;}
+#flogin{float:left; margin:10px 1px 1px 207px;}
+.or{ margin:65px 20px 1px 288px; width:36px; height:21px; border-radius: 9px; text-align:center; padding-top:6px; background-color:#FFFFFF;}
+.uname{float:left; height:70px; width:100%;}
+.choseuruname{float:left; height:15px; width:92%; margin:1px 1px 1px 18px; font-size:14px; }
+.line{border:1px solid #BBBBBB; width:91%; margin:18px 1px 10px 20px; }
+.uniquename{float:left; margin:1px 10px 1px 140px; font-weight:bolder;}
+.exist-image{float:left; width:25px; height:25px; margin-top:10px;/* margin-top:-15px;*/}
+.pass-ok-image{width:19px; height:17px; display:none;}
+.pass-no-image{width:19px; height:17px; display:none;}
+.uname-ok-image{width:19px; height:17px; display:none;}
+.uname-no-image{width:19px; height:17px; display:none;}
+.email-ok-image{width:19px; height:17px; display:none;}
+.email-no-image{width:19px; height:17px; display:none;}
+.code-ok-image{width:19px; height:17px; margin-top:10px; display:none;}
+.code-no-image{width:19px; height:17px; margin-top:10px; display:none;}
+#verify-txt{float:left; margin:4px 1px 12px 6px;}
+#refresh-image{width:19px; height:19px; margin-top:7px; cursor:pointer;}  
+.capchaChecked{float:left;}
+.user-message{/*float:left;margin-top:-18px;*/ width:130px; height:30px;  color: #F00; display:none; font-size: 14px;}
+.err_msg{width:140px; height:40px; margin:0 0 0 295px;}
+.pass-message{/*float:left;*/ width:126px; height:30px; /*margin-top:-18px;*/ color: #F00; display:none; font-size: 14px;}
+.special-message{float:left; width:130px; height:30px; margin-top:-18px; color: #F00; display:none; font-size: 14px;}
+
+.dropdown{float:left; height:26px; width:183px; margin:-2px 1px 1px 270px; color:#737373;}
+.termsandcond{float:left; margin: -14px 1px 1px 10px;}
+.chkbox{float:left; margin:3px 5px 0 0; border-color:#BBBBBB;}
+.terms{border-color:#BBBBBB;}
+.signuptext1{background:url(../images/lobby-join-btn.png) no-repeat; width:70px; height:24px; border:0; float:left; margin:40px 0 0 -305px; padding-left:2px; color:#fff; line-height:24px; text-align:center; text-decoration:none;}
+.divider1{ float:left; background:url(../images/divider.jpg) repeat; height:30px; width:1px; margin:36px 0 0 -235px;}
+.alreadyhaveacc{background:url(../images/text.jpg) repeat; float:left;  margin:20px 1px 1px 15px; width:32%; height:30px; margin:5px 0 0 8px;}
+/*#btn-signup,*/.btn-signup,#btn-signin,.btn-signin{background:url(../images/lobby-join-btn.png) no-repeat; width:50px; height:24px; border:0; float:left; color:#fff; line-height:24px; text-decoration:none; margin:10px 0 0 10px;}
+
+/**************************************************************** My Team *******************************************************************/
+.myteam{float:left; width:100%; margin-bottom:50px;}
+.myteam-body{float:left; width:100%; background-color:#EBEBEB; padding-bottom:20px; -moz-border-radius:0 0 6px 6px; -webit-border-radius:0 0 6px 6px; border-radius:0 0 6px 6px;}
+.myteam-table-header{float:left; width:100%; height:20px; background-color:#2F2F2F; color:#fff; text-align:center; line-height:20px; font-weight:bold;}
+.myteam-body .extra-large{width:135px; float:left;}
+.myteam-body .left-align{text-align:left;}
+.myteam-body .small{width:35px; float:left;}
+.myteam-body .medium{width:50px; float:left;}
+.myteam-body .large{width:73px; float:left;}
+.myteam-body .large img,.myteam-result-body .large img{width:30px; height:30px; margin:3px 0 0 0;}
+.myteam-body .bonus{background-color:#EDCCB9;}
+.myteam-table-header .total{color:#000;}
+.myteam-table-header .bonus{background-color:#F76512;}
+.myteam-body .grandtotal{background-color:#E98144;}
+.myteam-body .total{background-color:#C9E678;}
+.myteam-table-row{float:left; width:100%; height:30px; line-height:30px; background-color:#fff;}
+.myteam-table-row div{border-right:solid 1px #ccc;}
+.myteam-table-header div{border-right:solid 1px #000;}
+.myteam-table-body{text-align:center;}
+.myteam-table-row img{width:25px; height:25px; margin:2px 5px 0 5px;}
+ul.myteam-table-body li:nth-child(even){background-color:#EAEAEA;}
+.myteam-tour-details{width:350px; margin:0 auto;}
+.myteam-tour-details-inner{float:left; background-color:#fff; padding:30px 0 10px 30px; -moz-border-radius:8px; -webkit-border-radius:8px; border-radius:8px; margin:80px 0 50px 0;}
+.tour-detail-label{float:left; width:150px; line-height:35px;}
+.myteam-prize{float:left; margin:10px 0 0 20px;}
+.myteam-prizebox{float: right; width: 400px; height: 70px; margin-right: 10px; border-radius: 8px; background-color:#FFFFFF;}
+.myteam-result{float:left; width:100%;}
+.myteam-result-head{float:left;}
+.myteam-result-head{float: left; width: 100%; height: 20px; background-color: #2F2F2F; color: white; text-align: center; line-height: 20px; font-weight: bold;}
+.myteam-result .small{float:left; width:100px;}
+.myteam-result .large{float:left; width:250px; text-align:left}
+.myteam-result-body a{color:#000; text-decoration:none;}
+.myteam-result-body a:hover{text-decoration:underline;}
+.myteam-result-body{float:left; width:100%; height:35px; line-height:35px; text-align:center;}
+.highlight-user{background-color:#FFA501; font-weight:bold; animation:currentuser 1s; -webkit-animation:currentuser 0.5s;animation-iteration-count: infinite;-webkit-animation-iteration-count: infinite;}
+@keyframes currentuser
+{
+100% {background-color:#fff;}
+}
+
+@-webkit-keyframes currentuser /* Safari and Chrome */
+{
+100% {background-color:#fff;}
+}
+.myteam-rank{float:right; font-weight:bold; margin:0 20px 0 0; line-height:18px;}
+.myteam-rank span{font-size:20px;}
+.myteam-loading{width:50px; height:50px; float:right; margin-right:15px; display:none;}
+.myteam-prize-title{float:left; font-weight:bold;}
+.myteam-prize-list{float:left; background-color:#fff; padding:5px; margin:10px 0 10px 0;}
+.myteam-prize-list .first-place{margin:0;}
+.myteam-result-pending{float:left; width:100%; height:200px; text-align:center; font-weight:bold; font-size:14px; line-height:100px;}
+.myteam-pointer-head{float:left; height:25px; line-height:25px; border:solid 1px #000; width:295px; text-align:center; margin-left:135px; border-bottom-width:0; -moz-border-radius:15px 15px 0 0; -webkit-border-radius:15px 15px 0 0; border-radius:15px 15px 0 0; font-weight:bold;}
+.my-team-total{float:right; margin:10px 10px 0 0; font-weight:bold;}
+.my-team-coach{float:left; margin:10px 0 0 10px; font-weight:bold;}
+/* Previous match details - Start*/
+.rightcontext{float:left; width:592px; height:270px; margin:1px 0 2px 0;}
+.content_title{float:left; width:94%; height:33px; margin-top:6px; background-color:#F86611;}
+.prevmatch_img{float:left;background:url(../images/prevmatch_icon.png) no-repeat; width:45px; height:31px;}
+.content_title p{float:left;color:#FFFFFF; font-size:14px; font-weight:bold; margin:8px 0 0 5px;}
+.prev_match1{float:left; width:88%; height:80px; margin:4px 5px 2px 25px; border-radius:10px;}
+.prev_match_team1{float:left; width:87px; height:74px; margin:5px 0px 0px 110px;}
+.prev_match_team1 img,.prev_match_team2 img{width:87px; height:74px;}
+.score_detail{float:left; width:50px; height:30px; margin:25px 0 0 5px;}
+.score_detail .prev_score{font-weight:bold; font-size:12px;}
+.prev_versus{float:left; margin:30px 0px 0px 20px; font-weight:bolder; font-size:18px; width:20px; height:20px; }
+.prev_match_team2{float:left; width:87px; height:74px; margin:5px 0px 0px 30px;}
+.prev_match1_detail #prev_match1_detail1,.prev_match1_detail #prev_match1_detail2{float:left; font-size:11px; width:80%; margin-left: 50px; color:#5D5D5D; text-align:center;}
+.prev_match1_detail #prev_match1_detail2{width:70%; margin-left: 85px;}
+.star_player_divider{float:left; width:96%; border:1px solid #CECECE; margin:3px 0 0 10px;}
+.title1 a{float:right; text-decoration:none; margin:8px 15px 0 0; color:#000000; font-weight:bold; border:1px solid #000;}
+.more{background-color: #E0E0E0;border: solid 1px #ccc;padding: 5px 15px 5px 15px; font-weight: bold;color: #3C3C3C;-moz-border-radius: 4px;-webkit-border-radius: 4px;border-radius: 4px;font-size: 11px;}
+.previous-match .content_title{display:none;}
+.previous-match a{color:#000;}
+/* Previous match details - End*/
+.latest-leaderboard{display:none;}
+.latest-leaderboard .lboard-menu{float:left; height:15px; border-bottom:1px solid #CECECE; margin:20px 0 0 20px;}
+.latest-leaderboard .small{float:left; width:75px; height:17px; text-align:center;}
+.latest-leaderboard .extra-large{float:left; width:180px; height:17px;}
+.latest-leaderboard .table-values{float:left; height:30px; border-bottom:1px solid #CECECE; line-height:30px; margin-left:20px;}
+.latest-leaderboard .table-values .small{height:40px; color:#484848;}
+.latest-leaderboard .table-values .extra-large{height:40px; color:#484848;}
+
+
+/*Rules-container - Start*/
+.rules-mainpage{float:left; width:100%; height:740px; background-color:#EAEAEA; border-radius:6px; margin:0 0 10px 0;}
+.batting-container{float:left; width:420px; height:634px;  margin-left:40px;}
+.batting-head-title{float:left; width:150px; height:40px; color:#000; font-size:12px; line-height:35px; font-weight:bold; text-indent:25px; }
+.bat-menu-bg{float:left; width:100%; height:18px; background-color:#000000; color:#FFFFFF; font-weight:bold;}
+.particulars{float:left; width:230px; height:30px; line-height:30px; text-indent:20px; border-right:1px solid #CCCCCC;}
+.particulars1{ text-indent:50px; width:150px; text-align:center;}
+.extra-height{}
+.parti-values{float:left; width:100%;} 
+.d-line{float:left; height:1px; width:100%; background-color:#CCCCCC;}
+#matchtype1{}
+#matchtype2{display:none;}
+#matchtype3{display:none;}
+/*Rules-container - End*/
+/********************************** Deposit *****************************************************/
+.deposit-title-options{float:left; height:30px; line-height:30px; text-align:center; background-color:#000; width:100%; color:#fff; font-size:15px; margin-bottom:15px;}
+.deposit-inner-center{width:600px; margin:0 auto;}
+.deposit-indivi-cont{float:left; width:100%; background-color:#E1E1E1; height:60px; border-bottom:dotted 1px #ccc; line-height:60px; font-size:13px;}
+.deposit-indivi-cont.even{background-color:#fff;}
+.deposit-money{float:left; width:100px;}
+.deposit-money-img{float:left; border:solid 1px #A2A2A2; -moz-border-radius:6px; -webkit-border-radius:6px; border-radius:6px; background:url(../images/cash_icon.png) no-repeat center center; width:35px; height:35px; margin:12px 10px 0 15px;}
+.deposit-free-cont{float:left; margin-left:150px;}
+.deposit-free-cont div{float:left;}
+.deposit-free-percent{width:40px; height:40px; -moz-border-radius:20px; -webkit-border-radius:20px; border-radius:20px; background-color:#ED0304; line-height:40px; text-align:center; color:#fff; font-size:15px; margin:10px 10px 0 10px;}
+.refer-a-friend-email{float:left; width:100%;}
+.refer-a-friend-email-inner-center{width:600px; margin:0 auto;}
+.refer-a-friend-email-inner{float:left; width:100%;}
+.refer-a-friend-title{float:left; font-size:15px; font-weight:bold; clear:both; margin-bottom:10px;}
+.refer-a-friend-email input[type='text']{margin:10px 0 0 0; border:solid 1px #ccc; width:250px; height:25px; margin-bottom:20px;}
+.refer-a-friend-email textarea{margin-top:10px; border:solid 1px #ccc; width:400px; height:150px;}
+.error-msg{float:left; position:fixed; width:300px; height:80px; z-index:10; background-color:#fff; -moz-border-radius:20px; -webkit-border-radius:20px; border-radius:20px; font-weight:bold; text-align:center; padding-top:30px; margin:0 0 0 350px; display:none;}
+/*---About Us ----*/
+.aboutus-container{ float:left; width:100%; background-color:#EBEBEB; min-height:300px;}
+/*---About Us End ---*/
+
+/*---Faqs ----*/
+.ques{font-weight:bold; float:left;}
+.ans{ text-align:justify; margin-left:30px; float: left; margin-bottom: 10px;}
+/*---Faqs End----*/
+
+/*---Legal---*/
+#legal{font-size:13px;text-align:justify; margin:5px 60px 15px 60px; }
+/*---Legal End----*/
+
+/*---Terms and Conditoin---*/
+.inner-terms{min-height:400px; }
+.terms-title{margin:10px 0 10px 0; font-weight:bold;}
+.inner-terms p{ text-align:justify;}
+/*---Terms and Conditoin End--*/
+.index-fixtures-cont{float:left; margin:-10px 0 0 0;}
+.forgot-password-link{float:left; margin-left:270px;}
+.social-buttons{float:left; margin:50px 0 0 220px;}
+.index-fixtures-indi{width:100%; float:left; margin:0 0 0 0; border-bottom:solid 1px #ccc; padding:8px 0 8px 0;}
+.index-fixtures-left{float:left; margin:0 0 0 15px;}
+.index-fixtures-left .flag{float:left; margin-left:-5px;}
+.index-fixtures-left .flag img{width:50px; float:left;}
+.index-fixtures-right{float:left; margin:0 0 0 5px; line-height:20px; width: 226px;}
+.forgot-password-text{margin:15px 0 0 20px; float:left; color:#000; font-weight:bold;}
+.custom-msg{float:left; height:40px; width:100%; background-color:#666666; text-align:center; color:#fff; font-family:Calibri, arial; line-height:40px; font-size:18px;}
+.sidebar-current-tour{float:left; margin:0 0 0 10px;}
+.sidebar-current-tour-head{float:left; background-color:#000; color:#fff; height:20px; line-height:20px; font-weight:bold;}
+.sidebar-current-tour .large{float:left; width:210px; text-indent:10px;}
+.sidebar-current-tour .small{float:left; width:60px;}
+.sidebar-current-tour-body{float:left;}
+
+/********************************************** Login Page **********************************************************/
+.login-box-container{width:800px; font: 16px Calibri; background:#DDE2E8 url(../images/login-box-bg.png) repeat-x; height:342px; border:solid 5px #000; -moz-border-radius:10px; -webkit-border-radius:10px; border-radius:10px;}
+.login-box-container a{color:#000;}
+.login-box-title{float:left; height:35px; line-height:35px; color:#fff; text-indent:20px; width:100%; font-size:25px;}
+.login-box-body{width:100%; height:300px; float:left;}
+.login-box-body-left{float:left; width:49%; text-align:center}
+.login-box-fb-title{float:left; width:100%; margin:85px 0 20px 0;}
+.login-box-left-already{float:left; width:100%; margin:75px 0 0 0; line-height:35px;}
+.pop-login-btn{height:31px; width:95px; text-align:center; background:url(../images/login-box-btn-bg.png) no-repeat; width:100px; font-weight:bold; border:0; margin-left:15px; font: 16px Calibri; font-weight:bold; cursor:pointer; outline:0;}
+.login-box-body-divider{width:2px; height:268px; background:url(../images/login-box-divider.jpg) no-repeat; float:left; margin:20px 0 0 0;}
+.login-box-body-right{float:left; margin:20px 0 0 50px; width:40%;}
+.txt-login-input{float:left; background:url(../images/login-txt-bg.png) no-repeat; width:287px; height:31px; margin:5px 0 10px 0;}
+.txt-login-input-error{background-image:url(../images/login-txt-bg-error.png);}
+.full-name-icon,.full-email-icon,.full-pwd-icon,.full-phone-icon{float:left; background:url(../images/full-name-icon.png) no-repeat top left; width:24px; height:20px; margin:7px 10px 0 10px;}
+.full-email-icon{background-image:url(../images/email-icon.png); height:15px;}
+.full-pwd-icon{background-image:url(../images/password-icon.png); height:18px;}
+.full-phone-icon{background-image:url(../images/phone-icon.png); height:24px; margin-top:5px;}
+.txt-login-input input,.txt-login-input .mobile-code{border:0; width:240px; float:left; height:25px; float:left; background:transparent; margin:2px 0 0 0; outline:0; font:16px calibri;}
+.txt-login-input .mobile-code{width:50px; border:solid 1px #ccc; margin:0 5px 0 0; height:31px; border-width:0 1px 0 1px; font-size:16px;}
+.login-signup-btn{background:url(../images/bg-btn.png) no-repeat; width:95px; height:35px; border:0; color:#000; font-size:15px; cursor:pointer; outline:0; font-family:Calibri;}
+.login-signup-btn:hover{background-image:url(../images/bg-btn-hover.png); color:#fff;}
+.txt-login-signup{float:left; width:100%; text-align:center; line-height:35px;}
+.login-agree-text{font-size:14px; margin-top:5px;}
+.login-box-close-btn{width:23px; height:27px; background:url(../images/login-close-button.png) no-repeat; float:right; margin:5px 10px 0 0; cursor:pointer;}
+.login-show-container,.facebook-signup-trans{margin:auto; position:fixed; top:0; z-index:999; display:none; bottom:0; left:0; right:0; width:800px; height:342px;}
+.lightbox-close{ background-image: url(../images/login-close-button.png); width:21px; height:21px; margin-top: -32px; margin-right: -10px; float:right;}
+.remeber{line-height: 11px; text-indent: 5px;}
+
+
+/******************************** Header My Account ********************************************/
+.myAccount-profile-stractures{ cursor:pointer; float:right; background:url(../images/account-box.png) no-repeat; width:272px; height:76px;  margin:5px 0 5px 0;}
+.addFundClass{ float:right; cursor:pointer; background:url(../images/add-funds-button.png) no-repeat; width:80px; height:29px; text-align:center; font-size:14px; color:#fff; line-height:29px; margin:32.5px 20px 0 10px;}
+.leftContentClass{ float:left; width:187px; height:74px; } 
+.rightContentClass{ float:right; width:80px; height:74px; } 
+.rightClassContent{ float:right; background:url(../images/dropdown.png) no-repeat; width:38px; height:33px; margin:8px 5px 0 0;}
+.logoutContent{ float:left; width:100%;}
+.classLogout{ float:left; background:url(../images/logout-icon.png) no-repeat; width:14px; height:16px; margin:10px 5px 0 5px;}
+.logoutText{ float:left; color:#fff; font-weight:bold; text-align:center; margin:12px 0 0 0; font-size:12px}
+.avatherContent{ float:left; margin:10px 0 0 10px;}
+.avatherContent img{border-radius:8px;-moz-border-radius:8px;-web-border-radius:8px;}
+.nameContentClass{ float:left; font-size:14px; color:#fff; margin:15px 0 0 9px; font-weight:bold; font-size:13px; width:63%; }
+.ruppesContent{  float:left; margin:10px 0 0 5px; color:#fff; font-size:16px;  line-height:12px;}
+.symblosRs{ float:left; background:url(../images/rupee.png) no-repeat; width:10px; height:13px; margin:0 5px 0 3px;}
+.upperContent-Class{ float:right; position:absolute; background-color:#2C2829; width:272px; height:333px; z-index:10000; margin:74px 0 0 0; cursor:pointer;border-radius:0 0 8px 8px;-moz-border-radius:0 0 8px 8px;-web-border-radius:0 0 8px 8px; display:none;}
+.first-content-class-set{ float:left; width:266px;  height:52px; background:url(../images/orange-strip.png) repeat; margin:3px 0 0 3px;}
+.main-content-class2{float:left; margin:0 0 0 85px; height:52px; line-height:52px; font-size:16px; color:#fff;}
+.header-user-level-icon{float:left; width:55px; background:url(../images/icons/copper.png) no-repeat center center; height:100%;}
+.coin-point-class span{ color:#EDFFA3; }
+.right-content2{ float:left; height:50px; width:40px; margin:0 ; padding:0;}
+.questionmark{ float:left; background:url(../images/questionmark.png) no-repeat; width:17px; height:16px; margin:19px 0 0 12px}
+.upperContent-Class2{ float:left; width:266px;  height:34px; margin:3px 0 0 3px; line-height:39px; text-align:center; color:#fff; font-size:14px;}
+.divdedClassContent{ float:left;background:url(../images/divider.png) no-repeat; height:3px; width:251px; margin:0 0 0 10px; }
+.logoutText a{ text-decoration:none;}
+.tournamentInfoClass{ float:left; width:100%; margin:20px 0 0 0; padding:0;}
+.tournamentInfoClassHeader{ margin:0 auto; padding:0; width:97%; height:45px; border-radius:8px 8px 0 0;-moz-border-radius:8px 8px 0 0;-web-border-radius:8px 8px 0 0; background-color:#000; }
+.tournamentInfoContentClass{ margin:0 auto; padding:0; width:97%; background-color:#fff; height:688px; border-radius:0 0 8px 8px;-moz-border-radius:0 0 8px 8px;-web-border-radius:0 0 8px 8px;}
+/******************************** Tournament Join ********************************************/
+.jointournamentContainnor{ width:54%; margin:0 auto; color:#fff; font-size:15px;}
+.joinTournamentContainnorClassHead{border-radius: 8px 8px 0 0 ;-moz-border-radius: 8px 8px 0 0;-web-border-radius:8px 8px 0 0; float:left; background:url(../images/join-orange-box-head-strip.png) repeat; height:51px; width:100%; text-align:center; line-height:51px; font-size:17px; font-weight:bold; margin-top:120px }
+.jointitleContent{ float:left; width:99.7%; background-color:#373536; margin:0 0 0 1px; height:25px;}
+.firstClassContent{ float:left; width:18%; font-size:13px; color:#fff; text-align:center; line-height:25px;}
+.InnerJoin-containnor-select{ float:left; width:75%;}
+.dailyfantasy{ float:left; width:100%; font-size:14px; font-weight:bold; color:#000; text-align:center; margin:8px 0 0 0; }
+.headerFileClass{ float:left; width:100%; margin:0px 0 0 0;}
+.IconeImages5{ float:left; background:url(../images/tournameinfo-icon.png) no-repeat; width:21px; height:21px; margin:8px 5px 0 12px ; padding:0 0 0 0;}
+.IconeImages6{ float:left; background:url(../images/entry-icon.png) no-repeat; width:28px; height:29px; margin:3px 5px 0 12px ; padding:0 0 0 0;}
+.IconeImages7{ float:left; background:url(../images/gift-icon.png) no-repeat; width:33px; height:31px; margin:3px 5px 0 12px ; padding:0 0 0 0;}
+.main-class-content{ float:left; width:96%; border:solid 1px #A2A2A2;border-radius: 8px;-moz-border-radius: 8px;-web-border-radius:8px; margin:0 0 0 10px;  background:#E1E1E1; height:272px;}
+.inner-Join-containnor-text{ margin:0 auto; /*width:95%;*/ background-color:#747474; height:245px; margin-top:13px;border-radius: 8px;-moz-border-radius: 8px;-web-border-radius:8px;}
+.name-Containnor-text{ width:100%; color:#fff; font-size:12px; font-weight:bold; text-align:center; height:15px ; margin:5px 0 0 0;}
+.btn-class-corner-classs{border-radius: 8px;-moz-border-radius: 8px;-web-border-radius:8px; text-align:center;  float:right;background: url(../images/tournament-cancel-button.png) repeat; line-height:28px; width:40px; text-align:center; font-size:12px; color:#fff; height: 28px; margin:0 30px 0 0; padding:0 5px 0 5px; cursor:pointer;}
+.score-btn-class{ float:left; width:55%; color:#000; margin:17px 0 0 12px; }
+.score-btn-class b{ color:#000;}
+.join-tournament-class{ border:solid 1px #A2A2A2; float:right; color:#fff; text-align:center;  width:100px;border-radius: 6px;-moz-border-radius: 6px;-web-border-radius:6px; background-color:#5B9121; padding:3px 5px 3px 5px ; margin:14px 60px 0 0; cursor:pointer;}
+.rightContainnorClass{ float:left; width:23%; height:275px; background-color:#E2E2E2;border-radius: 8px;-moz-border-radius: 8px;-web-border-radius:8px;border:solid 1px #A2A2A2; margin-top:68px}
+.rightContainnorClass h1{color: #000; text-align: center; line-height: 30px; float: left; width: 100%; margin: 5px 0 0 0; font-size: 16px;}
+.btn-class-containnor{ float:left; width:100%; font-size:14px; color:#000; text-align:center; margin-top:10px}
+.btn-cotainnorClass{ float:left; width:95%%; height:60px; background-color:#747474;border-radius: 8px;-moz-border-radius: 8px;-web-border-radius:8px; margin:10px 0 0 5px;}
+.timerStart{ float:left; background:url(../images/timer-box.png) no-repeat; width:40px; height:43px; margin:11px 0 0 13px; font-size:20px; text-align:center; color:#fff; line-height:34px; padding:0;}
+.timerStart span{ font-size:9px;line-height: 0;}
+.date-column{ float:left; width:100%; color:#fff; font-size:14px; text-align:center; margin:3px 0 0 0; }
+.prize-pool-Containnor{ float:left; background-color:#56B125; height:35px; text-align:left; font-size:14px; line-height:35px; width:100%;border-radius: 8px 8px 0 0;-moz-border-radius: 8px 8px 0 0;-web-border-radius: 8px 8px 0 0; }
+.small-containnor{ float:left; width:90%; background-color:#575757; margin:10px 0 0 10px ; height:30px;border-radius: 8px;-moz-border-radius: 8px;-web-border-radius:8px;}
+.s-noClass{ float:left; height:30px; width:25px; color:#fff; font-size:14px; text-align:center; line-height:30px; font-weight:bold;}
+.btn-class-Inner-sec{ float:left; width:80%; height:20px; color:#fff; text-align:center; line-height:20px; background-color:#737373;border-radius: 8px;-moz-border-radius: 8px;-web-border-radius:8px; margin:0px 0 0 50px;} 
+.falgClassContainnor{ float:left; overflow-y: auto; height: 201px; width:100%; border-bottom:solid 1px #CBCBCB;}
+.match-type-containnorClass{ float:left;height:100px; width:20%; text-align:center; line-height:80px; color:#707070; font-size:14px; font-weight:bold;}
+.flagsClassImages{ float:left; height:100px; width:40%; color:#707070; text-align:center; line-height:19px; }
+.flagsClassImages span{ float:left; width:100%; text-align:center;}
+.classImages{ float:left; margin-top:10px;}
+.vs-class-containnor{ float:left; width:15%; height:100px; line-height:80px; color:#707070;}
+.common-btn{float:left; background:url(../images/create-tournament-btn.png) repeat-x; height:26px; border:0; padding:0 10px 0 10px; color:#fff; border-radius: 8px;-moz-border-radius: 8px;-web-border-radius:8px; cursor:pointer;}
+.create-tournament-btn{float:right; margin:6px 8px 0 0;}
+.headermenuClass{ float:left; padding:0 ; margin:9px 0 0 10px; background:url(../images/tournamentgrey-tab.png) repeat; height:36px; text-align:center; line-height:38px; color:#FFFFFF;border-radius:8px 8px 0 0;-moz-border-radius:8px 8px 0 0;-web-border-radius:8px 8px 0 0; padding:0 13px 0 0; cursor:pointer; }
+.headerFileClass .active{background:url(../images/tournamentorange-tab.png) repeat;}
+.headermenuClass:hover{ background:url(../images/tournamentorange-tab.png) repeat;}
+.overall-btn{background: url(../images/lobby-join-btn.png) no-repeat; width: 50px; height: 24px; border: 0;float: left; margin: 0; color: #FFF; line-height: 24px; text-decoration: none; cursor: pointer; text-align:center}
+.tournament-back-icon{ float:left; background:url(../images/tournament-back-button.png) repeat; width:41px; height:24px; margin:12px 0 0 10px; padding:0;}
+.myAccount-profile-stractures:hover > .upperContent-Class{ display:block;}
+.my-account-Icon{ float:left; background:url(../images/my-account.png) no-repeat; width:12px; height:17px; margin:10px 0 0 20px;}
+.upperContent-Class2:hover{ background-color:#F66118;}
+.friend-Icon{float:left; background:url(../images/friends.png) no-repeat; width:27px; height:17px; margin:10px 0 0 15px;}
+.withdraw-Icon{float:left; background:url(../images/withdrawal.png) no-repeat; width:23px; height:25px; margin:7px 0 0 15px;}
+.transaction-histroy-Icon{float:left; background:url(../images/transaction-history.png) no-repeat; width:15px; height:19px; margin:7px 0 0 20px;}
+.bonus-Icon{float:left; background:url(../images/bonus.png) no-repeat; width:23px; height:23px; margin:7px 0 0 20px;}
+.support-Icon-menu{float:left; background:url(../images/support.png) no-repeat; width:23px; height:23px; margin:7px 0 0 20px;}
+.invite-Icon{float:left; background:url(../images/invite.png) no-repeat; width:21px; height:21px; margin:7px 0 0 22px;}
+.how-it-works-cont-overall{float:left; background-color:#fff;}
+.how-it-works-video-indi{float:left; margin:20px 0 20px 0; text-align:center; width:100%;}
+.how-it-works-video-indi h1{font-family:"Museo Sns W10 Cyr 700"; font-size:25px; margin:0 0 10px 0;}
+.how-it-works-cont{float:left; background:url(../images/how-it-works.jpg) no-repeat; width:981px; height:1041px; margin:10px 0 0 10px; color:#fff; font-size:16px;}
+.how-it-works-cont .how-it-works-step{padding:5px 0 0 5px;}
+.how-it-works-step2{float:left; width:250px; height:110px; margin:260px 0 0 365px;}
+.how-it-works-step1{float:left; width:255px; height:112px; margin:145px 0 0 50px;}
+.how-it-works-step3{float:left; width:250px; height:110px; margin:158px 0 0 370px;}
+.how-it-works-step5{float:left; width:250px; height:110px; margin:260px 0 0 242px;}
+.how-it-works-step4{float:left; width:250px; height:110px; margin:260px 0 0 95px;}
+.page-content-container{font-size:16px; line-height:30px; background-color:#fff; padding:20px; float:left;}
+.page-content-container .title{font-family:"Museo Sns W10 Cyr 700"; font-size:25px; margin:0 0 10px 0;}
+.page-content-container ul{list-style:circle; margin:0 0 20px 20px;}
+.page-content-container ul ul{margin-bottom:10px;}
+
+/****************************************** POP Dialog BOX ******************************************/
+.pop-dialog-box{position:fixed; width:390px; height:225px; margin:auto; top:0; left:0; bottom:0; right:0; background-color:#CACACA; border-radius: 8px; -moz-border-radius: 8px; -web-border-radius: 8px; overflow:hidden; font-size: 22px;}
+.pop-head-cont{float:left; width:100%; background:url(../images/big-strip-deep-yellow.png) repeat-x; height:55px;}
+.pop-head-cont-title{background:url(../images/title-strip.png) repeat-x; height:37px; float:left; margin:6px 0 0 150px; border-radius: 8px 8px 0 0; -moz-border-radius: 8px 8px 0 0; -web-border-radius: 8px 8px 0 0;color: #FFF; line-height: 37px; padding: 0 20px 0; font-size: 15px;}
+.pop-head-cont-close{float:right; background:url(../images/close-create.png) no-repeat; width:17px; height:17px; margin:10px 10px 0 0; cursor:pointer;}
+.pop-body-cont{float:left; width:100%; text-align:center; margin-top:10px;}
+.like-us-share-btn{border: 0; font-size: 16px; float: none; margin: 0;}
+/***** TOOLTIP ********/
+.tooltip{display: inline; position: relative; text-decoration: none; top: 0px; left: 4px;}
+.tooltip:hover:after{background: #333; background: rgba(0,0,0,.8); border-radius: 5px; top: -5px; color: #fff; content: attr(alt); left: 20px; padding: 5px 15px; position: absolute; z-index: 98; width: 150px;}
+.tooltip:hover:before{ border: solid; border-color: transparent black; border-width: 6px 6px 6px 0; bottom: 20px; content: ""; left: 15px; position: absolute; z-index: 99; top: 3px;}
+.my-tournament-more-link{float:left; width:100%; color:#fff; text-decoration:underline; text-align:center; margin:10px 0 0 0;}

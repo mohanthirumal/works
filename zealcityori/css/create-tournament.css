@@ -1,0 +1,64 @@
+.createTournamentContent{
+	float:left;
+	width:100%;
+	margin:0;
+	padding:0;
+}
+.createTournamentRightcontent{ float:left;width:1000px; padding:0; margin:0; } 
+.createTournamentmainContent{ background-color:#EAEAEA; margin:10px auto auto ; padding:0 0 30px 0; width:100%; float:left; border-radius:8px;-moz-border-radius:8px;-web-border-radius:8px; min-height:450px;}
+.createTournamentTitleContent{ float:left; margin:0; padding:0; border-radius:8px 8px 0 0 ;-moz-border-radius:8px 8px 0 0 ;-web-border-radius:8px 8px 0 0 ; background:url(../images/create-tournament-title-strip.png) repeat; height:55px; width:100%;}
+.createTournamentTitle{ width:29%; margin:6px auto auto;background:url(../images/title-strip.png) repeat; height:37px;  border-radius:8px 8px 0 0 ;-moz-border-radius:8px 8px 0 0 ;-web-border-radius:8px 8px 0 0 ; font-size:18px; color:#fff; font-weight:bold; text-align:center; line-height:37px;}
+.main-tournament-content{ width:60%; margin:0 auto;}
+.inner-tournament-content{ float:left; width:80%; margin:20px 0 0 0;}
+.tournament-values{ float:left; width:222px; font-size:13px; color:#000 ;  text-align:right; height:35px; line-height:30px; }
+.tournament-values input[type='text']{ float:left; width:210px; border:solid 1px #858585; margin:2px 0 0 10px; height:25px;}
+.schedule-values{ float:left; width:250px; font-size:13px; color:#000 ; font-weight:bold; text-align:right; min-height:35px;  line-height:30px; }
+.inner-content-schedule{ float:left; width:214px; text-align:center; min-height:100px; border:solid 1px #858585; margin:0 0 0 10px;border-radius:8px;-moz-border-radius:8px;-web-border-radius:8px;
+-webkit-box-shadow: -1px 0px 5px 0px #858585;-moz-box-shadow:-1px 0px 5px 0px #858585;box-shadow:-1px 0px 5px 0px #858585; background-color:#fff;}
+.main-class-cotant{ float:left; width:200px; margin:15px 0 15px 15px;}
+.vsClass{ float:left; width:31px; height:26px; background:url(../images/vs_img.png) no-repeat; margin:10px 20px 0 20px;}
+.more-class-content{ float:right;background:url(../images/more-button-strip.png)repeat; width:55px; height:19px; line-height:19px; text-align:center; color:#fff;border-radius:8px;-moz-border-radius:8px;-web-border-radius:8px; border:solid 1px #858585; margin:5px 0 0 0; cursor:pointer;}
+.fix-content-border{ float:left;  width:52px; height:67px; margin:10px 0 10px 13px;}
+.first-class-content{ float:left; width:50px; height:21px;border:solid 1px #858585; }
+.first-class-content.first{background-color:#498500;border-radius:5px;-moz-border-radius:5px;-web-border-radius:5px; text-align:center; line-height:21px; color:#fff;}
+.first-class-content.second{background-color:#EE2C14;border-radius:5px;-moz-border-radius:5px;-web-border-radius:5px; text-align:center; line-height:21px; color:#fff;}
+.first-class-content.third{background-color:#FF7431;border-radius:5px;-moz-border-radius:5px;-web-border-radius:5px; text-align:center; line-height:21px; color:#fff;}
+.first-class-content.fourth{background-color:#D99435; border-radius:5px;-moz-border-radius:5px;-web-border-radius:5px; text-align:center; line-height:21px; color:#fff;}
+.first-class-content.fifth{background-color:#34A92E; border-radius:5px;-moz-border-radius:5px;-web-border-radius:5px; text-align:center; line-height:21px; color:#fff;}
+.setClassContent{ float:left; margin:5px 0 0 0; width:100%}
+.price-content{ float:left; background:url(../images/cash-box.png) no-repeat; width:51px; height:34px; margin:10px 0 0 0; text-align:center; color:#fff; line-height:44px; font-size:11px;}
+.submit-class-content{ cursor:pointer; float:left;background:url(../images/create-button.png) no-repeat; width:107px; margin:20px 0 0 260px; padding-bottom: 5px; /*line-height:22px;*/ height:37px; text-align:center; font-weight:bold; color:#fff;  border:0;}
+.fill-Content{ float: left;margin: 1px 0px 0px 10px;overflow: hidden; height: auto; }
+.styled-select-one {
+/*width: 145px;*/
+height: 30x;
+overflow: hidden;
+background: url(../images/down_arrow.jpg) no-repeat right;
+border-radius: 1px solid #888;
+}
+.styled-select-one select {
+/*background: transparent;*/
+width: 212px;
+padding: 5px;
+font-size: 13px;
+font-family: Arial, Helvetica, sans-serif;
+line-height: 0px;
+border: 0;
+border: solid 1px #858585;
+border-radius: 0;
+height: 30px;
+/*-moz-box-shadow: inset 0 0 5px #888;
+-webkit-box-shadow: inset 0 0 5px #888;
+box-shadow: inset 0 0 5px #888;*/
+outline: none;
+}
+
+.success-dialog{width:390px; height:225px; margin: auto; background-color:#CACACA; border-radius:8px; z-index:999; position:fixed; top: 0; right: 0; left: 0; bottom:0;}
+.popup-title{ font-size: 12px; width: 40%;}
+.invite-text {font-size: 14px; text-align: center; margin: 0 0 20px 0; line-height: 15px; font-weight:bold;}
+
+.sub-canbtn{ background-color:#E5E5E5; width: 238px; min-height: 33px; border-radius: 8px; margin: 0 0 15px 80px; padding: 1px 0 1px 0;}
+.createTournamentTitleContent{ background:url(../images/big-strip-deep-yellow.png) repeat; }
+.create-submit{ background:url(../images/tournament-cancel-button.png) repeat; width: 104px; margin: 6px 0 5px 10px; border-radius: 5px; text-align: center; min-height: 8px; padding: 3px 0 2px 0; /* font-weight: bold; */ color: white; font-size: 14px; float:left; cursor:pointer;}
+.close-btn{ background:url(../images/close-create.png) no-repeat; width:17px; height:17px; float: right; margin: -29px 4px 0px 0; cursor:pointer;}
+.chckbox-private-tour{float:left; margin:10px 0 0 10px;}

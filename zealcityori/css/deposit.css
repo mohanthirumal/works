@@ -1,0 +1,69 @@
+.join-tournament-class{ border:solid 1px #A2A2A2; float:right; color:#fff; text-align:center;  width:100px;border-radius: 6px;-moz-border-radius: 6px;-web-border-radius:6px; background-color:#5B9121; padding:3px 5px 3px 5px ; margin:14px 200px 0 0; cursor:pointer;}
+.rightContainnorClass{ float:left; width:23%; height:267px; background-color:#E2E2E2;border-radius: 8px;-moz-border-radius: 8px;-web-border-radius:8px;border:solid 1px #A2A2A2; margin-top:68px}
+.btn-class-containnor{ float:left; width:100%; font-size:14px; color:#000; text-align:center; margin-top:10px}
+.btn-cotainnorClass{ float:left; width:95%%; height:60px; background-color:#747474;border-radius: 8px;-moz-border-radius: 8px;-web-border-radius:8px; margin:10px 0 0 5px;}
+.timerStart{ float:left; background:url(../images/timer-box.png) no-repeat; width:40px; height:43px; margin:11px 0 0 13px; font-size:20px; text-align:center; color:#fff; line-height:34px; padding:0;}
+.timerStart span{ font-size:9px;line-height: 0;}
+.date-column{ float:left; width:100%; color:#fff; font-size:14px; text-align:center; margin:3px 0 0 0; }
+.prize-pool-Containnor{ float:left; background-color:#56B125; height:35px; text-align:left; font-size:14px; line-height:35px; width:100%;border-radius: 8px 8px 0 0;-moz-border-radius: 8px 8px 0 0;-web-border-radius: 8px 8px 0 0; }
+.small-containnor{ float:left; width:90%; background-color:#575757; margin:10px 0 0 10px ; height:30px;border-radius: 8px;-moz-border-radius: 8px;-web-border-radius:8px;}
+.s-noClass{ float:left; height:30px; width:25px; color:#fff; font-size:14px; text-align:center; line-height:30px; font-weight:bold;}
+.btn-class-Inner-sec{ float:left; width:80%; height:20px; color:#fff; text-align:center; line-height:20px; background-color:#737373;border-radius: 8px;-moz-border-radius: 8px;-web-border-radius:8px; margin:0px 0 0 50px;} 
+.falgClassContainnor{ float:left; width:100%; border-bottom:solid 1px #CBCBCB; height:100px;}
+.match-type-containnorClass{ float:left;height:100px; width:20%; text-align:center; line-height:80px; color:#707070; font-size:14px; font-weight:bold;}
+.flagsClassImages{ float:left; height:100px; width:40%; color:#707070; text-align:center; line-height:19px; }
+.flagsClassImages span{ float:left; width:100%; text-align:center;}
+.classImages{ float:left; margin-top:10px;}
+.vs-class-containnor{ float:left; width:15%; height:100px; line-height:80px; color:#707070;}
+.icon-deposit-Class{ float:left; background:url(../images/deposit-icon.png) no-repeat; width:41px; height:39px; margin:8px 0 0 8px;}
+.my-tournament-Class{ margin:0 auto; width:50%;height: 20px;color: #fff; font-size:12px;text-align:center;line-height: 20px;background-color: #737373;border-radius: 8px;-moz-border-radius: 8px;-web-border-radius: 8px; margin-top:18px; font-weight:bold; }
+.depositContainnor{ margin:0 auto; width:60%; background-color:#C5C5C5; height:420px; border:solid 1px #919191;border-radius: 8px;-moz-border-radius: 8px;-web-border-radius: 8px; margin-top:10px}
+.depostContainnor-class{ cursor:pointer; float:left; width:27.5%; height:100px;border:solid 1px #919191; background-color:#C5C5C5;border-radius: 8px;-moz-border-radius: 8px;-web-border-radius: 8px; background-color:#fff;
+-webkit-box-shadow: 7px 6px 22px -3px #9A9A9A;-moz-box-shadow: 7px 6px 22px -3px #9A9A9A;box-shadow: 7px 6px 22px -3px #9A9A9A;margin:15px 0 0 27px;}
+.depostContainnor-class:hover,.hoverClassOne { background-color:#F3F77E; }
+.depostContainnor-class:hover > .innerContainor-likeTwo{ background-color:#B5B67D;}
+.hoverClassTwo { background-color:#B5B67D !important;}
+.or-class-content{ float:left; width:100%; font-size:16px; font-weight:bold; text-align:center; margin:20px 0 0 0;}
+.innerContainor-like{ width:100%; height:70%; float:left;}
+.innerContainor-likeTwo{ width:100%; height:30%;   float:left; text-align:center; font-weight:bold; font-size:11px; line-height:30px;background-color:#B3B3B3;border-radius:0 0 5.6px 5.6px;-moz-border-radius:0 0 7px 7px;-web-border-radius:0 0 7px 7px;}
+.rupessImagesContent{ margin:0 auto; width:60%; height:25px;  margin-top:20px; text-align:left; font-size:18px; color:#000; line-height:25px;}
+.rupessContent{ float:left; width:10px; height:12px; margin:0 2px 0 20px;}
+.txtType{height:28px; border-radius: 8px;-moz-border-radius: 8px;-web-border-radius: 8px; width:30%; padding:0 0 0 5px}
+.btnclassSearchContent{ margin:0 auto; height:60px; width:90%; background-color: #737373;border-radius: 8px;-moz-border-radius: 8px;-web-border-radius: 8px;}
+.rightContentails{ float:left; width:30%;}
+.leftContentails{ float:left; width:50%; margin: 0 0 0 10px;}
+.textContainnore{ float:left; text-align:right; font-size:15px; width:100%; height:25px; line-height:28px;}
+.text-box-Containnor{ margin:0 auto; width:210px; border-top:solid 2px #8D8D8D;  border-right:solid 1px #8D8D8D;  border-left:solid 2px #8D8D8D; border-bottom:solid 1px #8D8D8D;height:25px; text-align:center; font-size:14px; line-height:25px; background-color:#fff; color:#000000; font-weight:bold; }
+.leftContentails >.txtType{ width:100%;}
+.btnclassSearchContent div a{ color:#fff;}
+.depositClassContainnorClass2{ float:left; width:99.8%; height:50px; margin-top:30px;}
+.fill-Content {
+    float: left;
+    height: auto;
+    margin: 1px 0 0 10px;
+    overflow: hidden;
+}
+.tournament-values {
+    color: #000000;
+    margin: 0 auto;
+    font-size: 13px;
+    height: 35px;
+    line-height: 30px;
+    text-align: right;
+    width: 232px;
+}
+styled-select-one {
+    background: url("../images/down_arrow.jpg") no-repeat scroll right center rgba(0, 0, 0, 0);
+    overflow: hidden;
+}
+.styled-select-one select {
+    border: 0 none;
+    border-radius: 0;
+    box-shadow: 0 0 5px #888888 inset;
+    font-size: 13px;
+    height: 30px;
+    line-height: 0;
+    outline: medium none;
+    padding: 5px;
+    width: 212px;
+}

@@ -1,0 +1,43 @@
+@media only screen and (max-width: 995px){
+	.center-container{width:768px; margin:0 auto;}
+	img{margin:0 auto; width:100%;}
+	.column1,.column2,.column3{width:768px;  margin:0 auto !important; padding:0;}
+	.header .logo{float:left; width:100%;}
+	.header .menu,.menu-main-container{float:left; width:100%;}
+	.header .menu ul,.footer-tit,.footer .footer-top .column{margin:0; padding:0; width:100%;}
+	.header .menu ul li{margin:0; padding:0; width:100%;}
+	.header .menu ul li a{margin:0 0 5px 0; color:#fff; width:100%; padding:0; text-indent:20px; height:50px; line-height:50px; background-color:#1F9FBA;}
+	.index-left-container,.index-right-container,.left-container,.right-container,.footer ul{width:100% !important; margin:0 !important;}	
+	footer .footer-top .column ul,.index-newsletter-container,.column-right-container{float:none; margin:0 auto; width:100%;}
+	.footer-bottom ul li{width:100%; text-align:center;}
+	.index-slider-container,.index-video-container,.ws_thumbs{display:none;}
+	.teachers-banner{margin:20px 0 0 0;}
+	.activity-centre,.course-video-cont.activity,.login-show-container,.login-box-container,.features-content-right{width:100%;}
+	.header .menu,.menu-main-container{float:right; height:auto;}
+	img.inherit{width:auto;}
+	.courses-container-bg{height:900px !important; background-image:none !important;}
+	.features-content-mastering-button{margin-left:0;}
+	.features-content-container{background:none;}
+	.features-page{height:1235px !important;}
+}
+@media only screen and (max-width: 767px){
+	.center-container,.footer-bottom ul{width:420px; margin:0 auto;}
+	.index-slider-container,.index-video-container{display:none;}
+	.column1,.column2,.column3{width:420px;  margin:0 auto;}
+	.top-blue{height:435px;}
+	.content{margin:0;}
+	.left-container{width:100%;}
+	.login-container{margin:0; width:100%;}	
+	.tab-content .item-content .video{width:100%;}
+	.width-changer{width:100% !important;}
+	.course-left{left:-425px;}
+	.course-right{left:40px;}
+}
+@media only screen and (max-width: 479px) {
+	.center-container,.footer-bottom ul{width:300px; margin:0 auto;}
+	.index-slider-container,.index-video-container,.login-box-body-left{display:none;}
+	.column1,.column2,.column3{width:300px;  margin:0 auto;}
+	.login-container{margin:0;}
+	.course-left{left:-425px;}
+	.course-right{left:40px;}
+}

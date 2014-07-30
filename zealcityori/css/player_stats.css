@@ -1,0 +1,85 @@
+/**popUp containnor **/
+
+#vpb_load_user_details_main_wrapper
+{
+	min-width:200px;
+	width:auto;
+	height:auto;
+	margin:0;
+	padding:10px;
+	text-align:left;
+	background: #FFF;
+	border: solid 1px #cbcbcb;
+	box-shadow: 0 0 15px #cbcbcb;
+	-moz-box-shadow: 0 0 15px #cbcbcb;
+	-webkit-box-shadow: 0 0 15px #cbcbcb;
+	-webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;
+	font-family:Verdana, Geneva, sans-serif; font-size:12px;
+	position:absolute;
+    left:0px;
+    top:0;
+    display:none;
+    z-index: 99999999;
+}
+
+#vpb_photo_box { width:100px; float:left; text-align:left; }
+#vpb_photo_style {-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px; width:90px; height:90px; border:none; }
+#vpb_fullname_box { min-width:130px; width:auto; float:left; font-family:Verdana, Geneva, sans-serif; font-size:13px; font-weight:bold; color: #00509F; margin-top:0px; }
+
+
+.vpb_photo_box { width:110px; float:left; text-align:left; }
+.vpb_photo_style {-webkit-border-radius: 10px 0 0 10px;-moz-border-radius: 10px 0 0 10px;border-radius: 10px 0 0 10px; width:100px; height:100px; border:none; }
+.vpb_fullname_box { width:380px; float:left; font-family:Verdana, Geneva, sans-serif; font-size:14px; font-weight:bold; color: #00509F; margin-top:5px; }
+
+.vpb_fullname_style A:link {text-decoration: none}
+.vpb_fullname_style A:visited {text-decoration: none}
+.vpb_fullname_style A:active {text-decoration: none}
+.vpb_fullname_style A:hover {text-decoration:underline; font: Arial, Helvetica, sans-serif;color: #00509F;}
+
+
+.info { border: 1px solid #999; margin: 15px 0px; padding:12px; width: 480px;font: bold 12px verdana;-moz-box-shadow: 0 0 5px #888; -webkit-box-shadow: 0 0 5px#888;box-shadow: 0 0 5px #888;text-shadow: 2px 2px 2px #ccc;-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;font-family:Verdana, Geneva, sans-serif; font-size:11px; line-height:20px;font-weight:normal;color: black;background: #BDE5F8; width:500px;}
+
+
+.vpb_user_details_wrapper
+{
+	width:500px;
+	margin: 0 auto;
+	position:relative;
+	padding:10px;
+	padding-bottom:0px;
+	background-color: #FFF;
+	border: solid 1px #cbcbcb;
+	box-shadow: 0 0 10px #cbcbcb;
+	-moz-box-shadow: 0 0 10px #cbcbcb;
+	-webkit-box-shadow: 0 0 10px #cbcbcb;
+	-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;
+}
+
+.vpb_user_details_inner_wrapper
+{
+	width:500px;
+	margin-bottom:20px;
+	float:left;
+	background-color: #FFF;
+	border: solid 1px #cbcbcb;
+	box-shadow: 0 0 10px #cbcbcb;
+	-moz-box-shadow: 0 0 10px #cbcbcb;
+	-webkit-box-shadow: 0 0 10px #cbcbcb;
+	-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;
+}
+.playerStatusContainnor{ float:left; width:700px;height:500px; border:solid 1px #CBCBCB; border-radius:8px;-moz- border-radius:8px;-webkit- border-radius:8px; margin:0 0 0 10px;}
+.imagesContainnor{ float:left; width:200px; height:232px; margin:10px 0 0 10px; background-color:#EFEFEF;}
+.imagesContainnorinner{ float:left; width:180px; height:210px;  margin:10px 0 0 10px; background-color:#FFFFFF; border-radius:8px;-moz- border-radius:8px;-webkit- border-radius:8px;}
+.playernameClass{ float:left; width:100%; text-align:center; font-size:14px; font-weight:bold;}
+.profiledetailsContainnor{ float:left; width:430px;margin:10px 0 0 10px; background-color:#EFEFEF;border-radius:8px;-moz- border-radius:8px;-webkit- border-radius:8px;}
+.profiledetailsContainnorImg{ float:left; background:url(../images/grey_b.jpg) no-repeat; width:63px; height:232px; margin-top:10px;}
+.containorClass{ float:left; width:120px; font-size:12px; font-weight:bold; margin:10px 0 0 5px;}
+.containorClass1{ float:left; width:290px; font-size:12px; margin:11px 0 0 5px;color:#4B4B4B;}
+.secondClasscontainnor,.secondClasscontainnor1,.secondClasscontainnor2{ float:left; width:100%; text-align:center; font-size:14px; font-weight:bold; text-align:left; margin:10px 0 0 10px; cursor:pointer;}
+.t-20Class{ float:left; width:60px; text-align:center; line-height:2; font-size:12px;}
+.t-20Class:hover,.t-20ClassActive{ background-color:#FDBC02}
+.interclassContainnor{ float:left; width:2px; height:25px; background:url(../images/divider12.jpg) no-repeat;}
+.innerclassContainnor{ float:left; width:48px; height:20px; text-align:center; line-height:1.5; font-size:12px; font-weight:normal; text-align:center}
+.border-bottom-containnor{ float:left; width:97.8%; border-bottom:dotted 1px #000; margin:3px 0 0 10px;}
+.centeterContainnorClass{ float:left; width:200px; margin:100px 0 0 13px;}
+.dayClassContainnor{ font-family:Tahoma; font-size:12px; float:left; font-weight:bold; text-align:center; width:100%;  }

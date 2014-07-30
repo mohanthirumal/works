@@ -1,0 +1,131 @@
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta content="telephone=no" name="format-detection">
+<meta content="address=no" name="format-detection">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<style type="text/css">
+  html { height: 100% }
+  body { height: 100%; margin: 0; padding: 0 }
+  #map-canvas,#clinic-map-canvas { height: 100% }
+</style>
+<title>Untitled Document</title>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/parse-1.2.18.js"></script>
+<link rel="stylesheet" href="css/jquery.mobile-1.4.2.css" />
+<link rel="stylesheet" href="css/global.css"/>
+<link rel="stylesheet" href="css/style.css"/>
+<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.4.2.min.js"></script>
+<link rel="stylesheet" href="css/auto-complete.css" />
+<script>var $con = jQuery.noConflict( true );</script>
+
+<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/openfb.js"></script>
+<script src='js/jquery.js' type="text/javascript"></script>
+<script src='js/jquery.rating.js' type="text/javascript" language="javascript"></script>
+<link href='css/jquery.rating.css' type="text/css" rel="stylesheet"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js" type="text/javascript"></script>
+</head>
+<body>
+<div data-role="page" id="loader"></div>
+<!----------------------------------- Main Home Page : STARTS --------------------------------------------->
+<div class="page" data-role="page" id="home"></div>
+<!----------------------------------- Main Home Page : ENDS --------------------------------------------->
+<!----------------------------------- Login Page : STARTS --------------------------------------------->
+<div class="page" data-role="page" id="login"></div>
+<!----------------------------------- Login Page : ENDS --------------------------------------------->
+<!----------------------------------- Signup Page : STARTS --------------------------------------------->
+<div class="page" data-role="page" id="signup"></div>
+<!----------------------------------- Signup Page : ENDS --------------------------------------------->
+<!----------------------------------- Search Page : STARTS --------------------------------------------->
+<div class="page" data-role="page" id="search"></div>
+<!----------------------------------- Search Page : ENDS --------------------------------------------->
+<!----------------------------------- Search List Page : STARTS --------------------------------------------->
+<div class="page" data-role="page" id="search-list"></div>
+<!----------------------------------- Search List Page : ENDS --------------------------------------------->
+<!----------------------------------- Setting Page : STARTS --------------------------------------------->
+<div class="page" id="setting" data-role="page"></div>
+<!----------------------------------- Setting Page : ENDS --------------------------------------------->
+<!----------------------------------- Doctor Join Page : STARTS --------------------------------------------->
+<div class="page" id="join-doctor" data-role="page"></div>
+<!----------------------------------- Doctor Join Page : ENDS --------------------------------------------->
+<!----------------------------------- Doctor Pending Page : STARTS --------------------------------------------->
+<div class="page" id="doctor-pending-approval" data-role="page"></div>
+<!----------------------------------- Doctor Pending Page : ENDS --------------------------------------------->
+<!----------------------------------- Doctor Mode setting Page : STARTS --------------------------------------------->
+<div id="doctor-mode-setting" class="doctor-mode-setting" data-role="page">
+	<div class="header" data-role="footer" data-position="fixed" data-id="header" role="banner">
+		<div class="logo">
+			<a data-transition="fade" class="back-btn" href="#search"></a>
+			<a data-transition="fade" href="#" onclick="Doc.showHideMenu()" class="doc-header-user-profile"><img src="images/avatar.jpg" id="avatar" class="avatar"/></a>
+		</div>
+	</div>
+	<div class="content">
+		<h2>Hey doc id: <b id="doctor-id"></b></h2>
+		<h2>Doctor Information</h2>
+		<div class="register-bg">
+			<table align="center" cellpadding="10px">
+				<tr>
+					<td>Full name:</td>
+					<td id="doc-ful-name"></td>
+				</tr>
+				<tr>
+					<td>Speciality:</td>
+					<td id="doc-spec"></td>
+				</tr>
+				<tr>
+					<td>Medical License No:</td>
+					<td id="doc-med-lic"></td>
+				</tr>
+				<tr>
+					<td align="center" colspan="2">
+						Contact phone number
+						<input type="text" name="doc-mode-mobile" id="doc-mode-mobile" placeholder="Mobile" data-role="none" class="input"/>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+						Contact E-mail
+						<input type="text" name="doc-mode-email" id="doc-mode-email" placeholder="Email" data-role="none" class="input"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Doc Mode:</td>
+					<td>
+						<select id="doc-mode-check" name="doc-mode-check" data-role="flipswitch">
+							<option value="false">Off</option>
+							<option value="true">On</option>
+							
+						</select>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="center">
+			<input type="button" value="Save and Confirm" data-role="none" class="button" onClick="Doc.saveDocSetting()"/>
+			<input type="button" value="Support" data-role="none" class="button"/>
+		</div>
+	</div>
+	<div id="pending-mode-footer"></div>
+	<script>$("#pending-mode-footer").load('footer.html').trigger('create');</script>
+</div>
+<div class="page" id="search-home" data-role="page"></div>
+<!----------------------------------- Doctor Mode setting Page : ENDS --------------------------------------------->
+<div class="page" id="notification" data-role="page"></div>
+<div class="page" id="prescription" data-role="page"></div>
+<div class="page" id="appointment" data-role="page"></div>
+<div class="page" id="book-doctor" data-role="page"></div>
+<div class="page" id="invites" data-role="page"></div>
+<div class="page" id="speciality" data-role="page"></div>
+<div class="page" id="speciality-detail" data-role="page"></div>
+<div class="page" id="my-app-details" data-role="page"></div>
+<div class="page" id="clinic-map" data-role="page"></div>
+<div class="page" id="favourites" data-role="page"></div>
+<div class="page" id="favourites-details" data-role="page"></div>
+<div class="page" id="manual-doctor" data-role="page"></div>
+<script type="text/javascript" src="js/global.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

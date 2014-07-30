@@ -1,0 +1,29 @@
+<div class="header" data-role="footer" data-position="fixed" data-id="header" role="banner">
+	<div class="logo">
+		<a data-transition="fade" class="back-btn" onclick="Doc.gotoBack()"></a>
+		<a data-transition="fade" href="#doc-setting" class="doc-header-user-profile"><img src="images/avatar.jpg" id="avatar" class="avatar"/></a>
+	</div>
+</div>
+<div class="content">
+	<p>Are you a doctor? If you are interested  in joining our family of doctors then just fill up the form below and our representative will get in touch with you and bring you up to speed in saving more lives.</p>
+	<h2>Doc Information</h2>
+	<div class="register-bg">
+		<div class="center">
+			<select name="speciality" id="speciality" data-role="none" style="width:95%">
+				<option value="0">Choose speciality</option>
+			</select>
+			<div class="checkbox-center">
+				<label>
+					<input type="checkbox" name="fill-profile" onchange="Doc.fillDocProfile(this)">Same as user profile
+				</label>
+			</div>
+			<input type="text" name="country" id="country1" placeholder="Country" data-role="none" class="input"/>
+			<input type="text" name="city" id="city1" placeholder="City" data-role="none" class="input"/>
+			<input type="text" name="email" id="email1" placeholder="Email" data-role="none" class="input"/>
+			<input type="text" name="phone" id="phone1" placeholder="Mobile" data-role="none" class="input"/>
+		</div>
+	</div>
+	<div class="center"><input type="button" value="Submit" data-role="none" class="button" onclick="Doc.joinDoctor()"/></div>
+</div>
+<div id="joind-footer"></div>
+<script>$("#joind-footer").load('footer.html').trigger('create');</script>

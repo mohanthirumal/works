@@ -1,0 +1,13 @@
+<div class="header" data-role="footer" data-position="fixed" data-id="header" role="banner">
+	<div class="logo">
+	<a data-transition="fade" href="#" onclick="Doc.showHideMenu()" class="doc-header-user-profile"><img src="images/avatar.jpg" id="avatar" class="avatar"/></a></div>
+	</div>
+<div class="content">
+	<p>How do you want to search?</p>
+	<div class="clinic-link search-problem"><a class="clinic-link-arrow" href="#search-list" onclick="Doc.updateSearch('problem')" data-transition="fade">Doc by Problem</a></div>
+	<div class="clinic-link search-speciality"><a class="clinic-link-arrow" href="#speciality" onclick="Doc.updateSearch('speciality')" data-transition="fade">Doc by Speciality</a></div>
+	<div class="clinic-link search-clinic"><a class="clinic-link-arrow" href="#search-list" onclick="Doc.updateSearch('clinic')" data-transition="fade">Doc by Clinics</a></div>
+	<div class="clinic-link search-hospital"><a class="clinic-link-arrow" href="#search-list" onclick="Doc.updateSearch('hospital')" data-transition="fade">Doc by Hospitals</a></div>
+</div>
+<div id="search-home-footer"></div>
+<script>$("#search-home-footer").load('footer.html').trigger('create');</script>
